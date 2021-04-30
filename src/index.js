@@ -5,6 +5,29 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+const origin = {
+    alpha: 'alpha',
+    beta: 'beta',
+    eve: 'eve'
+}
+const target = {
+    ...origin,
+    [origin.alpha]: 'new-alpha'
+}
+console.log('target', target)
+
+const destination = {earth: 'earth', moon: 'moon'}
+const source_a = {mars: 'mars'}
+const source_b = {mars: 'MARS', sun: 'sun'}
+Object.assign(destination, source_a, source_b)
+console.log('source_a', source_a)
+console.log('source_b', source_b)
+console.log('destination', destination)
+
+const {alpha, ...other} = target
+console.log('alpha', alpha)
+console.log('other', other)
+
 ReactDOM.render(
     <React.StrictMode>
         <App/>
