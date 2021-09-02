@@ -63,7 +63,7 @@ export default function Profile() {
                         <MoreVertIcon/>
                     </IconButton>
                 }
-                title="Zhaopeng Gong"
+                title="Atzu68"
                 subheader="October 18, 1985"
             />
             <CardMedia
