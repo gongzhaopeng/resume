@@ -15,11 +15,17 @@ import {green} from '@material-ui/core/colors';
 import Profile from "./Profile";
 
 const useStyles = makeStyles({
-    root: {
+    canvas: {
+        backgroundColor: green[100],
+        minHeight: 5000,
         flexGrow: 1,
-        maxWidth: 500,
-        margin: 'auto'
+        margin: 'auto',
+        padding: 0
     },
+    contentField: {
+        maxWidth: 600,
+        padding: 0
+    }
 });
 
 function Resume() {
@@ -34,21 +40,25 @@ function Resume() {
     return (
         <React.Fragment>
             <CssBaseline/>
-            <Container style={{backgroundColor: green[100]}}>
-                <Paper square className={classes.root}>
-                    <Tabs
-                        value={tabIndex}
-                        onChange={handleTabChange}
-                        variant="fullWidth"
-                        indicatorColor="secondary"
-                        textColor="secondary"
-                        aria-label="icon label tabs example"
-                    >
-                        <Tab icon={<PhoneIcon/>} label="RECENTS"/>
-                        <Tab icon={<FavoriteIcon/>} label="FAVORITES"/>
-                        <Tab icon={<PersonPinIcon/>} label="NEARBY"/>
-                    </Tabs>
-                </Paper>
+            <Container className={classes.canvas}>
+                <Container className={classes.contentField}>
+                    <Paper square>
+                        <Tabs
+                            value={tabIndex}
+                            onChange={handleTabChange}
+                            variant="fullWidth"
+                            indicatorColor="secondary"
+                            textColor="secondary"
+                            aria-label="icon label tabs example"
+                        >
+                            <Tab icon={<PhoneIcon/>} label="RECENTS"/>
+                            <Tab icon={<FavoriteIcon/>} label="FAVORITES"/>
+                            <Tab icon={<PersonPinIcon/>} label="NEARBY"/>
+                        </Tabs>
+                    </Paper>
+                    <Profile>
+                    </Profile>
+                </Container>
             </Container>
         </React.Fragment>
     )

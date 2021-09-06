@@ -20,8 +20,7 @@ import journeyToMars from './journeyToMars.jpeg'
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        margin: 'auto',
-        maxWidth: 345,
+        margin: 'auto'
     },
     media: {
         height: 0,
