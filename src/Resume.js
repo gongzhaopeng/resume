@@ -18,8 +18,9 @@ const useStyles = makeStyles({
     canvas: {
         backgroundColor: green[100],
         minHeight: 5000,
+        maxWidth: '100%',
         flexGrow: 1,
-        margin: 'auto',
+        margin: 0,
         padding: 0
     },
     contentField: {
