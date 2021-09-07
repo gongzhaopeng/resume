@@ -9,7 +9,7 @@ import PersonPinRoundedIcon from '@material-ui/icons/PersonPinRounded';
 import BeenhereIcon from '@material-ui/icons/Beenhere';
 import FingerprintIcon from '@material-ui/icons/Fingerprint';
 
-import {BrowserRouter as Router, Redirect, Route, Switch, useHistory, useParams} from 'react-router-dom'
+import {HashRouter as Router, Redirect, Route, Switch, useHistory, useParams} from 'react-router-dom'
 
 import {makeStyles} from '@material-ui/core/styles'
 import {brown, cyan, green, lime} from '@material-ui/core/colors';
