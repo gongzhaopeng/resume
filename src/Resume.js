@@ -5,12 +5,14 @@ import Container from '@material-ui/core/Container'
 import Paper from '@material-ui/core/Paper'
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
-import PhoneIcon from '@material-ui/icons/Phone';
-import FavoriteIcon from '@material-ui/icons/Favorite';
-import PersonPinIcon from '@material-ui/icons/PersonPin';
+import PersonPinRoundedIcon from '@material-ui/icons/PersonPinRounded';
+import BeenhereIcon from '@material-ui/icons/Beenhere';
+import FingerprintIcon from '@material-ui/icons/Fingerprint';
+
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 
 import {makeStyles} from '@material-ui/core/styles'
-import {green} from '@material-ui/core/colors';
+import {brown, cyan, green, lime} from '@material-ui/core/colors';
 
 import Profile from "./Profile";
 
@@ -23,7 +25,7 @@ const useStyles = makeStyles({
         margin: 0,
         padding: 0
     },
-    contentField: {
+    contentArea: {
         maxWidth: 600,
         padding: 0
     }
@@ -42,7 +44,7 @@ function Resume() {
         <React.Fragment>
             <CssBaseline/>
             <Container className={classes.canvas}>
-                <Container className={classes.contentField}>
+                <Container className={classes.contentArea}>
                     <Paper square>
                         <Tabs
                             value={tabIndex}
@@ -50,15 +52,27 @@ function Resume() {
                             variant="fullWidth"
                             indicatorColor="secondary"
                             textColor="secondary"
-                            aria-label="icon label tabs example"
+                            aria-label="main navigating tabs"
                         >
-                            <Tab icon={<PhoneIcon/>} label="RECENTS"/>
-                            <Tab icon={<FavoriteIcon/>} label="FAVORITES"/>
-                            <Tab icon={<PersonPinIcon/>} label="NEARBY"/>
+                            <Tab icon={<PersonPinRoundedIcon style={{color: lime[400]}}/>} label="ME"/>
+                            <Tab icon={<BeenhereIcon style={{color: cyan[400]}}/>} label="SKILLS"/>
+                            <Tab icon={<FingerprintIcon style={{color: brown[400]}}/>} label="EXPERIENCES"/>
                         </Tabs>
                     </Paper>
-                    <Profile>
-                    </Profile>
+                    <Router>
+                        <Switch>
+                            <Route path='/skills'>
+                                <p>TODO::SKILLS</p>
+                            </Route>
+                            <Route path='/experiences'>
+                                <p>TODO::EXPERIENCES</p>
+                            </Route>
+                            <Route path='/'>
+                                <Profile>
+                                </Profile>
+                            </Route>
+                        </Switch>
+                    </Router>
                 </Container>
             </Container>
         </React.Fragment>
