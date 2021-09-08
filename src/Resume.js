@@ -8,11 +8,12 @@ import Tab from '@material-ui/core/Tab';
 import PersonPinRoundedIcon from '@material-ui/icons/PersonPinRounded';
 import BeenhereIcon from '@material-ui/icons/Beenhere';
 import FingerprintIcon from '@material-ui/icons/Fingerprint';
+import Typography from "@material-ui/core/Typography";
 
 import {HashRouter as Router, Redirect, Route, Switch, useHistory, useParams} from 'react-router-dom'
 
 import {makeStyles} from '@material-ui/core/styles'
-import {brown, cyan, green, lime} from '@material-ui/core/colors';
+import {brown, cyan, green, lime, deepOrange} from '@material-ui/core/colors';
 
 import ScrollToTop from './components/ScrollToTop'
 import Profile from './components/Profile';
@@ -41,7 +42,14 @@ const useStyles = makeStyles(theme => ({
         position: 'fixed',
         maxWidth: contentAreaMaxWidth
     },
-    offsetBeneathAppBar: theme.mixins.toolbar
+    offsetBeneathAppBar: theme.mixins.toolbar,
+    bottomWord: {
+        ...theme.typography.h4,
+        fontVariant: 'petite-caps',
+        background: 'transparent',
+        padding: theme.spacing(1),
+        color: deepOrange[600],
+    }
 }));
 
 function ResumeContent() {
@@ -96,7 +104,7 @@ function ResumeContent() {
 
 function Resume() {
 
-    const {canvas} = useStyles();
+    const {canvas, bottomWord} = useStyles();
 
     return (
         <React.Fragment>
@@ -114,6 +122,9 @@ function Resume() {
                     </Switch>
                 </Router>
             </Container>
+            <Typography align="center" className={bottomWord}>
+                May the force be with you!
+            </Typography>
         </React.Fragment>
     )
 }
