@@ -2,7 +2,7 @@ import React from 'react';
 
 import CssBaseline from '@material-ui/core/CssBaseline'
 import Container from '@material-ui/core/Container'
-import Paper from '@material-ui/core/Paper'
+import AppBar from '@material-ui/core/AppBar'
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import PersonPinRoundedIcon from '@material-ui/icons/PersonPinRounded';
@@ -14,15 +14,17 @@ import {HashRouter as Router, Redirect, Route, Switch, useHistory, useParams} fr
 import {makeStyles} from '@material-ui/core/styles'
 import {brown, cyan, green, lime} from '@material-ui/core/colors';
 
-import Profile from './Profile';
-import Skills from './Skills'
-import Experiences from './Experiences'
+import ScrollToTop from './components/ScrollToTop'
+import Profile from './components/Profile';
+import Skills from './components/Skills'
+import Experiences from './components/Experiences'
 
 const topics = ['me', 'skills', 'experiences']
 const globalDefaultTopicIndex = 0
 const globalDefaultTopic = topics[globalDefaultTopicIndex]
 
-const useStyles = makeStyles({
+const contentAreaMaxWidth = 600
+const useStyles = makeStyles(theme => ({
     canvas: {
         backgroundColor: green[50],
         minHeight: 5000,
@@ -32,10 +34,15 @@ const useStyles = makeStyles({
         padding: 0
     },
     contentArea: {
-        maxWidth: 600,
+        maxWidth: contentAreaMaxWidth,
         padding: 0
-    }
-});
+    },
+    appBar: {
+        position: 'fixed',
+        maxWidth: contentAreaMaxWidth
+    },
+    offsetBeneathAppBar: theme.mixins.toolbar
+}));
 
 function ResumeContent() {
 
@@ -50,11 +57,11 @@ function ResumeContent() {
         history.push(`/${topics[newTabIndex]}`)
     }
 
-    const {contentArea} = useStyles();
+    const {contentArea, appBar, offsetBeneathAppBar} = useStyles();
 
     return (
         <Container className={contentArea}>
-            <Paper square>
+            <AppBar position='static' color="default" className={appBar}>
                 <Tabs
                     value={tabIndex}
                     onChange={handleTabChange}
@@ -67,7 +74,8 @@ function ResumeContent() {
                     <Tab icon={<BeenhereIcon style={{color: cyan[400]}}/>} label="SKILLS"/>
                     <Tab icon={<FingerprintIcon style={{color: brown[400]}}/>} label="EXPERIENCES"/>
                 </Tabs>
-            </Paper>
+            </AppBar>
+            <div className={offsetBeneathAppBar}/>
             <Switch>
                 <Route path={`/${topics[0]}`}>
                     <Profile/>
@@ -95,6 +103,7 @@ function Resume() {
             <CssBaseline/>
             <Container className={canvas}>
                 <Router>
+                    <ScrollToTop/>
                     <Switch>
                         <Route path='/:topic'>
                             <ResumeContent/>
