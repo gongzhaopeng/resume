@@ -19,7 +19,7 @@ import {red, lime} from '@material-ui/core/colors';
 
 import UniformCard from './UniformCard';
 
-import journeyToMars from './journeyToMars.jpeg'
+import journeyToMars from '../assets/images/journeyToMars.jpeg'
 
 const useStyles = makeStyles((theme) => ({
     root: {
