@@ -15,7 +15,7 @@ import {HashRouter as Router, Redirect, Route, Switch, useHistory, useParams} fr
 import {makeStyles} from '@material-ui/core/styles'
 import {brown, cyan, green, lime, deepOrange} from '@material-ui/core/colors';
 
-import ScrollToTop from './components/ScrollToTop'
+import {ScrollToTopAnyway} from './components/ScrollToTop'
 import Profile from './components/Profile';
 import Skills from './components/Skills'
 import Experiences from './components/Experiences'
@@ -111,7 +111,7 @@ function Resume() {
             <CssBaseline/>
             <Container className={canvas}>
                 <Router>
-                    <ScrollToTop/>
+                    <ScrollToTopAnyway/>
                     <Switch>
                         <Route path='/:topic'>
                             <ResumeContent/>
