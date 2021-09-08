@@ -28,7 +28,7 @@ const contentAreaMaxWidth = 600
 const useStyles = makeStyles(theme => ({
     canvas: {
         backgroundColor: green[50],
-        minHeight: 5000,
+        minHeight: 50000,
         maxWidth: '100%',
         flexGrow: 1,
         margin: 0,
