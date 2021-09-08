@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/resume/static/css/main.5c01d3c8.chunk.css",
-    "main.js": "/resume/static/js/main.ba6a1f19.chunk.js",
-    "main.js.map": "/resume/static/js/main.ba6a1f19.chunk.js.map",
+    "main.css": "/resume/static/css/main.a89ad49c.chunk.css",
+    "main.js": "/resume/static/js/main.67f88f6a.chunk.js",
+    "main.js.map": "/resume/static/js/main.67f88f6a.chunk.js.map",
     "runtime-main.js": "/resume/static/js/runtime-main.5fd449c4.js",
     "runtime-main.js.map": "/resume/static/js/runtime-main.5fd449c4.js.map",
     "static/css/2.bd135b59.chunk.css": "/resume/static/css/2.bd135b59.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.d06deb55.chunk.js.map": "/resume/static/js/3.d06deb55.chunk.js.map",
     "index.html": "/resume/index.html",
     "static/css/2.bd135b59.chunk.css.map": "/resume/static/css/2.bd135b59.chunk.css.map",
-    "static/css/main.5c01d3c8.chunk.css.map": "/resume/static/css/main.5c01d3c8.chunk.css.map",
+    "static/css/main.a89ad49c.chunk.css.map": "/resume/static/css/main.a89ad49c.chunk.css.map",
     "static/js/2.edb926eb.chunk.js.LICENSE.txt": "/resume/static/js/2.edb926eb.chunk.js.LICENSE.txt",
     "static/media/journeyToMars.54fd4b28.jpeg": "/resume/static/media/journeyToMars.54fd4b28.jpeg",
     "static/media/index.css": "/resume/static/media/roboto-vietnamese-400-normal.52cebac0.woff2"
@@ -21,7 +21,7 @@
     "static/js/runtime-main.5fd449c4.js",
     "static/css/2.bd135b59.chunk.css",
     "static/js/2.edb926eb.chunk.js",
-    "static/css/main.5c01d3c8.chunk.css",
-    "static/js/main.ba6a1f19.chunk.js"
+    "static/css/main.a89ad49c.chunk.css",
+    "static/js/main.67f88f6a.chunk.js"
   ]
 }
