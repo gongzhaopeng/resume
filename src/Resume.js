@@ -60,7 +60,7 @@ function ResumeContent() {
 
     let history = useHistory()
     const handleTabChange = (event, newTabIndex) => {
-        if (newTabIndex === tabIndex) return
+        // if (newTabIndex === tabIndex) return
 
         history.push(`/${topics[newTabIndex]}`)
     }
