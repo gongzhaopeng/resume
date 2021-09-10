@@ -5,9 +5,6 @@ import {randomLcg} from 'd3-random'
 
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
-import EmojiSymbolsIcon from '@material-ui/icons/EmojiSymbols';
-import CloudDoneIcon from '@material-ui/icons/CloudDone';
-import CropIcon from '@material-ui/icons/Crop';
 import Avatar from '@material-ui/core/Avatar'
 import SvgIcon from '@material-ui/core/SvgIcon'
 
@@ -18,13 +15,21 @@ import UniformCard from './UniformCard'
 import SkillItemChip from './SkillItemChip'
 
 import {ReactComponent as SpringLogo} from '../assets/images/logos/spring-logo.svg'
+import {ReactComponent as MicroserviceLogo} from '../assets/images/logos/microservice-logo.svg'
+import {ReactComponent as SpringCloudLogo} from '../assets/images/logos/spring-cloud.logo.svg'
+import {ReactComponent as KubernetesLogo} from '../assets/images/logos/kubernetes-logo.svg'
+import {ReactComponent as NodejsLogo} from '../assets/images/logos/node-js-logo.svg'
 
 const skillsData = [
-    {name: 'Microservice Architecture', color: 'secondary', logo: null},
-    {name: 'Kubernetes', color: 'primary', logo: <CloudDoneIcon/>},
-    {name: 'Node.js', color: 'default', logo: <CropIcon/>},
-    {name: 'Spring Framework', color: 'primary', logo: <SvgIcon component={SpringLogo} viewBox="0 0 97.1 97.1"/>},
-    {name: 'Spring Cloud', color: 'secondary', logo: <EmojiSymbolsIcon/>}
+    {name: 'Spring Framework', color: 'secondary', logo: <SvgIcon component={SpringLogo} viewBox="0 0 97.1 97.1"/>},
+    {
+        name: 'Microservice Architecture',
+        color: 'primary',
+        logo: <SvgIcon component={MicroserviceLogo} viewBox="0 0 292.3 304.4"/>
+    },
+    {name: 'Spring Cloud', color: 'secondary', logo: <SvgIcon component={SpringCloudLogo} viewBox="0 0 271 239"/>},
+    {name: 'Kubernetes', color: 'default', logo: <SvgIcon component={KubernetesLogo} viewBox="0 0 68 66"/>},
+    {name: 'Node.js', color: 'default', logo: <SvgIcon component={NodejsLogo} viewBox="0 0 442.37 270.929"/>}
 ]
 const random = randomLcg()
 const shuffle = shuffler(random);
