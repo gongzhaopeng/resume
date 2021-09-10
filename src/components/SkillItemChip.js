@@ -6,7 +6,7 @@ export function SkillItemChip({skillIcon, skillName, color}) {
 
     return <Chip
         // variant="outlined"
-        size="small"
+        size="medium"
         icon={skillIcon}
         label={skillName}
         clickable
