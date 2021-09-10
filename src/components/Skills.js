@@ -13,7 +13,7 @@ import {cyan} from '@material-ui/core/colors';
 import UniformCard from './UniformCard'
 import SkillItemChip from './SkillItemChip'
 
-import springLogo from '../assets/images/logos/spring-logo.svg'
+import {ReactComponent as SpringLogo} from '../assets/images/logos/spring-logo.svg'
 
 const useStyles = makeStyles(theme => ({
     skillItemChips: {
@@ -47,8 +47,8 @@ function Skills() {
                         color='default'
                     />
                     <SkillItemChip
-                        skillIcon={<CloudDoneIcon/>}
-                        // skillIcon={<SvgIcon component={springLogo}/>}
+                        // skillIcon={<CloudDoneIcon/>}
+                        skillIcon={<SvgIcon component={SpringLogo} viewBox="0 0 97.1 97.1"/>}
                         skillName='Spring Framework'
                         color='primary'
                     />
