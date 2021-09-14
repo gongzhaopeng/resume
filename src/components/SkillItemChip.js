@@ -2,7 +2,7 @@ import React from 'react';
 
 import Chip from '@material-ui/core/Chip'
 
-export function SkillItemChip({skillIcon, skillName, ...rest}) {
+export function SkillItemChip({skillIcon, skillName, selected, ...rest}) {
 
     return <Chip
         // variant="outlined"
@@ -10,7 +10,8 @@ export function SkillItemChip({skillIcon, skillName, ...rest}) {
         icon={skillIcon}
         label={skillName}
         clickable
-        style={{margin: 10}}
+        variant={selected ? 'default' : 'outlined'}
+        style={{margin: 10, fontWeight: 'bold'}}
         {...rest}
     />
 }

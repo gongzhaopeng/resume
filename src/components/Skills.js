@@ -71,6 +71,7 @@ function Skills() {
                             key={name}
                             skillIcon={logo}
                             skillName={name}
+                            selected={name === popoverSkill}
                             color={color}
                             onClick={() => {
                                 setPopoverSkill(name)
