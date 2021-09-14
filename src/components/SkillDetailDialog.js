@@ -9,7 +9,7 @@ import {cyan} from '@material-ui/core/colors';
 export function SkillDetailDialog({skillName, onClose, ...rest}) {
 
     return (
-        <Dialog open={skillName != null} onClose={onClose}>
+        <Dialog open={true} onClose={onClose}>
             <DialogTitle>{skillName}</DialogTitle>
         </Dialog>
     )

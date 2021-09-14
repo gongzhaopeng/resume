@@ -78,11 +78,11 @@ function Skills() {
                             }}
                         />
                     })}
-                    <SkillDetailDialog
-                        skillName={popoverSkill}
-                        onClose={() => setPopoverSkill(null)}
-                    >
-                    </SkillDetailDialog>
+                    {popoverSkill && (
+                        <SkillDetailDialog skillName={popoverSkill}
+                                           onClose={() => setPopoverSkill(null)}>
+                        </SkillDetailDialog>
+                    )}
                 </CardContent>
             </UniformCard>
             <UniformCard style={{backgroundColor: cyan[100], height: 200}}>
