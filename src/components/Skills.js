@@ -61,7 +61,7 @@ function Skills() {
 
     return (
         <Fragment>
-            <UniformCard style={{backgroundColor: cyan[300], height: 200}}>
+            <UniformCard style={{backgroundColor: cyan[300], minHeight: 200}}>
                 <CardContent className={skillItemChips}>
                     {skillsData.map(({name, color, logo}) => {
                         if (!logo)
