@@ -13,6 +13,7 @@ import {cyan} from '@material-ui/core/colors';
 
 import UniformCard from './UniformCard'
 import SkillItemChip from './SkillItemChip'
+import SkillDetailDialog from './SkillDetailDialog'
 
 import {ReactComponent as SpringLogo} from '../assets/images/logos/spring-logo.svg'
 import {ReactComponent as MicroserviceLogo} from '../assets/images/logos/microservice-logo.svg'
@@ -31,6 +32,10 @@ const skillsData = [
     {name: 'Kubernetes', color: 'default', logo: <SvgIcon component={KubernetesLogo} viewBox="0 0 68 66"/>},
     {name: 'Node.js', color: 'default', logo: <SvgIcon component={NodejsLogo} viewBox="0 0 442.37 270.929"/>}
 ]
+const skillsNameToData = skillsData.reduce((previousValue, currentValue) => {
+    previousValue[currentValue.name] = currentValue
+    return previousValue
+}, {})
 const random = randomLcg()
 const shuffle = shuffler(random);
 shuffle(skillsData)
@@ -52,6 +57,8 @@ function Skills() {
 
     const {skillItemChips, letterSkillLogo} = useStyles()
 
+    const [popoverSkill, setPopoverSkill] = React.useState(null);
+
     return (
         <Fragment>
             <UniformCard style={{backgroundColor: cyan[300], height: 200}}>
@@ -65,8 +72,16 @@ function Skills() {
                             skillIcon={logo}
                             skillName={name}
                             color={color}
+                            onClick={() => {
+                                setPopoverSkill(name)
+                            }}
                         />
                     })}
+                    <SkillDetailDialog
+                        skillName={popoverSkill}
+                        onClose={() => setPopoverSkill(null)}
+                    >
+                    </SkillDetailDialog>
                 </CardContent>
             </UniformCard>
             <UniformCard style={{backgroundColor: cyan[100], height: 200}}>

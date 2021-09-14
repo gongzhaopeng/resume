@@ -6,9 +6,9 @@ import Resume from './Resume';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-    <React.StrictMode>
-        <Resume/>
-    </React.StrictMode>,
+    // <React.StrictMode>
+    <Resume/>,
+    // </React.StrictMode>,
     document.getElementById('root')
 );
 
