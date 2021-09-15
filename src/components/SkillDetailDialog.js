@@ -6,6 +6,8 @@ import DialogContent from '@material-ui/core/DialogContent'
 import DialogContentText from '@material-ui/core/DialogContentText'
 import Typography from '@material-ui/core/Typography'
 import Toolbar from '@material-ui/core/Toolbar'
+import CodeIcon from '@material-ui/icons/Code'
+import Rating from '@material-ui/lab/Rating'
 
 import {makeStyles} from '@material-ui/core/styles';
 import {yellow, cyan} from '@material-ui/core/colors';
@@ -45,6 +47,14 @@ export function SkillDetailDialog({skillIcon, skillName, onClose}) {
                 </Toolbar>
             </DialogTitle>
             <DialogContent dividers className={content}>
+                <Rating
+                    name="FAMILIARITY"
+                    readOnly
+                    defaultValue={3.5}
+                    precision={0.5}
+                    icon={<CodeIcon color='secondary'/>}
+                    emptyIcon={<CodeIcon/>}
+                />
                 <DialogContentText>
                     KEEP GOING
                 </DialogContentText>
