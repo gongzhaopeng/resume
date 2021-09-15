@@ -79,7 +79,8 @@ function Skills() {
                         />
                     })}
                     {popoverSkill && (
-                        <SkillDetailDialog skillName={popoverSkill}
+                        <SkillDetailDialog skillIcon={skillsNameToData[popoverSkill].logo}
+                                           skillName={popoverSkill}
                                            onClose={() => setPopoverSkill(null)}>
                         </SkillDetailDialog>
                     )}
