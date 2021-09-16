@@ -55,11 +55,11 @@ export function SkillDetailDialog({skillIcon, skillName, onClose}) {
             <DialogContent dividers className={content}>
                 <Grid container spacing={0}>
                     <Grid item xs={6}>
-                        <Typography variant='button'>familiarity</Typography>
+                        <Typography variant='button'>熟悉度</Typography>
                     </Grid>
                     <Grid item xs={6}>
                         <Rating
-                            name="FAMILIARITY"
+                            name="familiarity"
                             readOnly
                             defaultValue={3.5}
                             precision={0.5}
