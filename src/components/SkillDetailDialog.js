@@ -29,7 +29,7 @@ const useStyles = makeStyles(theme => ({
         height: 500,
         backgroundColor: yellow[50],
         padding: 10,
-        color: brown[300]
+        color: brown[400]
     }
 }))
 
