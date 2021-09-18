@@ -1,7 +1,7 @@
 import React, {Fragment} from 'react';
 
 import {shuffler} from 'd3-array'
-import {randomLcg} from 'd3-random'
+import {randomLcg, randomInt} from 'd3-random'
 
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
@@ -57,7 +57,23 @@ function Skills() {
 
     const {skillItemChips, letterSkillLogo} = useStyles()
 
+    function selectBlinkingSkill() {
+        return skillsData[randomInt.source(random)(0, skillsData.length)()].name
+        return null
+    }
+
     const [popoverSkill, setPopoverSkill] = React.useState(null);
+    const [blinkingSkill, setBlinkingSkill] = React.useState(selectBlinkingSkill());
+
+    const onClickSkillItemChip = name => {
+        setPopoverSkill(name)
+        setBlinkingSkill(null)
+    }
+
+    const onCloseSkillDetailDialog = () => {
+        setPopoverSkill(null)
+        setBlinkingSkill(selectBlinkingSkill())
+    }
 
     return (
         <Fragment>
@@ -72,16 +88,15 @@ function Skills() {
                             skillIcon={logo}
                             skillName={name}
                             selected={name === popoverSkill}
+                            blinking={name === blinkingSkill}
                             color={color}
-                            onClick={() => {
-                                setPopoverSkill(name)
-                            }}
+                            onClick={onClickSkillItemChip.bind(null, name)}
                         />
                     })}
                     {popoverSkill && (
                         <SkillDetailDialog skillIcon={skillsNameToData[popoverSkill].logo}
                                            skillName={popoverSkill}
-                                           onClose={() => setPopoverSkill(null)}>
+                                           onClose={onCloseSkillDetailDialog}>
                         </SkillDetailDialog>
                     )}
                 </CardContent>
