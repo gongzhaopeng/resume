@@ -3,11 +3,12 @@ import React from 'react';
 import Dialog from '@material-ui/core/Dialog'
 import DialogTitle from '@material-ui/core/DialogTitle'
 import DialogContent from '@material-ui/core/DialogContent'
-import DialogContentText from '@material-ui/core/DialogContentText'
 import Typography from '@material-ui/core/Typography'
 import CodeIcon from '@material-ui/icons/Code'
 import Rating from '@material-ui/lab/Rating'
 import Grid from '@material-ui/core/Grid'
+import AlarmOn from '@material-ui/icons/AlarmOn'
+import AlarmOff from '@material-ui/icons/AlarmOff'
 
 import {makeStyles} from '@material-ui/core/styles';
 import {yellow, cyan, brown} from '@material-ui/core/colors';
@@ -30,12 +31,21 @@ const useStyles = makeStyles(theme => ({
         backgroundColor: yellow[50],
         padding: 10,
         color: brown[400]
+    },
+    metricsName: {
+        fontWeight: 'bolder',
+        // border: `2px dashed ${brown[200]}`,
+        // textAlign: 'center',
+        // display: 'block',
+        // width: 100,
+        // margin: 0,
+        // paddingLeft: 5
     }
 }))
 
 export function SkillDetailDialog({skillIcon, skillName, onClose}) {
 
-    const {header, titleText, content} = useStyles()
+    const {header, titleText, content, metricsName} = useStyles()
 
     return (
         <Dialog open={true} onClose={onClose} scroll='paper'
@@ -55,9 +65,9 @@ export function SkillDetailDialog({skillIcon, skillName, onClose}) {
             <DialogContent dividers className={content}>
                 <Grid container spacing={0}>
                     <Grid item xs={6}>
-                        <Typography variant='button'>熟悉度</Typography>
+                        <Typography variant='button' className={metricsName}>熟悉度</Typography>
                     </Grid>
-                    <Grid item xs={6}>
+                    <Grid item xs={6} align='center'>
                         <Rating
                             name="familiarity"
                             readOnly
@@ -67,10 +77,19 @@ export function SkillDetailDialog({skillIcon, skillName, onClose}) {
                             emptyIcon={<CodeIcon/>}
                         />
                     </Grid>
+                    <Grid item xs={6}>
+                        <Typography variant='button' className={metricsName}>近期在用</Typography>
+                    </Grid>
+                    <Grid item xs={6} align='center'>
+                        <AlarmOn color='primary'/>
+                    </Grid>
+                    <Grid item xs={6}>
+                        <Typography variant='button' className={metricsName}>项目经验</Typography>
+                    </Grid>
+                    <Grid item xs={6} align='center'>
+                        <AlarmOff color='disabled'/>
+                    </Grid>
                 </Grid>
-                <DialogContentText>
-                    KEEP GOING
-                </DialogContentText>
             </DialogContent>
         </Dialog>
     )
