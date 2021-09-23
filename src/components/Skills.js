@@ -1,7 +1,7 @@
 import React, {Fragment} from 'react';
 
 import {shuffler} from 'd3-array'
-import {randomLcg, randomInt} from 'd3-random'
+import {randomInt, randomLcg} from 'd3-random'
 
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
@@ -22,15 +22,60 @@ import {ReactComponent as KubernetesLogo} from '../assets/images/logos/kubernete
 import {ReactComponent as NodejsLogo} from '../assets/images/logos/node-js-logo.svg'
 
 const skillsData = [
-    {name: 'Spring Framework', color: 'secondary', logo: <SvgIcon component={SpringLogo} viewBox="0 0 97.1 97.1"/>},
+    {
+        name: 'Spring Framework',
+        color: 'secondary',
+        logo: <SvgIcon component={SpringLogo} viewBox="0 0 97.1 97.1"/>,
+        detail: [
+            <Typography>For example, instances of Employee can be differentiated according to their job, that is,
+                whether they are researchers or administrators, and whether they are financed directly via the
+                university or
+                via a project. Multiple classification means that an object can be an instance of multiple classes
+                whose characteristics the object then has. In Figure 4.26, we have divided the generalization
+                relationships into two groups. The sets Job and Financing form generalization sets which group
+                subclasses according to multiple independent criteria. Generalization sets can be described more
+                precisely by the following constraints.
+                Similarly to the abstract class, an interface also does not have an implementation or any direct
+                instances. An interface represents a contract. The classes that enter into this contract, that is,
+                the classes that implement the interface, obligate themselves to provide the behavior specified by
+                the interface. In contrast to the relationship between an abstract class and its subclasses, an “is
+                a” relationship between an interface and the classes that implement it is not necessary. Operations
+                of interfaces never have an implementation.</Typography>,
+            <Typography>GOAL....................</Typography>
+        ]
+    },
     {
         name: 'Microservice Architecture',
         color: 'primary',
-        logo: <SvgIcon component={MicroserviceLogo} viewBox="0 0 292.3 304.4"/>
+        logo: <SvgIcon component={MicroserviceLogo} viewBox="0 0 292.3 304.4"/>,
+        detail: [
+            <Typography>GOAL....................</Typography>
+        ]
     },
-    {name: 'Spring Cloud', color: 'secondary', logo: <SvgIcon component={SpringCloudLogo} viewBox="0 0 271 239"/>},
-    {name: 'Kubernetes', color: 'default', logo: <SvgIcon component={KubernetesLogo} viewBox="0 0 68 66"/>},
-    {name: 'Node.js', color: 'default', logo: <SvgIcon component={NodejsLogo} viewBox="0 0 442.37 270.929"/>}
+    {
+        name: 'Spring Cloud',
+        color: 'secondary',
+        logo: <SvgIcon component={SpringCloudLogo} viewBox="0 0 271 239"/>,
+        detail: [
+            <Typography>GOAL....................</Typography>
+        ]
+    },
+    {
+        name: 'Kubernetes',
+        color: 'default',
+        logo: <SvgIcon component={KubernetesLogo} viewBox="0 0 68 66"/>,
+        detail: [
+            <Typography>GOAL....................</Typography>
+        ]
+    },
+    {
+        name: 'Node.js',
+        color: 'default',
+        logo: <SvgIcon component={NodejsLogo} viewBox="0 0 442.37 270.929"/>,
+        detail: [
+            <Typography>GOAL....................</Typography>
+        ]
+    }
 ]
 const skillsNameToData = skillsData.reduce((previousValue, currentValue) => {
     previousValue[currentValue.name] = currentValue
@@ -97,6 +142,7 @@ function Skills() {
                         <SkillDetailDialog skillIcon={skillsNameToData[popoverSkill].logo}
                                            skillName={popoverSkill}
                                            onClose={onCloseSkillDetailDialog}>
+                            {skillsNameToData[popoverSkill].detail}
                         </SkillDetailDialog>
                     )}
                 </CardContent>
