@@ -12,7 +12,7 @@ import AlarmOn from '@material-ui/icons/AlarmOn'
 import AlarmOff from '@material-ui/icons/AlarmOff'
 
 import {makeStyles} from '@material-ui/core/styles';
-import {yellow, cyan, brown, lime} from '@material-ui/core/colors';
+import {brown, cyan, grey, lime, yellow} from '@material-ui/core/colors';
 
 const useStyles = makeStyles(theme => ({
     header: {
@@ -93,8 +93,27 @@ export function SkillDetailDialog({skillIcon, skillName, onClose}) {
                         </Grid>
                     </Grid>
                 </Card>
-                <Card variant='outlined' style={{background: 'transparent', marginTop: 10, padding: 8, minHeight: 300}}>
-                    GOOD
+                <Card variant='outlined'
+                      style={{
+                          background: 'transparent',
+                          marginTop: 10,
+                          padding: 8,
+                          minHeight: 300,
+                          color: grey[600]
+                      }}>
+                    For example, instances of Employee can be differentiated according to their job, that is, whether
+                    they are researchers or administrators, and whether they are financed directly via the university or
+                    via a project. Multiple classification means that an object can be an instance of multiple classes
+                    whose characteristics the object then has. In Figure 4.26, we have divided the generalization
+                    relationships into two groups. The sets Job and Financing form generalization sets which group
+                    subclasses according to multiple independent criteria. Generalization sets can be described more
+                    precisely by the following constraints.
+                    Similarly to the abstract class, an interface also does not have an implementation or any direct
+                    instances. An interface represents a contract. The classes that enter into this contract, that is,
+                    the classes that implement the interface, obligate themselves to provide the behavior specified by
+                    the interface. In contrast to the relationship between an abstract class and its subclasses, an “is
+                    a” relationship between an interface and the classes that implement it is not necessary. Operations
+                    of interfaces never have an implementation.
                 </Card>
             </DialogContent>
         </Dialog>
