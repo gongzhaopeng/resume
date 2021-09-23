@@ -34,12 +34,12 @@ const useStyles = makeStyles(theme => ({
     },
     metricsName: {
         fontWeight: 'bolder',
-        // border: `2px dashed ${brown[200]}`,
+        borderRight: `2px dashed ${brown[200]}`,
         // textAlign: 'center',
-        // display: 'block',
-        // width: 100,
-        // margin: 0,
-        // paddingLeft: 5
+        display: 'block',
+        width: 100,
+        margin: 0,
+        paddingLeft: 5
     }
 }))
 
