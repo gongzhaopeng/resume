@@ -11,7 +11,7 @@ import AlarmOn from '@material-ui/icons/AlarmOn'
 import AlarmOff from '@material-ui/icons/AlarmOff'
 
 import {makeStyles} from '@material-ui/core/styles';
-import {yellow, cyan, brown} from '@material-ui/core/colors';
+import {yellow, cyan, brown, lime} from '@material-ui/core/colors';
 
 const useStyles = makeStyles(theme => ({
     header: {
@@ -34,7 +34,7 @@ const useStyles = makeStyles(theme => ({
     },
     metricsName: {
         fontWeight: 'bolder',
-        borderRight: `2px dashed ${brown[200]}`,
+        borderRight: `2px dashed ${lime[600]}`,
         // textAlign: 'center',
         display: 'block',
         width: 100,
