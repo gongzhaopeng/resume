@@ -26,7 +26,7 @@ const skillsData = [
         name: 'Spring Framework',
         color: 'secondary',
         logo: <SvgIcon component={SpringLogo} viewBox="0 0 97.1 97.1"/>,
-        detail: [
+        detail: <Fragment>
             <Typography>For example, instances of Employee can be differentiated according to their job, that is,
                 whether they are researchers or administrators, and whether they are financed directly via the
                 university or
@@ -40,41 +40,33 @@ const skillsData = [
                 the classes that implement the interface, obligate themselves to provide the behavior specified by
                 the interface. In contrast to the relationship between an abstract class and its subclasses, an “is
                 a” relationship between an interface and the classes that implement it is not necessary. Operations
-                of interfaces never have an implementation.</Typography>,
+                of interfaces never have an implementation.</Typography>
             <Typography>GOAL....................</Typography>
-        ]
+        </Fragment>
     },
     {
         name: 'Microservice Architecture',
         color: 'primary',
         logo: <SvgIcon component={MicroserviceLogo} viewBox="0 0 292.3 304.4"/>,
-        detail: [
-            <Typography>GOAL....................</Typography>
-        ]
+        detail: <Typography>GOAL....................</Typography>
     },
     {
         name: 'Spring Cloud',
         color: 'secondary',
         logo: <SvgIcon component={SpringCloudLogo} viewBox="0 0 271 239"/>,
-        detail: [
-            <Typography>GOAL....................</Typography>
-        ]
+        detail: <Typography>GOAL....................</Typography>
     },
     {
         name: 'Kubernetes',
         color: 'default',
         logo: <SvgIcon component={KubernetesLogo} viewBox="0 0 68 66"/>,
-        detail: [
-            <Typography>GOAL....................</Typography>
-        ]
+        detail: <Typography>GOAL....................</Typography>
     },
     {
         name: 'Node.js',
         color: 'default',
         logo: <SvgIcon component={NodejsLogo} viewBox="0 0 442.37 270.929"/>,
-        detail: [
-            <Typography>GOAL....................</Typography>
-        ]
+        detail: <Typography>GOAL....................</Typography>
     }
 ]
 const skillsNameToData = skillsData.reduce((previousValue, currentValue) => {
@@ -104,7 +96,6 @@ function Skills() {
 
     function selectBlinkingSkill() {
         return skillsData[randomInt.source(random)(0, skillsData.length)()].name
-        return null
     }
 
     const [popoverSkill, setPopoverSkill] = React.useState(null);
