@@ -9,6 +9,8 @@ import PersonPinRoundedIcon from '@material-ui/icons/PersonPinRounded';
 import BeenhereIcon from '@material-ui/icons/Beenhere';
 import FingerprintIcon from '@material-ui/icons/Fingerprint';
 import Typography from "@material-ui/core/Typography";
+import Fab from '@material-ui/core/Fab';
+import NavigationIcon from '@material-ui/icons/NavigationRounded';
 
 import {HashRouter as Router, Redirect, Route, Switch, useHistory, useParams} from 'react-router-dom'
 
@@ -43,6 +45,12 @@ const useStyles = makeStyles(theme => ({
         maxWidth: contentAreaMaxWidth
     },
     offsetBeneathAppBar: theme.mixins.toolbar,
+    metaDesignFab: {
+        position: 'fixed',
+        bottom: theme.spacing(2),
+        right: theme.spacing(2),
+        fontWeight: 'bolder'
+    },
     bottomWord: {
         ...theme.typography.h4,
         fontVariant: 'petite-caps',
@@ -65,7 +73,7 @@ function ResumeContent() {
         history.push(`/${topics[newTabIndex]}`)
     }
 
-    const {contentArea, appBar, offsetBeneathAppBar} = useStyles();
+    const {contentArea, appBar, offsetBeneathAppBar, metaDesignFab} = useStyles();
 
     return (
         <Container className={contentArea}>
@@ -98,6 +106,10 @@ function ResumeContent() {
                     <Redirect to={{pathname: `/${globalDefaultTopic}`}}/>
                 </Route>
             </Switch>
+            <Fab variant="extended" color='default' className={metaDesignFab}>
+                <NavigationIcon/>
+                meta design
+            </Fab>
         </Container>
     )
 }
