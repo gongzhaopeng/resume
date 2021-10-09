@@ -80,7 +80,7 @@ function ResumeContent() {
         <Container className={contentArea}>
             <AppBar position='static' color="default" className={appBar}>
                 <Tabs
-                    value={false}
+                    value={tabIndex}
                     onChange={handleTabChange}
                     variant="fullWidth"
                     indicatorColor="secondary"
