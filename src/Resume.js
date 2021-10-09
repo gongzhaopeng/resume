@@ -21,6 +21,7 @@ import {ScrollToTopAnyway} from './components/ScrollToTop'
 import Profile from './components/Profile';
 import Skills from './components/Skills'
 import Experiences from './components/Experiences'
+import IframeContainerDialog from './components/IframeContainerDialog'
 
 const topics = ['me', 'skills', 'experiences']
 const globalDefaultTopicIndex = 0
@@ -79,7 +80,7 @@ function ResumeContent() {
         <Container className={contentArea}>
             <AppBar position='static' color="default" className={appBar}>
                 <Tabs
-                    value={tabIndex}
+                    value={false}
                     onChange={handleTabChange}
                     variant="fullWidth"
                     indicatorColor="secondary"
@@ -110,6 +111,11 @@ function ResumeContent() {
                 <NavigationIcon/>
                 meta design
             </Fab>
+            <IframeContainerDialog
+                url='https://lucid.app/documents/embeddedchart/1f4c67fa-cc11-42ef-9027-eaf6941bfc66?invitationId=inv_9e8336d1-0c97-415b-b0ae-a0174cb5caf0#'
+                title='ud.resume.atzu68.com'
+                maxWidth={contentAreaMaxWidth}
+            />
         </Container>
     )
 }
