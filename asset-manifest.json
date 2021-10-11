@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/resume/static/css/main.5c01d3c8.chunk.css",
-    "main.js": "/resume/static/js/main.0b70a79b.chunk.js",
-    "main.js.map": "/resume/static/js/main.0b70a79b.chunk.js.map",
-    "runtime-main.js": "/resume/static/js/runtime-main.677b3983.js",
-    "runtime-main.js.map": "/resume/static/js/runtime-main.677b3983.js.map",
+    "main.js": "/resume/static/js/main.c207e405.chunk.js",
+    "main.js.map": "/resume/static/js/main.c207e405.chunk.js.map",
+    "runtime-main.js": "/resume/static/js/runtime-main.35b4bbe5.js",
+    "runtime-main.js.map": "/resume/static/js/runtime-main.35b4bbe5.js.map",
     "static/css/2.bd135b59.chunk.css": "/resume/static/css/2.bd135b59.chunk.css",
-    "static/js/2.b0590e58.chunk.js": "/resume/static/js/2.b0590e58.chunk.js",
-    "static/js/2.b0590e58.chunk.js.map": "/resume/static/js/2.b0590e58.chunk.js.map",
-    "static/js/3.1971a189.chunk.js": "/resume/static/js/3.1971a189.chunk.js",
-    "static/js/3.1971a189.chunk.js.map": "/resume/static/js/3.1971a189.chunk.js.map",
+    "static/js/2.6c3cd581.chunk.js": "/resume/static/js/2.6c3cd581.chunk.js",
+    "static/js/2.6c3cd581.chunk.js.map": "/resume/static/js/2.6c3cd581.chunk.js.map",
+    "static/js/3.39b730b5.chunk.js": "/resume/static/js/3.39b730b5.chunk.js",
+    "static/js/3.39b730b5.chunk.js.map": "/resume/static/js/3.39b730b5.chunk.js.map",
     "index.html": "/resume/index.html",
     "static/css/2.bd135b59.chunk.css.map": "/resume/static/css/2.bd135b59.chunk.css.map",
     "static/css/main.5c01d3c8.chunk.css.map": "/resume/static/css/main.5c01d3c8.chunk.css.map",
-    "static/js/2.b0590e58.chunk.js.LICENSE.txt": "/resume/static/js/2.b0590e58.chunk.js.LICENSE.txt",
+    "static/js/2.6c3cd581.chunk.js.LICENSE.txt": "/resume/static/js/2.6c3cd581.chunk.js.LICENSE.txt",
     "static/media/journeyToMars.54fd4b28.jpeg": "/resume/static/media/journeyToMars.54fd4b28.jpeg",
     "static/media/kubernetes-logo.33243eab.svg": "/resume/static/media/kubernetes-logo.33243eab.svg",
     "static/media/microservice-logo.53b64462.svg": "/resume/static/media/microservice-logo.53b64462.svg",
@@ -23,10 +23,10 @@
     "static/media/spring-logo.5e950eb4.svg": "/resume/static/media/spring-logo.5e950eb4.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.677b3983.js",
+    "static/js/runtime-main.35b4bbe5.js",
     "static/css/2.bd135b59.chunk.css",
-    "static/js/2.b0590e58.chunk.js",
+    "static/js/2.6c3cd581.chunk.js",
     "static/css/main.5c01d3c8.chunk.css",
-    "static/js/main.0b70a79b.chunk.js"
+    "static/js/main.c207e405.chunk.js"
   ]
 }
