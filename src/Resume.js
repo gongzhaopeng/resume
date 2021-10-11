@@ -11,6 +11,7 @@ import FingerprintIcon from '@material-ui/icons/Fingerprint';
 import Typography from "@material-ui/core/Typography";
 import Fab from '@material-ui/core/Fab';
 import NavigationIcon from '@material-ui/icons/NavigationRounded';
+import BubbleChartIcon from '@material-ui/icons/BubbleChartRounded';
 
 import {HashRouter as Router, Redirect, Route, Switch, useHistory, useParams} from 'react-router-dom'
 
@@ -21,11 +22,12 @@ import {ScrollToTopAnyway} from './components/ScrollToTop'
 import Profile from './components/Profile';
 import Skills from './components/Skills'
 import Experiences from './components/Experiences'
-import IframeContainerDialog from './components/IframeContainerDialog'
+import MetaDesign from "./components/MetaDesign";
 
-const topics = ['me', 'skills', 'experiences']
+const homeTopics = ['me', 'skills', 'experiences']
 const globalDefaultTopicIndex = 0
-const globalDefaultTopic = topics[globalDefaultTopicIndex]
+const globalDefaultTopic = homeTopics[globalDefaultTopicIndex]
+const metaDesignTopic = 'meta-design'
 
 const contentAreaMaxWidth = 600
 const useStyles = makeStyles(theme => ({
@@ -46,7 +48,7 @@ const useStyles = makeStyles(theme => ({
         maxWidth: contentAreaMaxWidth
     },
     offsetBeneathAppBar: theme.mixins.toolbar,
-    metaDesignFab: {
+    fab: {
         position: 'fixed',
         bottom: theme.spacing(2),
         right: theme.spacing(2),
@@ -61,20 +63,54 @@ const useStyles = makeStyles(theme => ({
     }
 }));
 
+function CustomFab({fabAtHome, onClick}) {
+
+    const {fab} = useStyles();
+
+    const fabProps = {
+        color: 'default',
+        text: 'meta design',
+        icon: <NavigationIcon/>
+    };
+    if (!fabAtHome) {
+        fabProps.color = 'secondary';
+        fabProps.text = 'home';
+        fabProps.icon = <BubbleChartIcon/>;
+    }
+
+    return (
+        <Fab variant="extended" color={fabProps.color} className={fab} onClick={onClick}>
+            {fabProps.icon}
+            {fabProps.text}
+        </Fab>
+    )
+}
+
 function ResumeContent() {
 
     let {topic} = useParams()
-    let tabIndex = topics.indexOf(topic)
-    if (tabIndex < 0) tabIndex = globalDefaultTopicIndex
+    const isMetaDesignTopic = (topic === metaDesignTopic)
+    let tabIndex = homeTopics.indexOf(topic)
+    if (tabIndex < 0) {
+        if (isMetaDesignTopic) tabIndex = false
+        else tabIndex = globalDefaultTopicIndex
+    }
 
     let history = useHistory()
     const handleTabChange = (event, newTabIndex) => {
         // if (newTabIndex === tabIndex) return
 
-        history.push(`/${topics[newTabIndex]}`)
+        history.push(`/${homeTopics[newTabIndex]}`)
     }
 
-    const {contentArea, appBar, offsetBeneathAppBar, metaDesignFab} = useStyles();
+    const {contentArea, appBar, offsetBeneathAppBar} = useStyles();
+
+    const onClickFab = isFabAtHome => {
+        if (isFabAtHome)
+            history.push(`/${metaDesignTopic}`)
+        else
+            history.push(`/`)
+    }
 
     return (
         <Container className={contentArea}>
@@ -94,28 +130,23 @@ function ResumeContent() {
             </AppBar>
             <div className={offsetBeneathAppBar}/>
             <Switch>
-                <Route path={`/${topics[0]}`}>
+                <Route path={`/${homeTopics[0]}`}>
                     <Profile/>
                 </Route>
-                <Route path={`/${topics[1]}`}>
+                <Route path={`/${homeTopics[1]}`}>
                     <Skills/>
                 </Route>
-                <Route path={`/${topics[2]}`}>
+                <Route path={`/${homeTopics[2]}`}>
                     <Experiences/>
+                </Route>
+                <Route path={`/${metaDesignTopic}`}>
+                    <MetaDesign/>
                 </Route>
                 <Route path='/'>
                     <Redirect to={{pathname: `/${globalDefaultTopic}`}}/>
                 </Route>
             </Switch>
-            <Fab variant="extended" color='default' className={metaDesignFab}>
-                <NavigationIcon/>
-                meta design
-            </Fab>
-            <IframeContainerDialog
-                url='https://lucid.app/documents/embeddedchart/1f4c67fa-cc11-42ef-9027-eaf6941bfc66?invitationId=inv_9e8336d1-0c97-415b-b0ae-a0174cb5caf0#'
-                title='ud.resume.atzu68.com'
-                maxWidth={contentAreaMaxWidth}
-            />
+            <CustomFab fabAtHome={!isMetaDesignTopic} onClick={onClickFab.bind(null, !isMetaDesignTopic)}/>
         </Container>
     )
 }

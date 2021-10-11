@@ -11,22 +11,12 @@ const useStyles = makeStyles(theme => ({
     }
 }))
 
-export function IframeContainerDialog({url, title}) {
+export function IframeContainerDialog({url, onClose}) {
 
     const {iframe} = useStyles()
 
     return (
-        <Dialog fullWidth open={true}>
-            {/*<AppBar>*/}
-            {/*    <Toolbar>*/}
-            {/*        <IconButton edge='start'>*/}
-            {/*            <CloseIcon/>*/}
-            {/*        </IconButton>*/}
-            {/*        <Typography>*/}
-            {/*            {title}*/}
-            {/*        </Typography>*/}
-            {/*    </Toolbar>*/}
-            {/*</AppBar>*/}
+        <Dialog fullWidth open={true} onClose={onClose}>
             <iframe
                 src={url}
                 className={iframe}
