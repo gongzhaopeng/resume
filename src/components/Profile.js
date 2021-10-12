@@ -8,10 +8,7 @@ import Collapse from '@material-ui/core/Collapse';
 import Avatar from '@material-ui/core/Avatar';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
-import FavoriteIcon from '@material-ui/icons/Favorite';
-import ShareIcon from '@material-ui/icons/Share';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import MoreVertIcon from '@material-ui/icons/MoreVert';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMoreRounded';
 
 import {makeStyles} from '@material-ui/core/styles';
 import clsx from 'clsx';
@@ -62,13 +59,10 @@ export default function Profile() {
                             P
                         </Avatar>
                     }
-                    action={
-                        <IconButton aria-label="settings">
-                            <MoreVertIcon/>
-                        </IconButton>
-                    }
-                    title="Atzu68"
+                    title="Zhaopeng Gong"
+                    titleTypographyProps={{'variant': "h6"}}
                     subheader="October 18, 1985"
+                    subheaderTypographyProps={{'variant': "subtitle2"}}
                 />
                 <CardMedia
                     className={classes.media}
@@ -76,18 +70,14 @@ export default function Profile() {
                     title="Journey To Mars"
                 />
                 <CardContent>
-                    <Typography variant="body2" color="textSecondary" component="p">
-                        This impressive paella is a perfect party dish and a fun meal to cook together with your
-                        guests. Add 1 cup of frozen peas along with the mussels, if you like.
+                    <Typography variant="body1" color="textSecondary" component="p">
+                        Coding is a lifestyle.
+                    </Typography>
+                    <Typography variant="body1" color="textSecondary" component="p">
+                        Coding is a philosophy.
                     </Typography>
                 </CardContent>
                 <CardActions disableSpacing>
-                    <IconButton aria-label="add to favorites">
-                        <FavoriteIcon/>
-                    </IconButton>
-                    <IconButton aria-label="share">
-                        <ShareIcon/>
-                    </IconButton>
                     <IconButton
                         className={clsx(classes.expand, {
                             [classes.expandOpen]: expanded,
@@ -96,7 +86,7 @@ export default function Profile() {
                         aria-expanded={expanded}
                         aria-label="show more"
                     >
-                        <ExpandMoreIcon/>
+                        <ExpandMoreIcon fontSize='large'/>
                     </IconButton>
                 </CardActions>
                 <Collapse in={expanded} timeout="auto" unmountOnExit>

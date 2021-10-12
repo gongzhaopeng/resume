@@ -48,7 +48,7 @@ function MetaDesign() {
                             <CardMedia
                                 image={dgDatum.image}
                                 title={dgDatum.title}
-                                style={{height: 200}}
+                                style={{height: 0, paddingTop: '56.25%'}}
                             />
                             <CardContent>
                                 <Typography gutterBottom variant="button">
