@@ -23,7 +23,6 @@ const designDgsTitleToData = designDgsData.reduce((previousValue, currentValue) 
     previousValue[currentValue.title] = currentValue
     return previousValue
 }, {})
-console.log(designDgsTitleToData)
 
 function MetaDesign() {
 
@@ -43,7 +42,7 @@ function MetaDesign() {
 
             {designDgsData.map(dgDatum => {
                 return (
-                    <UniformCard style={{backgroundColor: grey[400]}}>
+                    <UniformCard key={dgDatum.title} style={{backgroundColor: grey[400]}}>
                         <CardActionArea onClick={onClickDgCard.bind(null, dgDatum.title)}>
                             <CardMedia
                                 image={dgDatum.image}
