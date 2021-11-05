@@ -20,6 +20,11 @@ const designDgsData = [
         'scaleUpRatio': 3
     },
     {
+        'title': 'mindmap.product.backlog.resume.atzu68.com',
+        'image': 'https://lucid.app/publicSegments/view/cc415a13-e213-4437-a9f0-2b59fad6954a/image.png',
+        'url': 'https://lucid.app/documents/embeddedchart/9b620cab-59e8-49e6-b0f2-55b649bd2e5b?invitationId=inv_780ba4e6-abfc-4d12-ba9b-5f6b2f150fac#'
+    },
+    {
         'title': 'ud.resume.atzu68.com',
         'image': 'https://lucid.app/publicSegments/view/fb8b056b-734c-4034-b34d-a86a29b0e631/image.png',
         'url': 'https://lucid.app/documents/embeddedchart/1f4c67fa-cc11-42ef-9027-eaf6941bfc66?invitationId=inv_9e8336d1-0c97-415b-b0ae-a0174cb5caf0#'
