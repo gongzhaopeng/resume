@@ -1,0 +1,16 @@
+{
+  "aspects": {
+    "me": {
+      "name": "me"
+    },
+    "skills": {
+      "name": "skill"
+    },
+    "experiences": {
+      "name": "experience"
+    },
+    "career": {
+      "name": "career"
+    }
+  }
+}

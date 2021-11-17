@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import "@fontsource/roboto";
+import './i18n'
 import './index.css';
 import Resume from './Resume';
 import reportWebVitals from './reportWebVitals';

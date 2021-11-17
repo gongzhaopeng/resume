@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Suspense} from 'react';
 
 import CssBaseline from '@material-ui/core/CssBaseline'
 import Container from '@material-ui/core/Container'
@@ -15,6 +15,8 @@ import NavigationIcon from '@material-ui/icons/NavigationRounded';
 import BubbleChartIcon from '@material-ui/icons/BubbleChartRounded';
 
 import {HashRouter as Router, Redirect, Route, Switch, useHistory, useParams} from 'react-router-dom'
+
+import {useTranslation} from 'react-i18next';
 
 import {makeStyles} from '@material-ui/core/styles'
 import {brown, cyan, green, lime, deepOrange, deepPurple} from '@material-ui/core/colors';
@@ -107,6 +109,8 @@ function ResumeContent() {
 
     const {contentArea, appBar, offsetBeneathAppBar} = useStyles();
 
+    const {t} = useTranslation('common');
+
     const onClickFab = isFabAtHome => {
         if (isFabAtHome)
             history.push(`/${metaDesignTopic}`)
@@ -126,10 +130,14 @@ function ResumeContent() {
                     textColor="secondary"
                     aria-label="main navigating tabs"
                 >
-                    <Tab icon={<PersonPinRoundedIcon style={{color: lime[400]}}/>} label="ME"/>
-                    <Tab icon={<BeenhereIcon style={{color: cyan[400]}}/>} label="SKILL"/>
-                    <Tab icon={<FingerprintIcon style={{color: brown[400]}}/>} label="EXPERIENCE"/>
-                    <Tab icon={<AllInclusiveIcon style={{color: deepPurple[400]}}/>} label="CAREER"/>
+                    <Tab icon={<PersonPinRoundedIcon style={{color: lime[400]}}/>}
+                         label={t('common:aspects.me.name')}/>
+                    <Tab icon={<BeenhereIcon style={{color: cyan[400]}}/>}
+                         label={t('common:aspects.skills.name')}/>
+                    <Tab icon={<FingerprintIcon style={{color: brown[400]}}/>}
+                         label={t('common:aspects.experiences.name')}/>
+                    <Tab icon={<AllInclusiveIcon style={{color: deepPurple[400]}}/>}
+                         label={t('common:aspects.career.name')}/>
                 </Tabs>
             </AppBar>
             <div className={offsetBeneathAppBar}/>
@@ -163,7 +171,7 @@ function Resume() {
     const {canvas, bottomWord} = useStyles();
 
     return (
-        <React.Fragment>
+        <Suspense fallback='loading'>
             <CssBaseline/>
             <Container className={canvas}>
                 <Router>
@@ -181,7 +189,7 @@ function Resume() {
             <Typography align="center" className={bottomWord}>
                 May the force be with you!
             </Typography>
-        </React.Fragment>
+        </Suspense>
     )
 }
 
