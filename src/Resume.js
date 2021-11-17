@@ -6,6 +6,7 @@ import AppBar from '@material-ui/core/AppBar'
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import PersonPinRoundedIcon from '@material-ui/icons/PersonPinRounded';
+import AllInclusiveIcon from '@material-ui/icons/AllInclusive';
 import BeenhereIcon from '@material-ui/icons/Beenhere';
 import FingerprintIcon from '@material-ui/icons/Fingerprint';
 import Typography from "@material-ui/core/Typography";
@@ -16,20 +17,21 @@ import BubbleChartIcon from '@material-ui/icons/BubbleChartRounded';
 import {HashRouter as Router, Redirect, Route, Switch, useHistory, useParams} from 'react-router-dom'
 
 import {makeStyles} from '@material-ui/core/styles'
-import {brown, cyan, green, lime, deepOrange} from '@material-ui/core/colors';
+import {brown, cyan, green, lime, deepOrange, deepPurple} from '@material-ui/core/colors';
 
 import {ScrollToTopAnyway} from './components/ScrollToTop'
 import Profile from './components/Profile';
 import Skills from './components/Skills'
 import Experiences from './components/Experiences'
+import Career from './components/Career'
 import MetaDesign from "./components/MetaDesign";
 
-const homeTopics = ['me', 'skills', 'experiences']
+const homeTopics = ['me', 'skills', 'experiences', 'career']
 const globalDefaultTopicIndex = 0
 const globalDefaultTopic = homeTopics[globalDefaultTopicIndex]
 const metaDesignTopic = 'meta-design'
 
-const contentAreaMaxWidth = 600
+const contentAreaMaxWidth = 700
 const useStyles = makeStyles(theme => ({
     canvas: {
         backgroundColor: green[50],
@@ -116,6 +118,7 @@ function ResumeContent() {
         <Container className={contentArea}>
             <AppBar position='static' color="default" className={appBar}>
                 <Tabs
+                    centered={true}
                     value={tabIndex}
                     onChange={handleTabChange}
                     variant="fullWidth"
@@ -124,8 +127,9 @@ function ResumeContent() {
                     aria-label="main navigating tabs"
                 >
                     <Tab icon={<PersonPinRoundedIcon style={{color: lime[400]}}/>} label="ME"/>
-                    <Tab icon={<BeenhereIcon style={{color: cyan[400]}}/>} label="SKILLS"/>
-                    <Tab icon={<FingerprintIcon style={{color: brown[400]}}/>} label="EXPERIENCES"/>
+                    <Tab icon={<BeenhereIcon style={{color: cyan[400]}}/>} label="SKILL"/>
+                    <Tab icon={<FingerprintIcon style={{color: brown[400]}}/>} label="EXPERIENCE"/>
+                    <Tab icon={<AllInclusiveIcon style={{color: deepPurple[400]}}/>} label="CAREER"/>
                 </Tabs>
             </AppBar>
             <div className={offsetBeneathAppBar}/>
@@ -138,6 +142,9 @@ function ResumeContent() {
                 </Route>
                 <Route path={`/${homeTopics[2]}`}>
                     <Experiences/>
+                </Route>
+                <Route path={`/${homeTopics[3]}`}>
+                    <Career/>
                 </Route>
                 <Route path={`/${metaDesignTopic}`}>
                     <MetaDesign/>
