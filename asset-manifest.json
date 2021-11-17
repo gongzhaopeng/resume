@@ -1,19 +1,20 @@
 {
   "files": {
     "main.css": "/resume/static/css/main.5c01d3c8.chunk.css",
-    "main.js": "/resume/static/js/main.ef94bcdc.chunk.js",
-    "main.js.map": "/resume/static/js/main.ef94bcdc.chunk.js.map",
-    "runtime-main.js": "/resume/static/js/runtime-main.35b4bbe5.js",
-    "runtime-main.js.map": "/resume/static/js/runtime-main.35b4bbe5.js.map",
+    "main.js": "/resume/static/js/main.0ca74fd6.chunk.js",
+    "main.js.map": "/resume/static/js/main.0ca74fd6.chunk.js.map",
+    "runtime-main.js": "/resume/static/js/runtime-main.28cde4c4.js",
+    "runtime-main.js.map": "/resume/static/js/runtime-main.28cde4c4.js.map",
     "static/css/2.bd135b59.chunk.css": "/resume/static/css/2.bd135b59.chunk.css",
-    "static/js/2.25b1ed9c.chunk.js": "/resume/static/js/2.25b1ed9c.chunk.js",
-    "static/js/2.25b1ed9c.chunk.js.map": "/resume/static/js/2.25b1ed9c.chunk.js.map",
-    "static/js/3.39b730b5.chunk.js": "/resume/static/js/3.39b730b5.chunk.js",
-    "static/js/3.39b730b5.chunk.js.map": "/resume/static/js/3.39b730b5.chunk.js.map",
+    "static/js/2.4b90b4f2.chunk.js": "/resume/static/js/2.4b90b4f2.chunk.js",
+    "static/js/2.4b90b4f2.chunk.js.map": "/resume/static/js/2.4b90b4f2.chunk.js.map",
+    "static/js/3.c3d2105c.chunk.js": "/resume/static/js/3.c3d2105c.chunk.js",
+    "static/js/3.c3d2105c.chunk.js.map": "/resume/static/js/3.c3d2105c.chunk.js.map",
     "index.html": "/resume/index.html",
     "static/css/2.bd135b59.chunk.css.map": "/resume/static/css/2.bd135b59.chunk.css.map",
     "static/css/main.5c01d3c8.chunk.css.map": "/resume/static/css/main.5c01d3c8.chunk.css.map",
-    "static/js/2.25b1ed9c.chunk.js.LICENSE.txt": "/resume/static/js/2.25b1ed9c.chunk.js.LICENSE.txt",
+    "static/js/2.4b90b4f2.chunk.js.LICENSE.txt": "/resume/static/js/2.4b90b4f2.chunk.js.LICENSE.txt",
+    "static/media/getFetch.cjs": "/resume/static/media/getFetch.582d29c4.cjs",
     "static/media/journeyToMars.54fd4b28.jpeg": "/resume/static/media/journeyToMars.54fd4b28.jpeg",
     "static/media/kubernetes-logo.33243eab.svg": "/resume/static/media/kubernetes-logo.33243eab.svg",
     "static/media/microservice-logo.53b64462.svg": "/resume/static/media/microservice-logo.53b64462.svg",
@@ -23,10 +24,10 @@
     "static/media/spring-logo.5e950eb4.svg": "/resume/static/media/spring-logo.5e950eb4.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.35b4bbe5.js",
+    "static/js/runtime-main.28cde4c4.js",
     "static/css/2.bd135b59.chunk.css",
-    "static/js/2.25b1ed9c.chunk.js",
+    "static/js/2.4b90b4f2.chunk.js",
     "static/css/main.5c01d3c8.chunk.css",
-    "static/js/main.ef94bcdc.chunk.js"
+    "static/js/main.0ca74fd6.chunk.js"
   ]
 }

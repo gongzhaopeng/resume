@@ -1,0 +1,16 @@
+{
+  "aspects": {
+    "me": {
+      "name": "我"
+    },
+    "skills": {
+      "name": "技能"
+    },
+    "experiences": {
+      "name": "经历"
+    },
+    "career": {
+      "name": "生涯"
+    }
+  }
+}
