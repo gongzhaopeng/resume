@@ -27,6 +27,7 @@ import Skills from './components/Skills'
 import Experiences from './components/Experiences'
 import Career from './components/Career'
 import MetaDesign from "./components/MetaDesign";
+import LanguageToggle from './components/LanguageToggle'
 
 const homeTopics = ['me', 'skills', 'experiences', 'career']
 const globalDefaultTopicIndex = 0
@@ -162,6 +163,7 @@ function ResumeContent() {
                 </Route>
             </Switch>
             <CustomFab fabAtHome={!isMetaDesignTopic} onClick={onClickFab.bind(null, !isMetaDesignTopic)}/>
+            <LanguageToggle/>
         </Container>
     )
 }
@@ -171,7 +173,7 @@ function Resume() {
     const {canvas, bottomWord} = useStyles();
 
     return (
-        <Suspense fallback='loading'>
+        <Suspense fallback={null}>
             <CssBaseline/>
             <Container className={canvas}>
                 <Router>
