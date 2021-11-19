@@ -6,7 +6,7 @@ import {makeStyles} from '@material-ui/core/styles';
 import clsx from "clsx"
 import {orange} from '@material-ui/core/colors';
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles({
     root: {
         margin: 10,
         fontWeight: 'bolder'
@@ -28,7 +28,7 @@ const useStyles = makeStyles(theme => ({
             backgroundColor: orange[600]
         }
     }
-}))
+})
 
 export function SkillItemChip({skillIcon, skillName, selected, blinking, ...rest}) {
 

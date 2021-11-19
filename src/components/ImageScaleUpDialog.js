@@ -6,7 +6,7 @@ import {makeStyles} from '@material-ui/core/styles';
 
 import LoadingIndicator from "./LoadingIndicator";
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles({
     dialog: {
         display: "flex",
         alignItems: "center",
@@ -16,7 +16,7 @@ const useStyles = makeStyles(theme => ({
         width: `${100 * scaleUpRatio}%`,
         display: showLoading ? 'none' : 'block'
     })
-}))
+})
 
 export function ImageScaleUpDialog({image, title, scaleUpRatio, onClose}) {
 

@@ -6,7 +6,6 @@ import CardContent from '@material-ui/core/CardContent';
 import Typography from "@material-ui/core/Typography";
 import Divider from "@material-ui/core/Divider";
 
-import {makeStyles} from '@material-ui/core/styles';
 import {grey} from '@material-ui/core/colors';
 
 import UniformCard from './UniformCard'
@@ -71,6 +70,7 @@ function MetaDesign() {
             })}
             {popoverDg && (designDgsTitleToData[popoverDg].url ? (
                 <IframeContainerDialog
+                    title={popoverDg}
                     url={designDgsTitleToData[popoverDg].url}
                     onClose={onCloseDgDetailDialog}
                 />) : (

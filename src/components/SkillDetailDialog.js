@@ -14,7 +14,7 @@ import AlarmOff from '@material-ui/icons/AlarmOff'
 import {makeStyles} from '@material-ui/core/styles';
 import {brown, cyan, grey, lime, yellow} from '@material-ui/core/colors';
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles({
     header: {
         height: 50,
         backgroundColor: yellow[600],
@@ -42,7 +42,7 @@ const useStyles = makeStyles(theme => ({
         width: 100,
         margin: 0
     }
-}))
+})
 
 export function SkillDetailDialog({skillIcon, skillName, onClose, children}) {
 
