@@ -24,9 +24,9 @@ const designDgsData = [
         'url': 'https://lucid.app/documents/embeddedchart/9b620cab-59e8-49e6-b0f2-55b649bd2e5b?invitationId=inv_780ba4e6-abfc-4d12-ba9b-5f6b2f150fac#'
     },
     {
-        'title': 'ud.resume.atzu68.com',
-        'image': 'https://lucid.app/publicSegments/view/fb8b056b-734c-4034-b34d-a86a29b0e631/image.png',
-        'url': 'https://lucid.app/documents/embeddedchart/1f4c67fa-cc11-42ef-9027-eaf6941bfc66?invitationId=inv_9e8336d1-0c97-415b-b0ae-a0174cb5caf0#'
+        'title': 'gen-info.me.mindmap.pb.resume.atzu68.com',
+        'image': 'https://lucid.app/publicSegments/view/df1eac74-60b0-40aa-82d1-afa68412df80/image.png',
+        'url': 'https://lucid.app/documents/embeddedchart/276d6d0b-eace-4b85-8141-998e519d7017?invitationId=inv_3fbc92bf-a2c7-45d3-b2f3-9b4b6606e7c0#'
     },
 ]
 const designDgsTitleToData = designDgsData.reduce((previousValue, currentValue) => {
