@@ -16,8 +16,9 @@ export function IframeContainerDialog({title, url, onClose}) {
     const {iframe} = useStyles()
 
     return (
-        <Dialog title={title} fullWidth open={true} onClose={onClose}>
+        <Dialog fullWidth open={true} onClose={onClose}>
             <iframe
+                title={title}
                 src={url}
                 className={iframe}
                 frameBorder={0}
