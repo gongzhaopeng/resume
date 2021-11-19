@@ -12,5 +12,8 @@
     "career": {
       "name": "career"
     }
+  },
+  "language": {
+    "switchMark": "中"
   }
 }

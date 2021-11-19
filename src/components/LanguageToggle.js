@@ -22,12 +22,10 @@ const useStyles = makeStyles(theme => ({
 
 function LanguageToggle() {
 
-    const {i18n} = useTranslation();
-
-    const isLngEn = i18n.language.indexOf('en') >= 0
+    const {t, i18n} = useTranslation();
 
     const onClickFab = () => {
-        const targetLng = isLngEn ? 'zh' : 'en'
+        const targetLng = i18n.language.indexOf('en') >= 0 ? 'zh' : 'en'
         i18n.changeLanguage(targetLng).then(() => {
         })
     };
@@ -37,7 +35,7 @@ function LanguageToggle() {
     return (
         <Fab color="secondary" size="medium" className={fab} onClick={onClickFab}>
             <Avatar variant="circular" className={avatar}>
-                {isLngEn ? "中" : "en"}
+                {t("common:language.switchMark")}
             </Avatar>
         </Fab>
     );

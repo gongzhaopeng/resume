@@ -12,5 +12,8 @@
     "career": {
       "name": "生涯"
     }
+  },
+  "language": {
+    "switchMark": "en"
   }
 }
