@@ -61,7 +61,7 @@ export default function Profile() {
                     }
                     title="Zhaopeng Gong"
                     titleTypographyProps={{'variant': "h6"}}
-                    subheader="October 18, 1985"
+                    subheader="October, 1985"
                     subheaderTypographyProps={{'variant': "subtitle2"}}
                 />
                 <CardMedia
