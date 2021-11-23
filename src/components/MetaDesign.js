@@ -28,6 +28,11 @@ const designDgsData = [
         'image': 'https://lucid.app/publicSegments/view/df1eac74-60b0-40aa-82d1-afa68412df80/image.png',
         'url': 'https://lucid.app/documents/embeddedchart/276d6d0b-eace-4b85-8141-998e519d7017?invitationId=inv_3fbc92bf-a2c7-45d3-b2f3-9b4b6606e7c0#'
     },
+    {
+        'title': 'main.wireframe.ui.resume.atzu68.com',
+        'image': 'https://lucid.app/publicSegments/view/672da579-f718-4a45-b541-9cc40a133efc/image.png',
+        'scaleUpRatio': 1.5
+    }
 ]
 const designDgsTitleToData = designDgsData.reduce((previousValue, currentValue) => {
     previousValue[currentValue.title] = currentValue

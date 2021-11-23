@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useRef} from 'react';
 
 import Dialog from '@material-ui/core/Dialog';
 
@@ -20,16 +20,21 @@ const useStyles = makeStyles({
 
 export function ImageScaleUpDialog({image, title, scaleUpRatio, onClose}) {
 
+    const rootRef = useRef(null);
+
     const [showLoading, setShowLoading] = React.useState(true);
 
     const {dialog, img} = useStyles({scaleUpRatio, showLoading})
 
     const onImageLoad = () => {
         setShowLoading(false)
+        // const paperElem = rootRef.current.querySelector(".MuiDialog-paper")
+        // paperElem.scrollLeft = 175
+        // TODO
     }
 
     return (
-        <Dialog fullWidth open={true} onClose={onClose} className={dialog}>
+        <Dialog fullWidth open={true} onClose={onClose} className={dialog} ref={rootRef}>
             {showLoading && (
                 <LoadingIndicator/>
             )}
