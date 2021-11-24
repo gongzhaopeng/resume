@@ -86,7 +86,7 @@ export default function Profile() {
                         aria-expanded={expanded}
                         aria-label="show more"
                     >
-                        <ExpandMoreIcon fontSize='large'/>
+                        <ExpandMoreIcon fontSize='large' color="secondary"/>
                     </IconButton>
                 </CardActions>
                 <Collapse in={expanded} timeout="auto" unmountOnExit>
