@@ -14,7 +14,7 @@ function Experiences() {
             <UniformCard style={{backgroundColor: deepPurple[300], height: 200}}>
                 <CardContent>
                     <Typography>
-                        Road map...
+                        Roadmap...
                     </Typography>
                 </CardContent>
             </UniformCard>
