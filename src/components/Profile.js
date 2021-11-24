@@ -99,7 +99,7 @@ export default function Profile() {
                             So far, within the most of my career, Java has been used predominantly.
                         </Typography>
                         <Typography>
-                            I am very familiar with Spring framework, including the related
+                            I am very familiar with Spring Framework, including the related
                             Spring Boot, Spring Cloud, and so on.
                         </Typography>
                     </CardContent>
