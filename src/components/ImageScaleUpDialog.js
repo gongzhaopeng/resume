@@ -1,4 +1,4 @@
-import React, {useRef} from 'react';
+import React, {useEffect, useRef} from 'react';
 
 import Dialog from '@material-ui/core/Dialog';
 
@@ -28,10 +28,14 @@ export function ImageScaleUpDialog({image, title, scaleUpRatio, onClose}) {
 
     const onImageLoad = () => {
         setShowLoading(false)
-        // const paperElem = rootRef.current.querySelector(".MuiDialog-paper")
-        // paperElem.scrollLeft = 175
-        // TODO
     }
+
+    useEffect(() => {
+        if (!showLoading) {
+            const paperElem = rootRef.current.querySelector(".MuiDialog-paper")
+            paperElem.scrollLeft = (paperElem.scrollWidth - paperElem.offsetWidth) / 2.0
+        }
+    })
 
     return (
         <Dialog fullWidth open={true} onClose={onClose} className={dialog} ref={rootRef}>
