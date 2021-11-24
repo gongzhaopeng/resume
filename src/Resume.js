@@ -21,7 +21,7 @@ import {useTranslation} from 'react-i18next';
 import {makeStyles} from '@material-ui/core/styles'
 import {brown, cyan, green, lime, deepOrange, deepPurple} from '@material-ui/core/colors';
 
-import {ScrollToTopAnyway} from './components/ScrollToTop'
+import ScrollToTop from './components/ScrollToTop'
 import Profile from './components/Profile';
 import Skills from './components/Skills'
 import Experiences from './components/Experiences'
@@ -177,7 +177,7 @@ function Resume() {
             <CssBaseline/>
             <Container className={canvas}>
                 <Router>
-                    <ScrollToTopAnyway/>
+                    <ScrollToTop/>
                     <Switch>
                         <Route path='/:topic'>
                             <ResumeContent/>
