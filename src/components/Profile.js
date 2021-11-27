@@ -10,6 +10,8 @@ import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMoreRounded';
 
+import {useTranslation} from "react-i18next";
+
 import {makeStyles} from '@material-ui/core/styles';
 import clsx from 'clsx';
 import {red, lime} from '@material-ui/core/colors';
@@ -50,6 +52,8 @@ export default function Profile() {
         setExpanded(!expanded);
     };
 
+    const {t} = useTranslation('me');
+
     return (
         <Fragment>
             <UniformCard className={classes.root}>
@@ -59,9 +63,9 @@ export default function Profile() {
                             P
                         </Avatar>
                     }
-                    title="Zhaopeng Gong"
+                    title={t('me:genInfo.name')}
                     titleTypographyProps={{'variant': "h6"}}
-                    subheader="October, 1985"
+                    subheader={t('me:genInfo.motto')}
                     subheaderTypographyProps={{'variant': "subtitle2"}}
                 />
                 <CardMedia
