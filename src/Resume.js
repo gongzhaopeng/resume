@@ -16,6 +16,11 @@ import BubbleChartIcon from '@material-ui/icons/BubbleChartRounded';
 
 import {HashRouter as Router, Redirect, Route, Switch, useHistory, useParams} from 'react-router-dom'
 
+import {MuiPickersUtilsProvider} from '@material-ui/pickers';
+import DateFnsUtils from '@date-io/date-fns';
+import zhLocale from 'date-fns/locale/zh-CN';
+import enLocale from 'date-fns/locale/en-US';
+
 import {useTranslation} from 'react-i18next';
 
 import {makeStyles} from '@material-ui/core/styles'
@@ -110,7 +115,11 @@ function ResumeContent() {
 
     const {contentArea, appBar, offsetBeneathAppBar} = useStyles();
 
-    const {t} = useTranslation('common');
+    const {t, i18n} = useTranslation('common');
+
+    function determineLocale() {
+        return i18n.language.indexOf('en') >= 0 ? enLocale : zhLocale;
+    }
 
     const onClickFab = isFabAtHome => {
         if (isFabAtHome)
@@ -120,51 +129,53 @@ function ResumeContent() {
     }
 
     return (
-        <Container className={contentArea}>
-            <AppBar position='static' color="default" className={appBar}>
-                <Tabs
-                    centered={true}
-                    value={tabIndex}
-                    onChange={handleTabChange}
-                    variant="fullWidth"
-                    indicatorColor="secondary"
-                    textColor="secondary"
-                    aria-label="main navigating tabs"
-                >
-                    <Tab icon={<PersonPinRoundedIcon style={{color: lime[400]}}/>}
-                         label={t('common:aspects.me.name')}/>
-                    <Tab icon={<BeenhereIcon style={{color: cyan[400]}}/>}
-                         label={t('common:aspects.skills.name')}/>
-                    <Tab icon={<FingerprintIcon style={{color: brown[400]}}/>}
-                         label={t('common:aspects.experiences.name')}/>
-                    <Tab icon={<AllInclusiveIcon style={{color: deepPurple[400]}}/>}
-                         label={t('common:aspects.career.name')}/>
-                </Tabs>
-            </AppBar>
-            <div className={offsetBeneathAppBar}/>
-            <Switch>
-                <Route path={`/${homeTopics[0]}`}>
-                    <Profile/>
-                </Route>
-                <Route path={`/${homeTopics[1]}`}>
-                    <Skills/>
-                </Route>
-                <Route path={`/${homeTopics[2]}`}>
-                    <Experiences/>
-                </Route>
-                <Route path={`/${homeTopics[3]}`}>
-                    <Career/>
-                </Route>
-                <Route path={`/${metaDesignTopic}`}>
-                    <MetaDesign/>
-                </Route>
-                <Route path='/'>
-                    <Redirect to={{pathname: `/${globalDefaultTopic}`}}/>
-                </Route>
-            </Switch>
-            <CustomFab fabAtHome={!isMetaDesignTopic} onClick={onClickFab.bind(null, !isMetaDesignTopic)}/>
-            <LanguageToggle/>
-        </Container>
+        <MuiPickersUtilsProvider utils={DateFnsUtils} locale={determineLocale()}>
+            <Container className={contentArea}>
+                <AppBar position='static' color="default" className={appBar}>
+                    <Tabs
+                        centered={true}
+                        value={tabIndex}
+                        onChange={handleTabChange}
+                        variant="fullWidth"
+                        indicatorColor="secondary"
+                        textColor="secondary"
+                        aria-label="main navigating tabs"
+                    >
+                        <Tab icon={<PersonPinRoundedIcon style={{color: lime[400]}}/>}
+                             label={t('common:aspects.me.name')}/>
+                        <Tab icon={<BeenhereIcon style={{color: cyan[400]}}/>}
+                             label={t('common:aspects.skills.name')}/>
+                        <Tab icon={<FingerprintIcon style={{color: brown[400]}}/>}
+                             label={t('common:aspects.experiences.name')}/>
+                        <Tab icon={<AllInclusiveIcon style={{color: deepPurple[400]}}/>}
+                             label={t('common:aspects.career.name')}/>
+                    </Tabs>
+                </AppBar>
+                <div className={offsetBeneathAppBar}/>
+                <Switch>
+                    <Route path={`/${homeTopics[0]}`}>
+                        <Profile/>
+                    </Route>
+                    <Route path={`/${homeTopics[1]}`}>
+                        <Skills/>
+                    </Route>
+                    <Route path={`/${homeTopics[2]}`}>
+                        <Experiences/>
+                    </Route>
+                    <Route path={`/${homeTopics[3]}`}>
+                        <Career/>
+                    </Route>
+                    <Route path={`/${metaDesignTopic}`}>
+                        <MetaDesign/>
+                    </Route>
+                    <Route path='/'>
+                        <Redirect to={{pathname: `/${globalDefaultTopic}`}}/>
+                    </Route>
+                </Switch>
+                <CustomFab fabAtHome={!isMetaDesignTopic} onClick={onClickFab.bind(null, !isMetaDesignTopic)}/>
+                <LanguageToggle/>
+            </Container>
+        </MuiPickersUtilsProvider>
     )
 }
 
