@@ -9,6 +9,8 @@ import Collapse from '@material-ui/core/Collapse';
 import Avatar from '@material-ui/core/Avatar';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
+import TextField from "@material-ui/core/TextField";
+import InputAdornment from "@material-ui/core/InputAdornment";
 import ExpandMoreIcon from '@material-ui/icons/ExpandMoreRounded';
 import {DatePicker} from '@material-ui/pickers';
 
@@ -68,18 +70,31 @@ export default function Profile() {
                             title="Avatar"
                         />
                     </Grid>
-                    <Grid
-                        item
-                        xs={6}
-                        style={{textAlign: "right"}}
-                    >
-                        <DatePicker
-                            readOnly
-                            inputVariant="outlined"
-                            label={t('me:genInfo.birth.label')}
-                            value={new Date(1985, 9)}
-                            views={['year', 'month']}
-                        />
+                    <Grid item xs={6}>
+                        <Grid container spacing={2}>
+                            <Grid item xs={12}>
+                                <DatePicker
+                                    readOnly
+                                    inputVariant="outlined"
+                                    label={t('me:genInfo.birth.label')}
+                                    value={new Date(1985, 9)}
+                                    views={['year', 'month']}
+                                    fullWidth
+                                />
+                            </Grid>
+                            <Grid item xs={12}>
+                                <TextField
+                                    label="Height"
+                                    InputProps={{
+                                        startAdornment: <InputAdornment position="start">Cm</InputAdornment>,
+                                        readOnly: true
+                                    }}
+                                    value={186}
+                                    variant="outlined"
+                                    fullWidth
+                                />
+                            </Grid>
+                        </Grid>
                     </Grid>
                 </Grid>
                 <Typography variant="body1" color="textSecondary" component="p">
