@@ -2,6 +2,9 @@
   "genInfo": {
     "name": "Champion Gump",
     "motto": "The mystery of life isn't a problem to solve, but a reality to experience.  --- <Dune>",
+    "birth": {
+      "label": "Date of Birth"
+    },
     "beliefs": [
     ]
   }
