@@ -5,6 +5,23 @@
     "birth": {
       "label": "Date of Birth"
     },
+    "height": {
+      "label": "Height",
+      "amount": 6.1,
+      "unit": "Ft"
+    },
+    "weight": {
+      "label": "Weight",
+      "amount": 160.9,
+      "unit": "Lbs"
+    },
+    "bmi": {
+      "label": "Body Mass Index"
+    },
+    "diet": {
+      "label": "Diet",
+      "style": "Lacto-ovo Vegetarian"
+    },
     "beliefs": [
     ]
   }

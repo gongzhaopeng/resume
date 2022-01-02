@@ -12,6 +12,7 @@ import Typography from '@material-ui/core/Typography';
 import TextField from "@material-ui/core/TextField";
 import InputAdornment from "@material-ui/core/InputAdornment";
 import ExpandMoreIcon from '@material-ui/icons/ExpandMoreRounded';
+import DirectionsIcon from '@material-ui/icons/DirectionsRounded';
 import {DatePicker} from '@material-ui/pickers';
 
 import {useTranslation} from "react-i18next";
@@ -28,7 +29,8 @@ const useStyles = makeStyles((theme) => ({
     root: {
         margin: 'auto', backgroundColor: lime[300]
     }, media: {
-        height: 0, paddingTop: '133.385%', // 1279x1706 => 1706/1279 => 133.385%
+        height: 0,
+        paddingTop: '133.385%', // 1279x1706 => 1706/1279 => 133.385%
     }, expand: {
         transform: 'rotate(0deg)', marginLeft: 'auto', transition: theme.transitions.create('transform', {
             duration: theme.transitions.duration.shortest,
@@ -80,18 +82,62 @@ export default function Profile() {
                                     value={new Date(1985, 9)}
                                     views={['year', 'month']}
                                     fullWidth
+                                    size="small"
                                 />
                             </Grid>
                             <Grid item xs={12}>
                                 <TextField
-                                    label="Height"
+                                    label={t('me:genInfo.height.label')}
                                     InputProps={{
-                                        startAdornment: <InputAdornment position="start">Cm</InputAdornment>,
-                                        readOnly: true
+                                        startAdornment: <InputAdornment position="start">
+                                            {t('me:genInfo.height.unit')}
+                                        </InputAdornment>, readOnly: true
                                     }}
-                                    value={186}
+                                    value={t('me:genInfo.height.amount')}
                                     variant="outlined"
                                     fullWidth
+                                    size="small"
+                                />
+                            </Grid>
+                            <Grid item xs={12}>
+                                <TextField
+                                    label={t('me:genInfo.weight.label')}
+                                    InputProps={{
+                                        startAdornment: <InputAdornment position="start">
+                                            {t('me:genInfo.weight.unit')}
+                                        </InputAdornment>, readOnly: true
+                                    }}
+                                    value={t('me:genInfo.weight.amount')}
+                                    variant="outlined"
+                                    fullWidth
+                                    size="small"
+                                />
+                            </Grid>
+                            <Grid item xs={12}>
+                                <TextField
+                                    label={t('me:genInfo.bmi.label')}
+                                    InputProps={{
+                                        startAdornment: <InputAdornment position="start">BMI</InputAdornment>,
+                                        readOnly: true
+                                    }}
+                                    value={21.1}
+                                    variant="outlined"
+                                    fullWidth
+                                    size="small"
+                                />
+                            </Grid>
+                            <Grid item xs={12}>
+                                <TextField
+                                    label={t('me:genInfo.diet.label')}
+                                    InputProps={{
+                                        // startAdornment:
+                                        //     <InputAdornment position="start"><DirectionsIcon/></InputAdornment>,
+                                        readOnly: true
+                                    }}
+                                    value={t('me:genInfo.diet.style')}
+                                    variant="outlined"
+                                    fullWidth
+                                    size="small"
                                 />
                             </Grid>
                         </Grid>
