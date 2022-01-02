@@ -5,6 +5,23 @@
     "birth": {
       "label": "出生日期"
     },
+    "height": {
+      "label": "身高",
+      "amount": 186,
+      "unit": "厘米"
+    },
+    "weight": {
+      "label": "体重",
+      "amount": 73,
+      "unit": "千克"
+    },
+    "bmi": {
+      "label": "体质指数"
+    },
+    "diet": {
+      "label": "饮食",
+      "style": "奶蛋素"
+    },
     "beliefs": [
     ]
   }

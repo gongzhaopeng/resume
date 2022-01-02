@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/resume/static/css/main.5c01d3c8.chunk.css",
-    "main.js": "/resume/static/js/main.6c62e1a3.chunk.js",
-    "main.js.map": "/resume/static/js/main.6c62e1a3.chunk.js.map",
-    "runtime-main.js": "/resume/static/js/runtime-main.f8ab000b.js",
-    "runtime-main.js.map": "/resume/static/js/runtime-main.f8ab000b.js.map",
+    "main.js": "/resume/static/js/main.7c1eede7.chunk.js",
+    "main.js.map": "/resume/static/js/main.7c1eede7.chunk.js.map",
+    "runtime-main.js": "/resume/static/js/runtime-main.495473e3.js",
+    "runtime-main.js.map": "/resume/static/js/runtime-main.495473e3.js.map",
     "static/css/2.bd135b59.chunk.css": "/resume/static/css/2.bd135b59.chunk.css",
-    "static/js/2.2e528a30.chunk.js": "/resume/static/js/2.2e528a30.chunk.js",
-    "static/js/2.2e528a30.chunk.js.map": "/resume/static/js/2.2e528a30.chunk.js.map",
-    "static/js/3.9bcdb84c.chunk.js": "/resume/static/js/3.9bcdb84c.chunk.js",
-    "static/js/3.9bcdb84c.chunk.js.map": "/resume/static/js/3.9bcdb84c.chunk.js.map",
+    "static/js/2.3bceed70.chunk.js": "/resume/static/js/2.3bceed70.chunk.js",
+    "static/js/2.3bceed70.chunk.js.map": "/resume/static/js/2.3bceed70.chunk.js.map",
+    "static/js/3.363c1e67.chunk.js": "/resume/static/js/3.363c1e67.chunk.js",
+    "static/js/3.363c1e67.chunk.js.map": "/resume/static/js/3.363c1e67.chunk.js.map",
     "index.html": "/resume/index.html",
     "static/css/2.bd135b59.chunk.css.map": "/resume/static/css/2.bd135b59.chunk.css.map",
     "static/css/main.5c01d3c8.chunk.css.map": "/resume/static/css/main.5c01d3c8.chunk.css.map",
-    "static/js/2.2e528a30.chunk.js.LICENSE.txt": "/resume/static/js/2.2e528a30.chunk.js.LICENSE.txt",
+    "static/js/2.3bceed70.chunk.js.LICENSE.txt": "/resume/static/js/2.3bceed70.chunk.js.LICENSE.txt",
     "static/media/avatar.857e9bcc.jpeg": "/resume/static/media/avatar.857e9bcc.jpeg",
     "static/media/getFetch.cjs": "/resume/static/media/getFetch.582d29c4.cjs",
     "static/media/kubernetes-logo.33243eab.svg": "/resume/static/media/kubernetes-logo.33243eab.svg",
@@ -24,10 +24,10 @@
     "static/media/spring-logo.5e950eb4.svg": "/resume/static/media/spring-logo.5e950eb4.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.f8ab000b.js",
+    "static/js/runtime-main.495473e3.js",
     "static/css/2.bd135b59.chunk.css",
-    "static/js/2.2e528a30.chunk.js",
+    "static/js/2.3bceed70.chunk.js",
     "static/css/main.5c01d3c8.chunk.css",
-    "static/js/main.6c62e1a3.chunk.js"
+    "static/js/main.7c1eede7.chunk.js"
   ]
 }
