@@ -12,7 +12,6 @@ import Typography from '@material-ui/core/Typography';
 import TextField from "@material-ui/core/TextField";
 import InputAdornment from "@material-ui/core/InputAdornment";
 import ExpandMoreIcon from '@material-ui/icons/ExpandMoreRounded';
-import DirectionsIcon from '@material-ui/icons/DirectionsRounded';
 import {DatePicker} from '@material-ui/pickers';
 
 import {useTranslation} from "react-i18next";
@@ -24,13 +23,13 @@ import {red, lime} from '@material-ui/core/colors';
 import UniformCard from './UniformCard';
 
 import avatarImage from '../assets/images/avatar.jpeg'
+import lactoOvoIcon from "../assets/images/lacto-ovo.vegetarian.icon.jpeg"
 
 const useStyles = makeStyles((theme) => ({
     root: {
         margin: 'auto', backgroundColor: lime[300]
     }, media: {
-        height: 0,
-        paddingTop: '133.385%', // 1279x1706 => 1706/1279 => 133.385%
+        height: 0, paddingTop: '133.385%', // 1279x1706 => 1706/1279 => 133.385%
     }, expand: {
         transform: 'rotate(0deg)', marginLeft: 'auto', transition: theme.transitions.create('transform', {
             duration: theme.transitions.duration.shortest,
@@ -50,7 +49,7 @@ export default function Profile() {
         setExpanded(!expanded);
     };
 
-    const {t} = useTranslation('me');
+    const {t, i18n} = useTranslation('me');
 
     return (<Fragment>
         <UniformCard className={classes.root}>
@@ -130,8 +129,10 @@ export default function Profile() {
                                 <TextField
                                     label={t('me:genInfo.diet.label')}
                                     InputProps={{
-                                        // startAdornment:
-                                        //     <InputAdornment position="start"><DirectionsIcon/></InputAdornment>,
+                                        endAdornment: i18n.language.indexOf('en') >= 0 ? null :
+                                            <InputAdornment position="end">
+                                                <Avatar alt="Lacto-ovo Vegetarian" src={lactoOvoIcon}/>
+                                            </InputAdornment>,
                                         readOnly: true
                                     }}
                                     value={t('me:genInfo.diet.style')}
