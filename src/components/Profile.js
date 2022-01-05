@@ -3,6 +3,7 @@ import React, {Fragment} from 'react';
 import CardHeader from '@material-ui/core/CardHeader';
 import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
+import Divider from "@material-ui/core/Divider";
 import Grid from "@material-ui/core/Grid";
 import CardActions from '@material-ui/core/CardActions';
 import Collapse from '@material-ui/core/Collapse';
@@ -24,6 +25,7 @@ import UniformCard from './UniformCard';
 
 import avatarImage from '../assets/images/avatar.jpeg'
 import lactoOvoIcon from "../assets/images/lacto-ovo.vegetarian.icon.jpeg"
+import Chip from "@material-ui/core/Chip";
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -63,7 +65,7 @@ export default function Profile() {
                 subheaderTypographyProps={{'variant': "subtitle2"}}
             />
             <CardContent>
-                <Grid container spacing={1}>
+                <Grid container spacing={2}>
                     <Grid item xs={6}>
                         <CardMedia
                             className={classes.media}
@@ -132,8 +134,7 @@ export default function Profile() {
                                         endAdornment: i18n.language.indexOf('en') >= 0 ? null :
                                             <InputAdornment position="end">
                                                 <Avatar alt="Lacto-ovo Vegetarian" src={lactoOvoIcon}/>
-                                            </InputAdornment>,
-                                        readOnly: true
+                                            </InputAdornment>, readOnly: true
                                     }}
                                     value={t('me:genInfo.diet.style')}
                                     variant="outlined"
@@ -143,13 +144,41 @@ export default function Profile() {
                             </Grid>
                         </Grid>
                     </Grid>
+                    <Grid item xs={12}>
+                        <Divider variant='fullWidth'
+                                 style={{borderStyle: 'dashed', borderWidth: 1, borderColor: red[300]}}/>
+                    </Grid>
+                    <Grid container xs={4} alignItems="center" justifyContent="center" alignContent="center">
+                        <Typography variant="body2" color='primary' align="center" style={{"width": '100%'}}>
+                            上帝
+                        </Typography>
+                        <br/>
+                        <Typography variant="body2" color="primary" align="center" style={{"width": '100%'}}>
+                            想要光
+                        </Typography>
+                        <Typography variant="body2" color="primary" align="center" style={{"width": '100%'}}>
+                            于是 便有了光
+                        </Typography>
+                    </Grid>
+                    <Grid container xs={8} alignItems="center" justifyContent="center">
+                        <Chip label="Technical Co-Founder" style={{margin: 2}}/>
+                        <Chip label="Technical Leader" style={{margin: 2}}/>
+                        <Chip label="Scrum Master" style={{margin: 2}}/>
+                        <Chip label="Scrum Product Owner" style={{margin: 2}}/>
+                    </Grid>
+                    <Grid item xs={12}>
+                        <Divider variant='fullWidth'
+                                 style={{borderStyle: 'dashed', borderWidth: 1, borderColor: red[300]}}/>
+                    </Grid>
+                    <Grid item xs={12}>
+                        <Typography variant="body1" color="textSecondary" component="p">
+                            Coding is a lifestyle.
+                        </Typography>
+                        <Typography variant="body1" color="textSecondary" component="p">
+                            Coding is a philosophy.
+                        </Typography>
+                    </Grid>
                 </Grid>
-                <Typography variant="body1" color="textSecondary" component="p">
-                    Coding is a lifestyle.
-                </Typography>
-                <Typography variant="body1" color="textSecondary" component="p">
-                    Coding is a philosophy.
-                </Typography>
             </CardContent>
             <CardActions disableSpacing>
                 <IconButton
