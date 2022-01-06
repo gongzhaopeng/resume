@@ -26,6 +26,13 @@
       "label": "Diet",
       "style": "Lacto-ovo Vegetarian"
     },
+    "bible": {
+      "genesis": {
+        "wordOne": "And God said",
+        "wordTwo": "Let there be light",
+        "wordThree": "and there was light"
+      }
+    },
     "beliefs": [
     ]
   }

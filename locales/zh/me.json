@@ -26,6 +26,13 @@
       "label": "饮食",
       "style": "奶蛋素"
     },
+    "bible": {
+      "genesis": {
+        "wordOne": "上帝",
+        "wordTwo": "想要光",
+        "wordThree": "于是 便有了光"
+      }
+    },
     "beliefs": [
     ]
   }
