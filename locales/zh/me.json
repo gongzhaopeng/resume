@@ -1,6 +1,10 @@
 {
   "genInfo": {
     "name": "龚兆鹏",
+    "domain": {
+      "levelOne": "信息技术",
+      "levelTwo": "软件"
+    },
     "motto": "生活之奇幻当以平常心经历其中  万不可化作囚禁灵魂之困顿  --- <沙丘>",
     "birth": {
       "label": "出生日期"
