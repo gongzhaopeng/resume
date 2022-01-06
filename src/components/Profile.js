@@ -62,24 +62,20 @@ export default function Profile() {
                     P
                 </Avatar>}
                 disableTypography
-                title={
-                    <Grid container alignItems="center">
-                        <Button size="small" variant="outlined" color="primary">
-                            <Typography variant="body1">{t('me:genInfo.name')}</Typography>
-                        </Button>
-                        <Breadcrumbs style={{marginLeft: 20}}>
-                            <Chip label={t('me:genInfo.domain.levelOne')} size="small" variant="outlined"
-                                  color="secondary"/>
-                            <Chip label={t('me:genInfo.domain.levelTwo')} size="small" variant="outlined"
-                                  color="secondary"/>
-                        </Breadcrumbs>
-                    </Grid>
-                }
-                subheader={
-                    <Typography variant="body2" color="textSecondary" style={{marginTop: 5}}>
-                        {t('me:genInfo.motto')}
-                    </Typography>
-                }
+                title={<Grid container alignItems="center" style={{marginTop: 10}}>
+                    <Button size="small" variant="outlined" color="primary">
+                        <Typography variant="body1">{t('me:genInfo.name')}</Typography>
+                    </Button>
+                    <Breadcrumbs style={{marginLeft: 20}}>
+                        <Chip label={t('me:genInfo.domain.levelOne')} size="small" variant="outlined"
+                              color="secondary"/>
+                        <Chip label={t('me:genInfo.domain.levelTwo')} size="small" variant="outlined"
+                              color="secondary"/>
+                    </Breadcrumbs>
+                </Grid>}
+                subheader={<Typography variant="body2" color="textSecondary" style={{marginTop: 10}}>
+                    {t('me:genInfo.motto')}
+                </Typography>}
             />
             <CardContent>
                 <Grid container spacing={2}>
@@ -167,14 +163,14 @@ export default function Profile() {
                     </Grid>
                     <Grid container xs={4} alignItems="center" justifyContent="center" alignContent="center">
                         <Typography variant="body2" color='primary' align="center" style={{"width": '100%'}}>
-                            上帝
+                            {t('me:genInfo.bible.genesis.wordOne')}
                         </Typography>
                         <br/>
                         <Typography variant="body2" color="primary" align="center" style={{"width": '100%'}}>
-                            想要光
+                            {t('me:genInfo.bible.genesis.wordTwo')}
                         </Typography>
                         <Typography variant="body2" color="primary" align="center" style={{"width": '100%'}}>
-                            于是 便有了光
+                            {t('me:genInfo.bible.genesis.wordThree')}
                         </Typography>
                     </Grid>
                     <Grid container xs={8} alignItems="center" justifyContent="center">
