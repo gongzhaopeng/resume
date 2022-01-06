@@ -1,6 +1,10 @@
 {
   "genInfo": {
     "name": "Champion Gump",
+    "domain": {
+      "levelOne": "IT",
+      "levelTwo": "Software"
+    },
     "motto": "The mystery of life isn't a problem to solve, but a reality to experience.  --- <Dune>",
     "birth": {
       "label": "Date of Birth"

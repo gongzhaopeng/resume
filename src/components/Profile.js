@@ -13,6 +13,9 @@ import Typography from '@material-ui/core/Typography';
 import TextField from "@material-ui/core/TextField";
 import InputAdornment from "@material-ui/core/InputAdornment";
 import ExpandMoreIcon from '@material-ui/icons/ExpandMoreRounded';
+import Chip from "@material-ui/core/Chip";
+import Button from "@material-ui/core/Button";
+import Breadcrumbs from "@material-ui/core/Breadcrumbs"
 import {DatePicker} from '@material-ui/pickers';
 
 import {useTranslation} from "react-i18next";
@@ -25,7 +28,6 @@ import UniformCard from './UniformCard';
 
 import avatarImage from '../assets/images/avatar.jpeg'
 import lactoOvoIcon from "../assets/images/lacto-ovo.vegetarian.icon.jpeg"
-import Chip from "@material-ui/core/Chip";
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -59,10 +61,25 @@ export default function Profile() {
                 avatar={<Avatar aria-label="profile" className={classes.avatar}>
                     P
                 </Avatar>}
-                title={t('me:genInfo.name')}
-                titleTypographyProps={{'variant': "h6"}}
-                subheader={t('me:genInfo.motto')}
-                subheaderTypographyProps={{'variant': "subtitle2"}}
+                disableTypography
+                title={
+                    <Grid container alignItems="center">
+                        <Button size="small" variant="outlined" color="primary">
+                            <Typography variant="body1">{t('me:genInfo.name')}</Typography>
+                        </Button>
+                        <Breadcrumbs style={{marginLeft: 20}}>
+                            <Chip label={t('me:genInfo.domain.levelOne')} size="small" variant="outlined"
+                                  color="secondary"/>
+                            <Chip label={t('me:genInfo.domain.levelTwo')} size="small" variant="outlined"
+                                  color="secondary"/>
+                        </Breadcrumbs>
+                    </Grid>
+                }
+                subheader={
+                    <Typography variant="body2" color="textSecondary" style={{marginTop: 5}}>
+                        {t('me:genInfo.motto')}
+                    </Typography>
+                }
             />
             <CardContent>
                 <Grid container spacing={2}>
