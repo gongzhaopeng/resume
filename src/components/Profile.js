@@ -16,6 +16,10 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMoreRounded';
 import Chip from "@material-ui/core/Chip";
 import Button from "@material-ui/core/Button";
 import Breadcrumbs from "@material-ui/core/Breadcrumbs"
+import Battery60Icon from '@material-ui/icons/Battery60';
+import Battery80Icon from '@material-ui/icons/Battery80';
+import Battery90Icon from '@material-ui/icons/Battery90';
+import BatteryFullIcon from '@material-ui/icons/BatteryFull';
 import {DatePicker} from '@material-ui/pickers';
 
 import {useTranslation} from "react-i18next";
@@ -174,10 +178,35 @@ export default function Profile() {
                         </Typography>
                     </Grid>
                     <Grid container xs={8} alignItems="center" justifyContent="center">
-                        <Chip label="Technical Co-Founder" style={{margin: 2}}/>
-                        <Chip label="Technical Leader" style={{margin: 2}}/>
-                        <Chip label="Scrum Master" style={{margin: 2}}/>
-                        <Chip label="Scrum Product Owner" style={{margin: 2}}/>
+                        <Chip
+                            icon={<Battery60Icon/>}
+                            // label="Technical Co-Founder"
+                            label="技术合伙人"
+                            variant="outlined"
+                            color="secondary"
+                            style={{margin: 2, fontStyle: "italic", fontWeight: "bolder"}}
+                        />
+                        <Chip
+                            icon={<Battery80Icon/>}
+                            // label="Technical Leader"
+                            label="技术部门负责人"
+                            variant="outlined"
+                            color="primary"
+                            style={{margin: 2, fontStyle: "italic", fontWeight: "bolder"}}
+                        />
+                        <Chip
+                            icon={<Battery60Icon/>}
+                            label="Scrum Master"
+                            variant="outlined"
+                            style={{margin: 2, fontStyle: "italic", fontWeight: "bolder"}}
+                        />
+                        <Chip
+                            icon={<Battery60Icon/>}
+                            label="Scrum Product Owner"
+                            variant="outlined"
+                            color="secondary"
+                            style={{margin: 2, fontStyle: "italic", fontWeight: "bolder"}}
+                        />
                     </Grid>
                     <Grid item xs={12}>
                         <Divider variant='fullWidth'
