@@ -185,6 +185,7 @@ export default function Profile() {
                             variant="outlined"
                             color="secondary"
                             style={{margin: 2, fontStyle: "italic", fontWeight: "bolder"}}
+                            size="small"
                         />
                         <Chip
                             icon={<Battery80Icon/>}
@@ -193,12 +194,14 @@ export default function Profile() {
                             variant="outlined"
                             color="primary"
                             style={{margin: 2, fontStyle: "italic", fontWeight: "bolder"}}
+                            size="small"
                         />
                         <Chip
                             icon={<Battery60Icon/>}
                             label="Scrum Master"
                             variant="outlined"
                             style={{margin: 2, fontStyle: "italic", fontWeight: "bolder"}}
+                            size="small"
                         />
                         <Chip
                             icon={<Battery60Icon/>}
@@ -206,6 +209,7 @@ export default function Profile() {
                             variant="outlined"
                             color="secondary"
                             style={{margin: 2, fontStyle: "italic", fontWeight: "bolder"}}
+                            size="small"
                         />
                     </Grid>
                     <Grid item xs={12}>
