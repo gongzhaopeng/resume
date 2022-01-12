@@ -195,7 +195,7 @@ export default function Profile() {
                             size="small"
                         />
                         <Chip
-                            icon={<Battery80Icon/>}
+                            icon={<Battery90Icon/>}
                             label={t('me:genInfo.job.titles.developerManager')}
                             variant="outlined"
                             color="primary"
