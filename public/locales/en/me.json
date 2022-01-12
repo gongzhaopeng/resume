@@ -33,6 +33,17 @@
         "wordThree": "and there was light"
       }
     },
+    "job": {
+      "titles": {
+        "techPartner": "Technical Partner",
+        "techDirector": "Technical Director",
+        "developerManager": "Developer Manager",
+        "scrumMaster": "Scrum Master",
+        "scrumProductOwner": "Scrum Product Owner",
+        "architect": "Architect",
+        "leadBackendDeveloper": "Lead Backend Developer"
+      }
+    },
     "beliefs": [
     ]
   }

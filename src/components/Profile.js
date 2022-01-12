@@ -180,35 +180,57 @@ export default function Profile() {
                     <Grid container xs={8} alignItems="center" justifyContent="center">
                         <Chip
                             icon={<Battery60Icon/>}
-                            // label="Technical Co-Founder"
-                            label="技术合伙人"
+                            label={t('me:genInfo.job.titles.techPartner')}
                             variant="outlined"
                             color="secondary"
-                            style={{margin: 2, fontStyle: "italic", fontWeight: "bolder"}}
+                            style={{margin: 3, fontStyle: "italic", fontWeight: "bolder"}}
                             size="small"
                         />
                         <Chip
                             icon={<Battery80Icon/>}
-                            // label="Technical Leader"
-                            label="技术部门负责人"
+                            label={t('me:genInfo.job.titles.techDirector')}
                             variant="outlined"
                             color="primary"
-                            style={{margin: 2, fontStyle: "italic", fontWeight: "bolder"}}
+                            style={{margin: 3, fontStyle: "italic", fontWeight: "bolder"}}
                             size="small"
                         />
                         <Chip
-                            icon={<Battery60Icon/>}
-                            label="Scrum Master"
+                            icon={<Battery80Icon/>}
+                            label={t('me:genInfo.job.titles.developerManager')}
                             variant="outlined"
-                            style={{margin: 2, fontStyle: "italic", fontWeight: "bolder"}}
+                            color="primary"
+                            style={{margin: 3, fontStyle: "italic", fontWeight: "bolder"}}
                             size="small"
                         />
                         <Chip
                             icon={<Battery60Icon/>}
-                            label="Scrum Product Owner"
+                            label={t('me:genInfo.job.titles.scrumMaster')}
+                            variant="outlined"
+                            color="primary"
+                            style={{margin: 3, fontStyle: "italic", fontWeight: "bolder"}}
+                            size="small"
+                        />
+                        <Chip
+                            icon={<Battery60Icon/>}
+                            label={t('me:genInfo.job.titles.scrumProductOwner')}
                             variant="outlined"
                             color="secondary"
-                            style={{margin: 2, fontStyle: "italic", fontWeight: "bolder"}}
+                            style={{margin: 3, fontStyle: "italic", fontWeight: "bolder"}}
+                            size="small"
+                        />
+                        <Chip
+                            icon={<BatteryFullIcon/>}
+                            label={t('me:genInfo.job.titles.architect')}
+                            variant="outlined"
+                            color="primary"
+                            style={{margin: 3, fontStyle: "italic", fontWeight: "bolder"}}
+                            size="small"
+                        />
+                        <Chip
+                            icon={<BatteryFullIcon/>}
+                            label={t('me:genInfo.job.titles.leadBackendDeveloper')}
+                            variant="outlined"
+                            style={{margin: 3, fontStyle: "italic", fontWeight: "bolder"}}
                             size="small"
                         />
                     </Grid>

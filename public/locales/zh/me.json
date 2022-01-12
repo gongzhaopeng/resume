@@ -33,6 +33,17 @@
         "wordThree": "于是 便有了光"
       }
     },
+    "job": {
+      "titles": {
+        "techPartner": "技术合伙人",
+        "techDirector": "技术总监",
+        "developerManager": "开发部经理",
+        "scrumMaster": "Scrum专家",
+        "scrumProductOwner": "Scrum产品负责人",
+        "architect": "架构师",
+        "leadBackendDeveloper": "首席后端开发"
+      }
+    },
     "beliefs": [
     ]
   }
