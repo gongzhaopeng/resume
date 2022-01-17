@@ -44,7 +44,21 @@
         "leadBackendDeveloper": "Lead Backend Developer"
       }
     },
-    "beliefs": [
-    ]
+    "beliefs": {
+      "top": [
+        "Just do it!",
+        "Free your mind.",
+        "One can be destroyed but can not be defeated.",
+        "The show must go on."
+      ],
+      "pool": [
+        "All for one and one for all.",
+        "It's true that you made a mistake, but who doesn't?",
+        "May the force be with you!",
+        "Everything happens for a reason.",
+        "My mama always said, life is like a box of chocolates.",
+        "Preparing has been his life's work. He prepares, then he cleans up."
+      ]
+    }
   }
 }
