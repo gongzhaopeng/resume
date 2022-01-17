@@ -238,13 +238,12 @@ export default function Profile() {
                         <Divider variant='fullWidth'
                                  style={{borderStyle: 'dashed', borderWidth: 1, borderColor: red[300]}}/>
                     </Grid>
-                    <Grid item xs={12}>
-                        <Typography variant="body1" color="textSecondary" component="p">
-                            Coding is a lifestyle.
-                        </Typography>
-                        <Typography variant="body1" color="textSecondary" component="p">
-                            Coding is a philosophy.
-                        </Typography>
+                    <Grid container xs={12} alignItems="center" justifyContent="center">
+                        {t('me:genInfo.beliefs.top', {returnObjects: true}).map(belief => (
+                            <Typography variant="body1" color="textSecondary" align="center" style={{"width": '100%'}}>
+                                {belief}
+                            </Typography>
+                        ))}
                     </Grid>
                 </Grid>
             </CardContent>
@@ -262,17 +261,11 @@ export default function Profile() {
             </CardActions>
             <Collapse in={expanded} timeout="auto" unmountOnExit>
                 <CardContent>
-                    <Typography paragraph>
-                        I am a senior software developer armed with versatile architecting/programming
-                        skills and experiences.
-                    </Typography>
-                    <Typography paragraph>
-                        So far, within the most of my career, Java has been used predominantly.
-                    </Typography>
-                    <Typography>
-                        I am very familiar with Spring Framework, including the related
-                        Spring Boot, Spring Cloud, and so on.
-                    </Typography>
+                    {t('me:genInfo.beliefs.pool', {returnObjects: true}).map(belief => (
+                        <Typography variant="body2" color="textSecondary" paragraph>
+                            {belief}
+                        </Typography>
+                    ))}
                 </CardContent>
             </Collapse>
         </UniformCard>
