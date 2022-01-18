@@ -29,14 +29,25 @@ import clsx from 'clsx';
 import {red, lime} from '@material-ui/core/colors';
 
 import UniformCard from './UniformCard';
+import SingleLineImageList from "./SingleLineImageList";
 
 import avatarImage from '../assets/images/avatar.jpeg'
 import lactoOvoIcon from "../assets/images/lacto-ovo.vegetarian.icon.jpeg"
 
+const runnerImageItems = [{
+    img: avatarImage, title: "Ronaldo"
+}, {
+    img: avatarImage, title: "Ronaldo"
+}, {
+    img: avatarImage, title: "Ronaldo"
+}, {
+    img: avatarImage, title: "Ronaldo"
+},]
+
 const useStyles = makeStyles((theme) => ({
-    root: {
+    headCardRoot: {
         margin: 'auto', backgroundColor: lime[300]
-    }, media: {
+    }, headCardAvatarImage: {
         height: 0, paddingTop: '133.385%', // 1279x1706 => 1706/1279 => 133.385%
     }, expand: {
         transform: 'rotate(0deg)', marginLeft: 'auto', transition: theme.transitions.create('transform', {
@@ -44,9 +55,9 @@ const useStyles = makeStyles((theme) => ({
         }),
     }, expandOpen: {
         transform: 'rotate(180deg)',
-    }, avatar: {
-        backgroundColor: red[500],
-    },
+    }, generalCardRoot: {
+        backgroundColor: lime[100]
+    }
 }));
 
 export default function Profile() {
@@ -60,9 +71,9 @@ export default function Profile() {
     const {t, i18n} = useTranslation('me');
 
     return (<Fragment>
-        <UniformCard className={classes.root}>
+        <UniformCard className={classes.headCardRoot}>
             <CardHeader
-                avatar={<Avatar aria-label="profile" className={classes.avatar}>
+                avatar={<Avatar aria-label="profile" style={{backgroundColor: red[500]}}>
                     P
                 </Avatar>}
                 disableTypography
@@ -85,7 +96,7 @@ export default function Profile() {
                 <Grid container spacing={2}>
                     <Grid item xs={6}>
                         <CardMedia
-                            className={classes.media}
+                            className={classes.headCardAvatarImage}
                             image={avatarImage}
                             title="Avatar"
                         />
@@ -242,8 +253,7 @@ export default function Profile() {
                         {t('me:genInfo.beliefs.top', {returnObjects: true}).map(belief => (
                             <Typography variant="body1" color="textSecondary" align="center" style={{"width": '100%'}}>
                                 {belief}
-                            </Typography>
-                        ))}
+                            </Typography>))}
                     </Grid>
                 </Grid>
             </CardContent>
@@ -264,15 +274,16 @@ export default function Profile() {
                     {t('me:genInfo.beliefs.pool', {returnObjects: true}).map(belief => (
                         <Typography variant="body2" color="textSecondary" paragraph>
                             {belief}
-                        </Typography>
-                    ))}
+                        </Typography>))}
                 </CardContent>
             </Collapse>
         </UniformCard>
-        <UniformCard style={{backgroundColor: lime[100], height: 200}}>
-            <Typography>
-                Here is a treasure!
-            </Typography>
+        <UniformCard className={classes.generalCardRoot}>
+            <CardHeader title={t("me:genInfo.runner.slogan")}
+                        titleTypographyProps={{variant: "button", color: "secondary", align: "center"}}/>
+            <CardContent>
+                <SingleLineImageList imageItems={runnerImageItems} imgHeight={420}/>
+            </CardContent>
         </UniformCard>
     </Fragment>);
 }
