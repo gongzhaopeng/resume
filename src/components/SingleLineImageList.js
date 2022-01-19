@@ -12,6 +12,7 @@ const useStyles = makeStyles((theme) => ({
         flexWrap: 'nowrap',
         // Promote the list into his own layer on Chrome. This cost memory but helps keeping high FPS.
         transform: 'translateZ(0)',
+        width: 359
     }
 }));
 
@@ -19,10 +20,10 @@ export default function SingleLineImageList({imageItems, imgHeight}) {
     const classes = useStyles();
 
     return (<div className={classes.root}>
-        <ImageList className={classes.imageList} cols={1.1} gap={1} rowHeight={imgHeight}>
+        <ImageList className={classes.imageList} cols={1.1} gap={4} rowHeight={imgHeight}>
             {imageItems.map(item => (
                 <ImageListItem key={item.img}>
-                    <img src={item.img} alt={item.title} style={{height: imgHeight, width: 325}}/>
+                    <img src={item.img} alt={item.title} style={{height: imgHeight, width: 322}}/>
                 </ImageListItem>
             ))}
         </ImageList>
