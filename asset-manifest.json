@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/resume/static/css/main.5c01d3c8.chunk.css",
-    "main.js": "/resume/static/js/main.c3cc2bd6.chunk.js",
-    "main.js.map": "/resume/static/js/main.c3cc2bd6.chunk.js.map",
+    "main.js": "/resume/static/js/main.14cdcd56.chunk.js",
+    "main.js.map": "/resume/static/js/main.14cdcd56.chunk.js.map",
     "runtime-main.js": "/resume/static/js/runtime-main.64924f00.js",
     "runtime-main.js.map": "/resume/static/js/runtime-main.64924f00.js.map",
     "static/css/2.bd135b59.chunk.css": "/resume/static/css/2.bd135b59.chunk.css",
@@ -15,20 +15,26 @@
     "static/css/main.5c01d3c8.chunk.css.map": "/resume/static/css/main.5c01d3c8.chunk.css.map",
     "static/js/2.f639f7ba.chunk.js.LICENSE.txt": "/resume/static/js/2.f639f7ba.chunk.js.LICENSE.txt",
     "static/media/avatar.857e9bcc.jpeg": "/resume/static/media/avatar.857e9bcc.jpeg",
+    "static/media/card.run-levels.runner.2dd1503e.jpeg": "/resume/static/media/card.run-levels.runner.2dd1503e.jpeg",
+    "static/media/detail.run-levels.runner.f2ebf031.jpeg": "/resume/static/media/detail.run-levels.runner.f2ebf031.jpeg",
     "static/media/getFetch.cjs": "/resume/static/media/getFetch.582d29c4.cjs",
     "static/media/kubernetes-logo.33243eab.svg": "/resume/static/media/kubernetes-logo.33243eab.svg",
     "static/media/lacto-ovo.vegetarian.icon.469d239b.jpeg": "/resume/static/media/lacto-ovo.vegetarian.icon.469d239b.jpeg",
     "static/media/microservice-logo.53b64462.svg": "/resume/static/media/microservice-logo.53b64462.svg",
     "static/media/node-js-logo.a7a6b50a.svg": "/resume/static/media/node-js-logo.a7a6b50a.svg",
+    "static/media/personal-records.achievements.runner.8dc58812.jpeg": "/resume/static/media/personal-records.achievements.runner.8dc58812.jpeg",
     "static/media/index.css": "/resume/static/media/roboto-vietnamese-400-normal.52cebac0.woff2",
     "static/media/spring-cloud.logo.521541ab.svg": "/resume/static/media/spring-cloud.logo.521541ab.svg",
-    "static/media/spring-logo.5e950eb4.svg": "/resume/static/media/spring-logo.5e950eb4.svg"
+    "static/media/spring-logo.5e950eb4.svg": "/resume/static/media/spring-logo.5e950eb4.svg",
+    "static/media/statistics.activity.runner.f801d9a7.jpeg": "/resume/static/media/statistics.activity.runner.f801d9a7.jpeg",
+    "static/media/streaks.achievements.runner.e20c2204.jpeg": "/resume/static/media/streaks.achievements.runner.e20c2204.jpeg",
+    "static/media/trophies.achievements.runner.c78e1980.jpeg": "/resume/static/media/trophies.achievements.runner.c78e1980.jpeg"
   },
   "entrypoints": [
     "static/js/runtime-main.64924f00.js",
     "static/css/2.bd135b59.chunk.css",
     "static/js/2.f639f7ba.chunk.js",
     "static/css/main.5c01d3c8.chunk.css",
-    "static/js/main.c3cc2bd6.chunk.js"
+    "static/js/main.14cdcd56.chunk.js"
   ]
 }
