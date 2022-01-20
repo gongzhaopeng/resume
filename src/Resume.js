@@ -27,7 +27,7 @@ import {makeStyles} from '@material-ui/core/styles'
 import {brown, cyan, green, lime, deepOrange, deepPurple} from '@material-ui/core/colors';
 
 import ScrollToTop from './components/ScrollToTop'
-import Profile from './components/Profile';
+import Profile from './components/profile/Profile';
 import Skills from './components/Skills'
 import Experiences from './components/Experiences'
 import Career from './components/Career'

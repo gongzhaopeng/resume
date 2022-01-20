@@ -1,4 +1,4 @@
-import React, {Fragment} from 'react';
+import React from 'react';
 
 import CardHeader from '@material-ui/core/CardHeader';
 import CardMedia from '@material-ui/core/CardMedia';
@@ -28,36 +28,15 @@ import {makeStyles} from '@material-ui/core/styles';
 import clsx from 'clsx';
 import {red, lime} from '@material-ui/core/colors';
 
-import UniformCard from './UniformCard';
-import SingleLineImageList from "./SingleLineImageList";
+import UniformCard from '../UniformCard';
 
-import avatarImage from '../assets/images/avatar.jpeg'
-import lactoOvoIcon from "../assets/images/lacto-ovo.vegetarian.icon.jpeg"
-import runnerRunLevelsCardImage from "../assets/images/runner/card.run-levels.runner.jpeg"
-import runnerRunLevelsDetailImage from "../assets/images/runner/detail.run-levels.runner.jpeg"
-import runnerAchievementsPersonalRecordsImage from "../assets/images/runner/personal-records.achievements.runner.jpeg"
-import runnerActivityStatisticsImage from "../assets/images/runner/statistics.activity.runner.jpeg"
-import runnerAchievementsStreaksImage from "../assets/images/runner/streaks.achievements.runner.jpeg"
-import runnerAchievementsTrophiesImage from "../assets/images/runner/trophies.achievements.runner.jpeg"
-
-const runnerImageItems = [{
-    img: runnerRunLevelsCardImage, title: "card.run-levels.runner"
-}, {
-    img: runnerAchievementsPersonalRecordsImage, title: "personal-records.achievements.runner"
-}, {
-    img: runnerActivityStatisticsImage, title: "statistics.activity.runner"
-}, {
-    img: runnerAchievementsStreaksImage, title: "streaks.achievements.runner"
-}, {
-    img: runnerRunLevelsDetailImage, title: "detail.run-levels.runner"
-}, {
-    img: runnerAchievementsTrophiesImage, title: "trophies.achievements.runner"
-},]
+import avatarImage from '../../assets/images/avatar.jpeg'
+import lactoOvoIcon from "../../assets/images/lacto-ovo.vegetarian.icon.jpeg"
 
 const useStyles = makeStyles((theme) => ({
-    headCardRoot: {
+    root: {
         margin: 'auto', backgroundColor: lime[300]
-    }, headCardAvatarImage: {
+    }, avatarImage: {
         height: 0, paddingTop: '133.385%', // 1279x1706 => 1706/1279 => 133.385%
     }, expand: {
         transform: 'rotate(0deg)', marginLeft: 'auto', transition: theme.transitions.create('transform', {
@@ -65,12 +44,10 @@ const useStyles = makeStyles((theme) => ({
         }),
     }, expandOpen: {
         transform: 'rotate(180deg)',
-    }, generalCardRoot: {
-        backgroundColor: lime[100]
     }
 }));
 
-export default function Profile() {
+export default function ProfileHeadCard() {
     const classes = useStyles();
     const [expanded, setExpanded] = React.useState(false);
 
@@ -80,8 +57,8 @@ export default function Profile() {
 
     const {t, i18n} = useTranslation('me');
 
-    return (<Fragment>
-        <UniformCard className={classes.headCardRoot}>
+    return (
+        <UniformCard className={classes.root}>
             <CardHeader
                 avatar={<Avatar aria-label="profile" style={{backgroundColor: red[500]}}>
                     P
@@ -106,7 +83,7 @@ export default function Profile() {
                 <Grid container spacing={2}>
                     <Grid item xs={6}>
                         <CardMedia
-                            className={classes.headCardAvatarImage}
+                            className={classes.avatarImage}
                             image={avatarImage}
                             title="Avatar"
                         />
@@ -288,12 +265,5 @@ export default function Profile() {
                 </CardContent>
             </Collapse>
         </UniformCard>
-        <UniformCard className={classes.generalCardRoot}>
-            <CardHeader title={t("me:genInfo.runner.slogan")}
-                        titleTypographyProps={{variant: "button", color: "secondary", align: "center"}}/>
-            <CardContent>
-                <SingleLineImageList imageItems={runnerImageItems} imgHeight={700}/>
-            </CardContent>
-        </UniformCard>
-    </Fragment>);
+    )
 }
