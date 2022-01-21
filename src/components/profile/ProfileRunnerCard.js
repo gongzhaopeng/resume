@@ -48,7 +48,7 @@ export default function ProfileRunnerCard() {
         <CardHeader title={t("me:genInfo.runner.slogan")}
                     titleTypographyProps={{variant: "button", color: "secondary", align: "center"}}/>
         <CardContent>
-            <SingleLineImageList imageItems={runnerImageItems} imgHeight={700}/>
+            <SingleLineImageList imageItems={runnerImageItems} imgHeight={640}/>
         </CardContent>
     </UniformCard>)
 }
