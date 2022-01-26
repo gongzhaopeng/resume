@@ -63,6 +63,13 @@
     },
     "runner": {
       "slogan": "我是一个跑者."
+    },
+    "education": {
+      "college": {
+        "name": "北京大学",
+        "major": "计算机科学与技术",
+        "approach": "本科 高考统招"
+      }
     }
   }
 }

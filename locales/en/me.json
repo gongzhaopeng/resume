@@ -63,6 +63,13 @@
     },
     "runner": {
       "slogan": "I am a runner."
+    },
+    "education": {
+      "college": {
+        "name": "Peking University",
+        "major": "Computer Science and Technology",
+        "approach": "Through NCEE"
+      }
     }
   }
 }
