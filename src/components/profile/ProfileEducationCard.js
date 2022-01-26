@@ -8,6 +8,7 @@ import CardActions from "@material-ui/core/CardActions";
 import IconButton from "@material-ui/core/IconButton";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMoreRounded";
 import Collapse from "@material-ui/core/Collapse";
+import Rating from '@material-ui/lab/Rating';
 
 import {useTranslation} from "react-i18next";
 
@@ -19,6 +20,11 @@ import UniformCard from '../UniformCard';
 import GeneralHorizontalCrossDivider from '../GeneralHorizontalCrossDivider';
 
 import pkuLogo from "../../assets/images/pku-logo.svg"
+import englishLevelIcon from '../../assets/images/language-level/english.level.language.icon.png'
+import languageReadingIcon from '../../assets/images/language-level/reading.language.icon.png'
+import languageWritingIcon from '../../assets/images/language-level/writing.language.icon.png'
+import languageListeningIcon from '../../assets/images/language-level/listening.language.icon.png'
+import languageSpeakingIcon from '../../assets/images/language-level/speaking.language.icon.png'
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -30,8 +36,11 @@ const useStyles = makeStyles((theme) => ({
     }, expandOpen: {
         transform: 'rotate(180deg)',
     }, pkuLogo: {
-        width: 100,
-        height: 100
+        width: 100, height: 100
+    }, englishLevelIcon: {
+        width: 156, height: 156
+    }, languageSkillIcon: {
+        width: 48, height: 36
     }
 }));
 
@@ -47,7 +56,7 @@ export default function ProfileRunnerCard() {
 
     return (<UniformCard className={classes.root}>
         <CardContent>
-            <Grid container spacing={4}>
+            <Grid container spacing={2}>
                 <Grid container xs={4} alignContent="center" justifyContent="center">
                     <CardMedia
                         image={pkuLogo}
@@ -65,6 +74,79 @@ export default function ProfileRunnerCard() {
                     <Typography variant="caption" align="center" color="textSecondary" display="block">
                         {t('me:genInfo.education.college.approach')}
                     </Typography>
+                </Grid>
+                <Grid item xs={12}>
+                    <GeneralHorizontalCrossDivider/>
+                </Grid>
+                <Grid container xs={4} alignContent="center" justifyContent="center">
+                    <Grid container xs={12} justifyContent="center">
+                        <CardMedia
+                            image={englishLevelIcon}
+                            title="English Level Icon"
+                            className={classes.englishLevelIcon}
+                        />
+                    </Grid>
+                    <Typography variant="button" align="center" color="primary" display="block">
+                        {t('me:genInfo.education.englishLevel.title')}
+                    </Typography>
+                </Grid>
+                <Grid container xs={8} spacing={1} alignItems="center" alignContent="center" justifyContent="center">
+                    <Grid item xs={6}>
+                        <Grid container alignContent="center" justifyContent="center">
+                            <CardMedia
+                                image={languageReadingIcon}
+                                title="Reading Icon"
+                                className={classes.languageSkillIcon}
+                            />
+                        </Grid>
+                    </Grid>
+                    <Grid item xs={6}>
+                        <Grid container justifyContent="center">
+                            <Rating defaultValue={4.5} precision={0.5} size='small' readOnly/>
+                        </Grid>
+                    </Grid>
+                    <Grid item xs={6}>
+                        <Grid container alignContent="center" justifyContent="center">
+                            <CardMedia
+                                image={languageWritingIcon}
+                                title="Reading Icon"
+                                className={classes.languageSkillIcon}
+                            />
+                        </Grid>
+                    </Grid>
+                    <Grid item xs={6}>
+                        <Grid container justifyContent="center">
+                            <Rating defaultValue={4} precision={0.5} size='small' readOnly/>
+                        </Grid>
+                    </Grid>
+                    <Grid item xs={6}>
+                        <Grid container alignContent="center" justifyContent="center">
+                            <CardMedia
+                                image={languageListeningIcon}
+                                title="Reading Icon"
+                                className={classes.languageSkillIcon}
+                            />
+                        </Grid>
+                    </Grid>
+                    <Grid item xs={6}>
+                        <Grid container justifyContent="center">
+                            <Rating defaultValue={4} precision={0.5} size='small' readOnly/>
+                        </Grid>
+                    </Grid>
+                    <Grid item xs={6}>
+                        <Grid container alignContent="center" justifyContent="center">
+                            <CardMedia
+                                image={languageSpeakingIcon}
+                                title="Reading Icon"
+                                className={classes.languageSkillIcon}
+                            />
+                        </Grid>
+                    </Grid>
+                    <Grid item xs={6}>
+                        <Grid container justifyContent="center">
+                            <Rating defaultValue={3.5} precision={0.5} size='small' readOnly/>
+                        </Grid>
+                    </Grid>
                 </Grid>
                 <Grid item xs={12}>
                     <GeneralHorizontalCrossDivider/>

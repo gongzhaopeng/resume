@@ -17,7 +17,7 @@ import SkillDetailDialog from './SkillDetailDialog'
 
 import {ReactComponent as SpringLogo} from '../assets/images/logos/spring-logo.svg'
 import {ReactComponent as MicroserviceLogo} from '../assets/images/logos/microservice-logo.svg'
-import {ReactComponent as SpringCloudLogo} from '../assets/images/logos/spring-cloud.logo.svg'
+import {ReactComponent as SpringCloudLogo} from '../assets/images/logos/spring-cloud-logo.svg'
 import {ReactComponent as KubernetesLogo} from '../assets/images/logos/kubernetes-logo.svg'
 import {ReactComponent as NodejsLogo} from '../assets/images/logos/node-js-logo.svg'
 
