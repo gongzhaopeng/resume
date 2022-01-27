@@ -9,6 +9,7 @@ import IconButton from "@material-ui/core/IconButton";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMoreRounded";
 import Collapse from "@material-ui/core/Collapse";
 import Rating from '@material-ui/lab/Rating';
+import LinearProgress from '@material-ui/core/LinearProgress';
 
 import {useTranslation} from "react-i18next";
 
@@ -150,6 +151,37 @@ export default function ProfileRunnerCard() {
                 </Grid>
                 <Grid item xs={12}>
                     <GeneralHorizontalCrossDivider/>
+                </Grid>
+                <Grid item xs={12}>
+                    <Typography variant="button" align="center" color="secondary" display="block">
+                        {t('me:genInfo.education.readTechBooks.title')}
+                    </Typography>
+                </Grid>
+                <Grid container xs={12} spacing={0}>
+                    <Grid item xs={5}>
+                        <Typography variant="body1" align="center" color="textPrimary" display="block">
+                            Essential Scrum
+                        </Typography>
+                    </Grid>
+                    <Grid item xs={7}>
+                        <Typography variant="caption" align="left" color="textPrimary" display="block">
+                            a practical guide to the most popular agile process
+                        </Typography>
+                    </Grid>
+                    <Grid item xs={3}>
+                        <Typography variant="caption" align="right" color="textSecondary" display="block">
+                            8th edition
+                        </Typography>
+                    </Grid>
+                    <Grid item xs={5}>
+                        <Typography variant="caption" align="center" color="textSecondary" display="block">
+                            James F. Kurose
+                        </Typography>
+                    </Grid>
+                    <Grid container xs={3} alignContent="center">
+                        <LinearProgress variant="buffer" value={80} valueBuffer={90} color="primary"
+                                        style={{width: "100%"}}/>
+                    </Grid>
                 </Grid>
             </Grid>
         </CardContent>

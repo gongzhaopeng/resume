@@ -72,6 +72,9 @@
       },
       "englishLevel": {
         "title": "英语水平"
+      },
+      "readTechBooks": {
+        "title": "部分读过的技术类书籍."
       }
     }
   }

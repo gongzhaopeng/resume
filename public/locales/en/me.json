@@ -72,6 +72,9 @@
       },
       "englishLevel": {
         "title": "English Level"
+      },
+      "readTechBooks": {
+        "title": "Some technical books I have read."
       }
     }
   }
