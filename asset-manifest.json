@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/resume/static/css/main.5c01d3c8.chunk.css",
-    "main.js": "/resume/static/js/main.3cd51496.chunk.js",
-    "main.js.map": "/resume/static/js/main.3cd51496.chunk.js.map",
-    "runtime-main.js": "/resume/static/js/runtime-main.64924f00.js",
-    "runtime-main.js.map": "/resume/static/js/runtime-main.64924f00.js.map",
+    "main.js": "/resume/static/js/main.7c756325.chunk.js",
+    "main.js.map": "/resume/static/js/main.7c756325.chunk.js.map",
+    "runtime-main.js": "/resume/static/js/runtime-main.d895f946.js",
+    "runtime-main.js.map": "/resume/static/js/runtime-main.d895f946.js.map",
     "static/css/2.bd135b59.chunk.css": "/resume/static/css/2.bd135b59.chunk.css",
-    "static/js/2.f5f2ec14.chunk.js": "/resume/static/js/2.f5f2ec14.chunk.js",
-    "static/js/2.f5f2ec14.chunk.js.map": "/resume/static/js/2.f5f2ec14.chunk.js.map",
-    "static/js/3.f73714d2.chunk.js": "/resume/static/js/3.f73714d2.chunk.js",
-    "static/js/3.f73714d2.chunk.js.map": "/resume/static/js/3.f73714d2.chunk.js.map",
+    "static/js/2.8dd9c2c3.chunk.js": "/resume/static/js/2.8dd9c2c3.chunk.js",
+    "static/js/2.8dd9c2c3.chunk.js.map": "/resume/static/js/2.8dd9c2c3.chunk.js.map",
+    "static/js/3.0fc5255b.chunk.js": "/resume/static/js/3.0fc5255b.chunk.js",
+    "static/js/3.0fc5255b.chunk.js.map": "/resume/static/js/3.0fc5255b.chunk.js.map",
     "index.html": "/resume/index.html",
     "static/css/2.bd135b59.chunk.css.map": "/resume/static/css/2.bd135b59.chunk.css.map",
     "static/css/main.5c01d3c8.chunk.css.map": "/resume/static/css/main.5c01d3c8.chunk.css.map",
-    "static/js/2.f5f2ec14.chunk.js.LICENSE.txt": "/resume/static/js/2.f5f2ec14.chunk.js.LICENSE.txt",
+    "static/js/2.8dd9c2c3.chunk.js.LICENSE.txt": "/resume/static/js/2.8dd9c2c3.chunk.js.LICENSE.txt",
     "static/media/avatar.857e9bcc.jpeg": "/resume/static/media/avatar.857e9bcc.jpeg",
     "static/media/card.run-levels.runner.0b4be24f.jpeg": "/resume/static/media/card.run-levels.runner.0b4be24f.jpeg",
     "static/media/detail.run-levels.runner.a476e373.jpeg": "/resume/static/media/detail.run-levels.runner.a476e373.jpeg",
@@ -33,10 +33,10 @@
     "static/media/trophies.achievements.runner.3273cdd7.jpeg": "/resume/static/media/trophies.achievements.runner.3273cdd7.jpeg"
   },
   "entrypoints": [
-    "static/js/runtime-main.64924f00.js",
+    "static/js/runtime-main.d895f946.js",
     "static/css/2.bd135b59.chunk.css",
-    "static/js/2.f5f2ec14.chunk.js",
+    "static/js/2.8dd9c2c3.chunk.js",
     "static/css/main.5c01d3c8.chunk.css",
-    "static/js/main.3cd51496.chunk.js"
+    "static/js/main.7c756325.chunk.js"
   ]
 }
