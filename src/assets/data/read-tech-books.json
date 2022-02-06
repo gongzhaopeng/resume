@@ -1,0 +1,46 @@
+{
+  "top": [
+    {
+      "title": "Essential Scrum",
+      "subTitle": "a practical guide to the most popular agile process",
+      "edition": "",
+      "author": "Kenneth S. Rubin",
+      "process": {
+        "read": 100,
+        "master": 85
+      }
+    },
+    {
+      "title": "Microservices Patterns",
+      "subTitle": "with examples in java",
+      "edition": "",
+      "author": "Chris Richardson",
+      "process": {
+        "read": 100,
+        "master": 75
+      }
+    }
+  ],
+  "pool": [
+    {
+      "title": "Essential Scrum",
+      "subTitle": "a practical guide to the most popular agile process",
+      "edition": "",
+      "author": "Kenneth S. Rubin",
+      "process": {
+        "read": 100,
+        "master": 85
+      }
+    },
+    {
+      "title": "Microservices Patterns",
+      "subTitle": "with examples in java",
+      "edition": "",
+      "author": "Chris Richardson",
+      "process": {
+        "read": 100,
+        "master": 75
+      }
+    }
+  ]
+}

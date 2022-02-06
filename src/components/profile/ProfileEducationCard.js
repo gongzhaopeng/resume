@@ -20,6 +20,8 @@ import {lime, green, lightGreen} from '@material-ui/core/colors';
 import UniformCard from '../UniformCard';
 import GeneralHorizontalCrossDivider from '../GeneralHorizontalCrossDivider';
 
+import readTechBooks from "../../assets/data/read-tech-books.json"
+
 import pkuLogo from "../../assets/images/pku-logo.svg"
 import englishLevelIcon from '../../assets/images/language-level/english.level.language.icon.png'
 import languageReadingIcon from '../../assets/images/language-level/reading.language.icon.png'
@@ -157,7 +159,7 @@ export default function ProfileRunnerCard() {
                         {t('me:genInfo.education.readTechBooks.title')}
                     </Typography>
                 </Grid>
-                {t('me:genInfo.education.readTechBooks.top', {returnObjects: true}).map(book => (
+                {readTechBooks.top.map(book => (
                     [
                         <Grid key={book.title} container xs={12} spacing={0}>
                             <Grid item xs={5}>
@@ -204,7 +206,7 @@ export default function ProfileRunnerCard() {
         </CardActions>
         <Collapse in={expanded} timeout="auto" unmountOnExit>
             <CardContent>
-                {t('me:genInfo.education.readTechBooks.pool', {returnObjects: true}).map(book => (
+                {readTechBooks.pool.map(book => (
                     [
                         <Grid key={book.title} container xs={12} spacing={0}>
                             <Grid item xs={5}>
