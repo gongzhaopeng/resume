@@ -17,29 +17,199 @@
       "author": "Chris Richardson",
       "process": {
         "read": 100,
+        "master": 80
+      }
+    },
+    {
+      "title": "Computer Networking",
+      "subTitle": "a top-down approach",
+      "edition": "8th edition",
+      "author": "James F. Kurose",
+      "process": {
+        "read": 100,
         "master": 75
+      }
+    },
+    {
+      "title": "Kubernetes in Action",
+      "subTitle": "",
+      "edition": "",
+      "author": "Marko Luksa",
+      "process": {
+        "read": 100,
+        "master": 80
+      }
+    },
+    {
+      "title": "Spring Microservices in Action",
+      "subTitle": "",
+      "edition": "",
+      "author": "John Carnell",
+      "process": {
+        "read": 100,
+        "master": 100
       }
     }
   ],
   "pool": [
     {
-      "title": "Essential Scrum",
-      "subTitle": "a practical guide to the most popular agile process",
+      "title": "Thinking in Java",
+      "subTitle": "",
+      "edition": "4th edition",
+      "author": "Bruce Eckel",
+      "process": {
+        "read": 100,
+        "master": 100
+      }
+    },
+    {
+      "title": "Spring in Action",
+      "subTitle": "",
+      "edition": "4th edition",
+      "author": "Craig Walls",
+      "process": {
+        "read": 100,
+        "master": 100
+      }
+    },
+    {
+      "title": "Programming in Scala",
+      "subTitle": "",
+      "edition": "2nd edition",
+      "author": "Martin Odersky",
+      "process": {
+        "read": 100,
+        "master": 100
+      }
+    },
+    {
+      "title": "Introduction to Algorithms",
+      "subTitle": "",
+      "edition": "3rd edition",
+      "author": "Thomas H. Cormen",
+      "process": {
+        "read": 50,
+        "master": 30
+      }
+    },
+    {
+      "title": "Head First Design Patterns",
+      "subTitle": "",
       "edition": "",
-      "author": "Kenneth S. Rubin",
+      "author": "Eric Freeman",
+      "process": {
+        "read": 100,
+        "master": 100
+      }
+    },
+    {
+      "title": "Java Performance",
+      "subTitle": "the definitive guide",
+      "edition": "",
+      "author": "Scott Oaks",
       "process": {
         "read": 100,
         "master": 85
       }
     },
     {
-      "title": "Microservices Patterns",
-      "subTitle": "with examples in java",
+      "title": "UML @ Classroom",
+      "subTitle": "an introduction to object-oriented modeling",
       "edition": "",
-      "author": "Chris Richardson",
+      "author": "Martina Seidl",
       "process": {
         "read": 100,
-        "master": 75
+        "master": 100
+      }
+    },
+    {
+      "title": "Test-Driven Development",
+      "subTitle": "by example",
+      "edition": "",
+      "author": "Kent Beck",
+      "process": {
+        "read": 65,
+        "master": 65
+      }
+    },
+    {
+      "title": "RESTful Web APIs",
+      "subTitle": "",
+      "edition": "",
+      "author": "Leonard Richardson",
+      "process": {
+        "read": 35,
+        "master": 35
+      }
+    },
+    {
+      "title": "Spring Boot in Action",
+      "subTitle": "",
+      "edition": "",
+      "author": "Craig Walls",
+      "process": {
+        "read": 100,
+        "master": 100
+      }
+    },
+    {
+      "title": "Spring in Action",
+      "subTitle": "",
+      "edition": "5th edition",
+      "author": "Craig Walls",
+      "process": {
+        "read": 100,
+        "master": 100
+      }
+    },
+    {
+      "title": "Modern Java in Action",
+      "subTitle": "lambdas, streams, functional and reactive programming",
+      "edition": "",
+      "author": "Raoul-Gabriel Urma",
+      "process": {
+        "read": 100,
+        "master": 100
+      }
+    },
+    {
+      "title": "Beginning Python",
+      "subTitle": "from novice to professional",
+      "edition": "3rd edition",
+      "author": "Magnus Lie Hetland",
+      "process": {
+        "read": 65,
+        "master": 65
+      }
+    },
+    {
+      "title": "React in Action",
+      "subTitle": "",
+      "edition": "",
+      "author": "Mark Tielens Thomas",
+      "process": {
+        "read": 100,
+        "master": 100
+      }
+    },
+    {
+      "title": "Node.js in Action",
+      "subTitle": "",
+      "edition": "",
+      "author": "Mike Cantelon",
+      "process": {
+        "read": 50,
+        "master": 50
+      }
+    },
+    {
+      "title": "Android Programming",
+      "subTitle": "the big nerd ranch guide",
+      "edition": "3rd edition",
+      "author": "Bill Phillips",
+      "process": {
+        "read": 100,
+        "master": 100
       }
     }
   ]
