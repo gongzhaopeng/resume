@@ -235,7 +235,8 @@ export default function ProfileHeadCard() {
                 </Grid>
                 <Grid container xs={12} alignItems="center" justifyContent="center">
                     {t('me:genInfo.beliefs.top', {returnObjects: true}).map(belief => (
-                        <Typography variant="body1" color="textSecondary" align="center" style={{"width": '100%'}}>
+                        <Typography key={belief} variant="body1" color="textSecondary" align="center"
+                                    style={{"width": '100%'}}>
                             {belief}
                         </Typography>))}
                 </Grid>
@@ -256,7 +257,7 @@ export default function ProfileHeadCard() {
         <Collapse in={expanded} timeout="auto" unmountOnExit>
             <CardContent>
                 {t('me:genInfo.beliefs.pool', {returnObjects: true}).map(belief => (
-                    <Typography variant="body2" color="textSecondary" paragraph>
+                    <Typography key={belief} variant="body2" color="textSecondary" paragraph>
                         {belief}
                     </Typography>))}
             </CardContent>

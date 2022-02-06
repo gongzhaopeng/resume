@@ -74,8 +74,64 @@
         "title": "English Level"
       },
       "readTechBooks": {
-        "title": "Some technical books I have read."
+        "title": "Some technical books I have read.",
+        "top": [
+          {
+            "title": "Essential Scrum",
+            "subTitle": "a practical guide to the most popular agile process",
+            "edition": "",
+            "author": "Kenneth S. Rubin",
+            "process": {
+              "read": 100,
+              "master": 85
+            }
+          },
+          {
+            "title": "Microservices Patterns",
+            "subTitle": "with examples in java",
+            "edition": "",
+            "author": "Chris Richardson",
+            "process": {
+              "read": 100,
+              "master": 75
+            }
+          }
+        ],
+        "pool": [
+          {
+            "title": "Essential Scrum",
+            "subTitle": "a practical guide to the most popular agile process",
+            "edition": "",
+            "author": "Kenneth S. Rubin",
+            "process": {
+              "read": 100,
+              "master": 85
+            }
+          },
+          {
+            "title": "Microservices Patterns",
+            "subTitle": "with examples in java",
+            "edition": "",
+            "author": "Chris Richardson",
+            "process": {
+              "read": 100,
+              "master": 75
+            }
+          }
+        ]
       }
+    },
+    "family": {
+      "slogan": "The three of us."
+    },
+    "soccer": {
+      "slogan": "I love soccer."
+    },
+    "movie": {
+      "slogan": "The movies I like."
+    },
+    "music": {
+      "slogan": "The music I like."
     }
   }
 }
