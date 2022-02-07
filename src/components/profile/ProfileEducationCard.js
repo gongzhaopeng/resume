@@ -161,7 +161,7 @@ export default function ProfileRunnerCard() {
                 </Grid>
                 {readTechBooks.top.map(book => (
                     [
-                        <Grid key={book.title} container xs={12} spacing={0}>
+                        <Grid key={book.title + book.edition + book.author} container xs={12} spacing={0}>
                             <Grid item xs={5}>
                                 <Typography variant="body2" align="center" display="block"
                                             style={{color: green[900], marginLeft: 5, marginRight: 5}}>
@@ -208,7 +208,7 @@ export default function ProfileRunnerCard() {
             <CardContent>
                 {readTechBooks.pool.map(book => (
                     [
-                        <Grid key={book.title} container xs={12} spacing={0}>
+                        <Grid key={book.title + book.edition + book.author} container xs={12} spacing={0}>
                             <Grid item xs={5}>
                                 <Typography variant="caption" align="center" display="block"
                                             style={{color: lightGreen[800], marginLeft: 5, marginRight: 5}}>
@@ -223,7 +223,7 @@ export default function ProfileRunnerCard() {
                             <Grid item xs={3}>
                                 <Typography variant="caption" align="right" color="textSecondary" display="block">
                                     {book.edition}
-                                </Typography>,
+                                </Typography>
                             </Grid>
                             <Grid item xs={5}>
                                 <Typography variant="caption" align="center" color="textSecondary" display="block">
