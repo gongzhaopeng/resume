@@ -15,5 +15,8 @@
   },
   "language": {
     "switchMark": "中"
+  },
+  "contact": {
+    "label": "contact"
   }
 }
