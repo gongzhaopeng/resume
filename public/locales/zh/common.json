@@ -15,5 +15,8 @@
   },
   "language": {
     "switchMark": "en"
+  },
+  "contact": {
+    "label": "联系我"
   }
 }

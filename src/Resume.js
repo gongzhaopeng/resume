@@ -33,6 +33,7 @@ import Experiences from './components/Experiences'
 import Career from './components/Career'
 import MetaDesign from "./components/MetaDesign";
 import LanguageToggle from './components/LanguageToggle'
+import ContactMe from './components/ContactMe'
 
 const homeTopics = ['me', 'skills', 'experiences', 'career']
 const globalDefaultTopicIndex = 0
@@ -79,7 +80,7 @@ function CustomFab({fabAtHome, onClick}) {
 
     const fabProps = {
         color: 'default',
-        text: 'meta design',
+        text: 'meta',
         icon: <NavigationIcon/>
     };
     if (!fabAtHome) {
@@ -174,6 +175,7 @@ function ResumeContent() {
                 </Switch>
                 <CustomFab fabAtHome={!isMetaDesignTopic} onClick={onClickFab.bind(null, !isMetaDesignTopic)}/>
                 <LanguageToggle/>
+                <ContactMe/>
             </Container>
         </MuiPickersUtilsProvider>
     )
