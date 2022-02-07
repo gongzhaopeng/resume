@@ -63,7 +63,8 @@ const useStyles = makeStyles(theme => ({
         position: 'fixed',
         bottom: theme.spacing(2),
         right: theme.spacing(2),
-        fontWeight: 'bolder'
+        fontWeight: 'bolder',
+        zIndex: 1000
     },
     bottomWord: {
         ...theme.typography.h4,

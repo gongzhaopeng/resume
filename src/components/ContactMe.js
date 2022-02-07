@@ -18,7 +18,7 @@ import {yellow} from "@material-ui/core/colors";
 
 const useStyles = makeStyles(theme => ({
     fab: {
-        position: 'fixed', bottom: theme.spacing(2), right: "45%", fontWeight: 'bolder'
+        position: 'fixed', bottom: theme.spacing(2), right: "45%", fontWeight: 'bolder', zIndex: 1000
     }, content: {
         backgroundColor: yellow[50], padding: 10
     }

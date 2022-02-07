@@ -13,7 +13,8 @@ const useStyles = makeStyles(theme => ({
         position: 'fixed',
         bottom: theme.spacing(2),
         left: theme.spacing(2),
-        fontWeight: 'bolder'
+        fontWeight: 'bolder',
+        zIndex: 1000
     },
     avatar: {
         backgroundColor: amber[800]
