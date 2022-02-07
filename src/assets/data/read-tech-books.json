@@ -23,7 +23,7 @@
     {
       "title": "Computer Networking",
       "subTitle": "a top-down approach",
-      "edition": "8th edition",
+      "edition": "8th ed.",
       "author": "James F. Kurose",
       "process": {
         "read": 100,
@@ -55,7 +55,7 @@
     {
       "title": "Thinking in Java",
       "subTitle": "",
-      "edition": "4th edition",
+      "edition": "4th ed.",
       "author": "Bruce Eckel",
       "process": {
         "read": 100,
@@ -65,7 +65,7 @@
     {
       "title": "Spring in Action",
       "subTitle": "",
-      "edition": "4th edition",
+      "edition": "4th ed.",
       "author": "Craig Walls",
       "process": {
         "read": 100,
@@ -75,7 +75,7 @@
     {
       "title": "Programming in Scala",
       "subTitle": "",
-      "edition": "2nd edition",
+      "edition": "2nd ed.",
       "author": "Martin Odersky",
       "process": {
         "read": 100,
@@ -85,7 +85,7 @@
     {
       "title": "Introduction to Algorithms",
       "subTitle": "",
-      "edition": "3rd edition",
+      "edition": "3rd ed.",
       "author": "Thomas H. Cormen",
       "process": {
         "read": 50,
@@ -155,7 +155,7 @@
     {
       "title": "Spring in Action",
       "subTitle": "",
-      "edition": "5th edition",
+      "edition": "5th ed.",
       "author": "Craig Walls",
       "process": {
         "read": 100,
@@ -175,7 +175,7 @@
     {
       "title": "Beginning Python",
       "subTitle": "from novice to professional",
-      "edition": "3rd edition",
+      "edition": "3rd ed.",
       "author": "Magnus Lie Hetland",
       "process": {
         "read": 65,
@@ -205,7 +205,7 @@
     {
       "title": "Android Programming",
       "subTitle": "the big nerd ranch guide",
-      "edition": "3rd edition",
+      "edition": "3rd ed.",
       "author": "Bill Phillips",
       "process": {
         "read": 100,
