@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/resume/static/css/main.5c01d3c8.chunk.css",
-    "main.js": "/resume/static/js/main.96ffd171.chunk.js",
-    "main.js.map": "/resume/static/js/main.96ffd171.chunk.js.map",
+    "main.js": "/resume/static/js/main.e1ba2891.chunk.js",
+    "main.js.map": "/resume/static/js/main.e1ba2891.chunk.js.map",
     "runtime-main.js": "/resume/static/js/runtime-main.4524af55.js",
     "runtime-main.js.map": "/resume/static/js/runtime-main.4524af55.js.map",
     "static/css/2.bd135b59.chunk.css": "/resume/static/css/2.bd135b59.chunk.css",
@@ -19,7 +19,11 @@
     "static/media/detail.run-levels.runner.a476e373.jpeg": "/resume/static/media/detail.run-levels.runner.a476e373.jpeg",
     "static/media/english.level.language.icon.d60233b0.png": "/resume/static/media/english.level.language.icon.d60233b0.png",
     "static/media/getFetch.cjs": "/resume/static/media/getFetch.582d29c4.cjs",
+    "static/media/i.goat.i-love-soccer.949bfb9d.jpeg": "/resume/static/media/i.goat.i-love-soccer.949bfb9d.jpeg",
+    "static/media/i.me.i-love-soccer.2666732f.jpeg": "/resume/static/media/i.me.i-love-soccer.2666732f.jpeg",
     "static/media/i.the-three-of-us.b6425ab1.jpeg": "/resume/static/media/i.the-three-of-us.b6425ab1.jpeg",
+    "static/media/ii.goat.i-love-soccer.9e799169.jpeg": "/resume/static/media/ii.goat.i-love-soccer.9e799169.jpeg",
+    "static/media/ii.me.i-love-soccer.e778f427.jpeg": "/resume/static/media/ii.me.i-love-soccer.e778f427.jpeg",
     "static/media/ii.the-three-of-us.323d49ef.jpeg": "/resume/static/media/ii.the-three-of-us.323d49ef.jpeg",
     "static/media/iii.the-three-of-us.4ac6cafd.jpeg": "/resume/static/media/iii.the-three-of-us.4ac6cafd.jpeg",
     "static/media/iv.the-three-of-us.27abf96d.jpeg": "/resume/static/media/iv.the-three-of-us.27abf96d.jpeg",
@@ -31,17 +35,20 @@
     "static/media/personal-records.achievements.runner.ac4c0fa7.jpeg": "/resume/static/media/personal-records.achievements.runner.ac4c0fa7.jpeg",
     "static/media/pku-logo.8786d9d8.svg": "/resume/static/media/pku-logo.8786d9d8.svg",
     "static/media/index.css": "/resume/static/media/roboto-vietnamese-400-normal.52cebac0.woff2",
+    "static/media/ronaldinio.i-love-soccer.efb8893f.jpeg": "/resume/static/media/ronaldinio.i-love-soccer.efb8893f.jpeg",
+    "static/media/ronaldo.i-love-soccer.282ef73a.jpeg": "/resume/static/media/ronaldo.i-love-soccer.282ef73a.jpeg",
     "static/media/spring-cloud-logo.521541ab.svg": "/resume/static/media/spring-cloud-logo.521541ab.svg",
     "static/media/spring-logo.5e950eb4.svg": "/resume/static/media/spring-logo.5e950eb4.svg",
     "static/media/statistics.activity.runner.00bd8035.jpeg": "/resume/static/media/statistics.activity.runner.00bd8035.jpeg",
     "static/media/streaks.achievements.runner.c5276ac2.jpeg": "/resume/static/media/streaks.achievements.runner.c5276ac2.jpeg",
-    "static/media/trophies.achievements.runner.3273cdd7.jpeg": "/resume/static/media/trophies.achievements.runner.3273cdd7.jpeg"
+    "static/media/trophies.achievements.runner.3273cdd7.jpeg": "/resume/static/media/trophies.achievements.runner.3273cdd7.jpeg",
+    "static/media/zidane.i-love-soccer.0af2c730.jpeg": "/resume/static/media/zidane.i-love-soccer.0af2c730.jpeg"
   },
   "entrypoints": [
     "static/js/runtime-main.4524af55.js",
     "static/css/2.bd135b59.chunk.css",
     "static/js/2.1e0e4d83.chunk.js",
     "static/css/main.5c01d3c8.chunk.css",
-    "static/js/main.96ffd171.chunk.js"
+    "static/js/main.e1ba2891.chunk.js"
   ]
 }
