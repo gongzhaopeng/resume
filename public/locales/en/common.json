@@ -17,6 +17,14 @@
     "switchMark": "中"
   },
   "contact": {
-    "label": "contact"
+    "label": "contact",
+    "location": {
+      "country": "China",
+      "city": "Peking",
+      "district": "ChaoYang",
+      "street": "WangJing"
+    },
+    "email": "horn.atzu68@gmail.com",
+    "mobile": "+86-18612447216"
   }
 }

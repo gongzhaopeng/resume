@@ -17,6 +17,14 @@
     "switchMark": "en"
   },
   "contact": {
-    "label": "联系我"
+    "label": "联系我",
+    "location": {
+      "country": "中国",
+      "city": "北京",
+      "district": "朝阳",
+      "street": "望京"
+    },
+    "email": "horn.atzu68@gmail.com",
+    "mobile": "18612447216"
   }
 }
