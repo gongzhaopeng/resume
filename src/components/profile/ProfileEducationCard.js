@@ -163,7 +163,7 @@ export default function ProfileRunnerCard() {
                     [
                         <Grid key={book.title + book.edition + book.author} container xs={12} spacing={0}>
                             <Grid item xs={5}>
-                                <Typography variant="body2" align="center" display="block"
+                                <Typography variant="body2" align="left" display="block"
                                             style={{color: green[900], marginLeft: 5, marginRight: 5}}>
                                     {book.title}
                                 </Typography>
@@ -173,13 +173,14 @@ export default function ProfileRunnerCard() {
                                     {book.subTitle}
                                 </Typography>
                             </Grid>
-                            <Grid item xs={3}>
-                                <Typography variant="caption" align="right" color="textSecondary" display="block">
+                            <Grid item xs={1}/>
+                            <Grid item xs={2}>
+                                <Typography variant="caption" align="left" color="textSecondary" display="block">
                                     {book.edition}
                                 </Typography>
                             </Grid>
                             <Grid item xs={5}>
-                                <Typography variant="caption" align="center" color="textSecondary" display="block">
+                                <Typography variant="caption" align="left" color="textSecondary" display="block">
                                     {book.author}
                                 </Typography>
                             </Grid>
@@ -210,7 +211,7 @@ export default function ProfileRunnerCard() {
                     [
                         <Grid key={book.title + book.edition + book.author} container xs={12} spacing={0}>
                             <Grid item xs={5}>
-                                <Typography variant="caption" align="center" display="block"
+                                <Typography variant="caption" align="left" display="block"
                                             style={{color: lightGreen[800], marginLeft: 5, marginRight: 5}}>
                                     {book.title}
                                 </Typography>
@@ -220,13 +221,14 @@ export default function ProfileRunnerCard() {
                                     {book.subTitle}
                                 </Typography>
                             </Grid>
-                            <Grid item xs={3}>
-                                <Typography variant="caption" align="right" color="textSecondary" display="block">
+                            <Grid item xs={1}/>
+                            <Grid item xs={2}>
+                                <Typography variant="caption" align="left" color="textSecondary" display="block">
                                     {book.edition}
                                 </Typography>
                             </Grid>
                             <Grid item xs={5}>
-                                <Typography variant="caption" align="center" color="textSecondary" display="block">
+                                <Typography variant="caption" align="left" color="textSecondary" display="block">
                                     {book.author}
                                 </Typography>
                             </Grid>
