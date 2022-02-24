@@ -28,7 +28,7 @@ import {brown, cyan, green, lime, deepOrange, deepPurple} from '@material-ui/cor
 
 import ScrollToTop from './components/ScrollToTop'
 import Profile from './components/profile/Profile';
-import Skills from './components/Skills'
+import Skills from './components/skills/Skills'
 import Experiences from './components/Experiences'
 import Career from './components/Career'
 import MetaDesign from "./components/MetaDesign";

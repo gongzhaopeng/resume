@@ -22,7 +22,7 @@ import GeneralHorizontalCrossDivider from '../GeneralHorizontalCrossDivider';
 
 import readTechBooks from "../../assets/data/read-tech-books.json"
 
-import pkuLogo from "../../assets/images/pku-logo.svg"
+import pkuLogo from "../../assets/images/pku.logo.svg"
 import englishLevelIcon from '../../assets/images/language-level/english.level.language.icon.png'
 import languageReadingIcon from '../../assets/images/language-level/reading.language.icon.png'
 import languageWritingIcon from '../../assets/images/language-level/writing.language.icon.png'

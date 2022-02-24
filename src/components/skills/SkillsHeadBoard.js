@@ -11,15 +11,15 @@ import SvgIcon from '@material-ui/core/SvgIcon'
 import {makeStyles} from '@material-ui/core/styles';
 import {cyan} from '@material-ui/core/colors';
 
-import UniformCard from './UniformCard'
+import UniformCard from '../UniformCard'
 import SkillItemChip from './SkillItemChip'
 import SkillDetailDialog from './SkillDetailDialog'
 
-import {ReactComponent as SpringLogo} from '../assets/images/logos/spring-logo.svg'
-import {ReactComponent as MicroserviceLogo} from '../assets/images/logos/microservice-logo.svg'
-import {ReactComponent as SpringCloudLogo} from '../assets/images/logos/spring-cloud-logo.svg'
-import {ReactComponent as KubernetesLogo} from '../assets/images/logos/kubernetes-logo.svg'
-import {ReactComponent as NodejsLogo} from '../assets/images/logos/node-js-logo.svg'
+import {ReactComponent as SpringLogo} from '../../assets/images/logos/spring.logo.svg'
+import {ReactComponent as MicroserviceLogo} from '../../assets/images/logos/microservice.logo.svg'
+import {ReactComponent as SpringCloudLogo} from '../../assets/images/logos/spring-cloud.logo.svg'
+import {ReactComponent as KubernetesLogo} from '../../assets/images/logos/kubernetes.logo.svg'
+import {ReactComponent as NodejsLogo} from '../../assets/images/logos/node-js.logo.svg'
 
 const skillsData = [
     {
@@ -90,7 +90,7 @@ const useStyles = makeStyles(theme => ({
     }
 }));
 
-function Skills() {
+function SkillsHeadBoard() {
 
     const {skillItemChips, letterSkillLogo} = useStyles()
 
@@ -112,41 +112,32 @@ function Skills() {
     }
 
     return (
-        <Fragment>
-            <UniformCard style={{backgroundColor: cyan[300], minHeight: 200}}>
-                <CardContent className={skillItemChips}>
-                    {skillsData.map(({name, color, logo}) => {
-                        if (!logo)
-                            logo = <Avatar className={letterSkillLogo}>{name.charAt(0)}</Avatar>
+        <UniformCard style={{backgroundColor: cyan[300], minHeight: 200}}>
+            <CardContent className={skillItemChips}>
+                {skillsData.map(({name, color, logo}) => {
+                    if (!logo)
+                        logo = <Avatar className={letterSkillLogo}>{name.charAt(0)}</Avatar>
 
-                        return <SkillItemChip
-                            key={name}
-                            skillIcon={logo}
-                            skillName={name}
-                            selected={name === popoverSkill}
-                            blinking={name === blinkingSkill}
-                            color={color}
-                            onClick={onClickSkillItemChip.bind(null, name)}
-                        />
-                    })}
-                    {popoverSkill && (
-                        <SkillDetailDialog skillIcon={skillsNameToData[popoverSkill].logo}
-                                           skillName={popoverSkill}
-                                           onClose={onCloseSkillDetailDialog}>
-                            {skillsNameToData[popoverSkill].detail}
-                        </SkillDetailDialog>
-                    )}
-                </CardContent>
-            </UniformCard>
-            <UniformCard style={{backgroundColor: cyan[100], height: 200}}>
-                <CardContent>
-                    <Typography>
-                        Python is all around!
-                    </Typography>
-                </CardContent>
-            </UniformCard>
-        </Fragment>
+                    return <SkillItemChip
+                        key={name}
+                        skillIcon={logo}
+                        skillName={name}
+                        selected={name === popoverSkill}
+                        blinking={name === blinkingSkill}
+                        color={color}
+                        onClick={onClickSkillItemChip.bind(null, name)}
+                    />
+                })}
+                {popoverSkill && (
+                    <SkillDetailDialog skillIcon={skillsNameToData[popoverSkill].logo}
+                                       skillName={popoverSkill}
+                                       onClose={onCloseSkillDetailDialog}>
+                        {skillsNameToData[popoverSkill].detail}
+                    </SkillDetailDialog>
+                )}
+            </CardContent>
+        </UniformCard>
     )
 }
 
-export default Skills
+export default SkillsHeadBoard
