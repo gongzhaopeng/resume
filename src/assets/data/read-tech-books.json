@@ -21,6 +21,16 @@
       }
     },
     {
+      "title": "Domain-Driven Design",
+      "subTitle": "tackling complexity in the heart of software",
+      "edition": "",
+      "author": "Eric Evans",
+      "process": {
+        "read": 50,
+        "master": 35
+      }
+    },
+    {
       "title": "Computer Networking",
       "subTitle": "a top-down approach",
       "edition": "8th ed.",
