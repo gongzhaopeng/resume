@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Chip from '@material-ui/core/Chip'
+import Avatar from "@material-ui/core/Avatar";
 
 import {makeStyles} from '@material-ui/core/styles';
 import clsx from "clsx"
@@ -30,14 +31,13 @@ const useStyles = makeStyles({
     }
 })
 
-export function SkillItemChip({skillIcon, skillName, selected, blinking, ...rest}) {
+export function SkillItemChip({logoImg, logoWidthRatio, skillName, selected, blinking, ...rest}) {
 
     const {root, blinkingSkillItem} = useStyles()
 
     return <Chip
-        // variant="outlined"
         size="medium"
-        icon={skillIcon}
+        avatar={<Avatar src={logoImg} variant='rounded' style={{width: logoWidthRatio * 26, height: 26}}/>}
         label={skillName}
         clickable
         variant={selected ? 'default' : 'outlined'}

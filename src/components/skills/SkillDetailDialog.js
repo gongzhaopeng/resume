@@ -8,6 +8,7 @@ import CodeIcon from '@material-ui/icons/Code'
 import Rating from '@material-ui/lab/Rating'
 import Grid from '@material-ui/core/Grid'
 import Card from '@material-ui/core/Card'
+import Avatar from "@material-ui/core/Avatar";
 import AlarmOn from '@material-ui/icons/AlarmOn'
 import AlarmOff from '@material-ui/icons/AlarmOff'
 
@@ -16,16 +17,14 @@ import {brown, cyan, grey, lime, yellow} from '@material-ui/core/colors';
 
 const useStyles = makeStyles({
     header: {
-        height: 50,
+        height: 80,
         backgroundColor: yellow[600],
         margin: 0,
         padding: 10
     },
     titleText: {
         color: cyan[800],
-        fontWeight: 'bolder',
-        position: 'relative',
-        margin: 'auto'
+        fontWeight: 'bolder'
     },
     content: {
         height: 500,
@@ -44,7 +43,7 @@ const useStyles = makeStyles({
     }
 })
 
-export function SkillDetailDialog({skillIcon, skillName, onClose, children}) {
+export function SkillDetailDialog({logoImg, logoWidthRatio, skillName, onClose, children}) {
 
     const {header, titleText, content, metricsName} = useStyles()
 
@@ -53,11 +52,12 @@ export function SkillDetailDialog({skillIcon, skillName, onClose, children}) {
                 maxWidth='sm' fullWidth>
             <DialogTitle className={header}>
                 <Grid container spacing={0}>
-                    <Grid item xs={1} align='center'>
-                        {skillIcon}
+                    <Grid item xs={4}>
+                        <Avatar src={logoImg} variant='rounded' style={{width: logoWidthRatio * 60, height: 60}}/>
                     </Grid>
-                    <Grid item xs={10} align='center'>
-                        <Typography className={titleText}>
+                    <Grid item xs={1}/>
+                    <Grid container xs={7} alignContent='center'>
+                        <Typography className={titleText} variant='h6'>
                             {skillName}
                         </Typography>
                     </Grid>
