@@ -112,7 +112,7 @@ export default function ProfileRunnerCard() {
                         <Grid container alignContent="center" justifyContent="center">
                             <CardMedia
                                 image={languageWritingIcon}
-                                title="Reading Icon"
+                                title="Writing Icon"
                                 className={classes.languageSkillIcon}
                             />
                         </Grid>
@@ -126,7 +126,7 @@ export default function ProfileRunnerCard() {
                         <Grid container alignContent="center" justifyContent="center">
                             <CardMedia
                                 image={languageListeningIcon}
-                                title="Reading Icon"
+                                title="Listening Icon"
                                 className={classes.languageSkillIcon}
                             />
                         </Grid>
@@ -140,7 +140,7 @@ export default function ProfileRunnerCard() {
                         <Grid container alignContent="center" justifyContent="center">
                             <CardMedia
                                 image={languageSpeakingIcon}
-                                title="Reading Icon"
+                                title="Speaking Icon"
                                 className={classes.languageSkillIcon}
                             />
                         </Grid>
