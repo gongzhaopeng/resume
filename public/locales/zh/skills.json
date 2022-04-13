@@ -284,5 +284,13 @@
         "熟悉KPI、OKR等管理框架"
       ]
     }
-  }
+  },
+  "slogans": [
+    "三人行 必有我师焉",
+    "测试并非本质 责任心才是",
+    "Iterative development acknowledges that we will probably get things wrong before we get them right and that we will do things poorly before we do them well.",
+    "Incremental development is based on the age-old principle of \"Build some of it before you build all of it.\"",
+    "When lost in the woods, if the map doesn't agree with the terrain, in all cases believe the terrain.",
+    "\"I believe that this nation should commit itself to achieving the goal, before this decade is out, of landing a man on the Moon and returning him safely to the Earth\" (Kennedy 1961)"
+  ]
 }
