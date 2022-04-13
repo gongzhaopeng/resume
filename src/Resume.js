@@ -149,8 +149,8 @@ function ResumeContent() {
                              label={t('common:aspects.skills.name')}/>
                         <Tab icon={<FingerprintIcon style={{color: brown[400]}}/>}
                              label={t('common:aspects.experiences.name')}/>
-                        <Tab icon={<AllInclusiveIcon style={{color: deepPurple[400]}}/>}
-                             label={t('common:aspects.career.name')}/>
+                        {/*<Tab icon={<AllInclusiveIcon style={{color: deepPurple[400]}}/>}*/}
+                        {/*     label={t('common:aspects.career.name')}/>*/}
                     </Tabs>
                 </AppBar>
                 <div className={offsetBeneathAppBar}/>
@@ -164,9 +164,9 @@ function ResumeContent() {
                     <Route path={`/${homeTopics[2]}`}>
                         <Experiences/>
                     </Route>
-                    <Route path={`/${homeTopics[3]}`}>
-                        <Career/>
-                    </Route>
+                    {/*<Route path={`/${homeTopics[3]}`}>*/}
+                    {/*    <Career/>*/}
+                    {/*</Route>*/}
                     <Route path={`/${metaDesignTopic}`}>
                         <MetaDesign/>
                     </Route>

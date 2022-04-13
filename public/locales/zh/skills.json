@@ -1,0 +1,288 @@
+{
+  "label": {
+    "rate": {
+      "ability": "能力",
+      "interest": "兴趣",
+      "knowledge": "知识",
+      "practice": "实践"
+    },
+    "techStack": "技术栈",
+    "favoriteResources": "一些喜欢的资源",
+    "coreCompetence": "核心竞争力"
+  },
+  "skillCabinet": {
+    "javaBackendDev": {
+      "name": "Java后端开发",
+      "rate": {
+        "comprehensive": 5,
+        "ability": 5,
+        "interest": 4,
+        "knowledge": 5,
+        "practice": 5
+      },
+      "techStack": [
+        "Java Platform / JVM / Scala / Python",
+        "Spring Framework / Spring Boot / Spring Cloud",
+        "Data Structures / Algorithms / Functional Programming / Design Patterns",
+        "MongoDB / Redis / MySQL / Cache / ElasticSearch / ELK",
+        "Kafka / Zookeeper",
+        "Test-Driven Development  / Locust",
+        "IntelliJ IDEA",
+        "Maven / Git / GitHub / GitLab / Travis CI",
+        "Linux / 阿里云 / AWS / Nginx / Docker / DockerHub / Kubernetes"
+      ],
+      "favoriteResources": [
+        {
+          "type": "book",
+          "name": "Spring Microservices in Action"
+        },
+        {
+          "type": "book",
+          "name": "Kubernetes in Action"
+        },
+        {
+          "type": "website",
+          "url": "spring.io"
+        },
+        {
+          "type": "book",
+          "name": "Programming in Scala"
+        },
+        {
+          "type": "book",
+          "name": "Java Performance",
+          "subName": "the definitive guide"
+        },
+        {
+          "type": "website",
+          "name": "Baeldung",
+          "url": "www.baeldung.com"
+        },
+        {
+          "type": "book",
+          "name": "Test-Driven Development",
+          "subName": "by example"
+        },
+        {
+          "type": "book",
+          "name": "Introduction to Algorithms"
+        },
+        {
+          "type": "book",
+          "name": "Head First Design Patterns"
+        }
+      ],
+      "coreCompetence": [
+        "快速有效构造功能实现方案的经验及能力",
+        "良好的编码风格",
+        "推崇函数式编程和测试驱动开发",
+        "框架源码追踪及定制化经验",
+        "复杂BUG的排查定位经验",
+        "高并发服务开发及性能优化经验",
+        "大量的第三方平台能力集成经验"
+      ]
+    },
+    "webFrontendDev": {
+      "name": "Web前端开发",
+      "rate": {
+        "comprehensive": 4,
+        "ability": 4,
+        "interest": 3.5,
+        "knowledge": 4,
+        "practice": 3
+      },
+      "techStack": [
+        "JavaScript / HTML / CSS / Markdown",
+        "React / React Ecosystem",
+        "Material-UI / Redux",
+        "Test-Driven Development / Robot Framework",
+        "Material Design",
+        "WebStorm",
+        "npm / Git / GitHub",
+        "Node.js"
+      ],
+      "favoriteResources": [
+        {
+          "type": "book",
+          "name": "React in Action"
+        },
+        {
+          "type": "website",
+          "name": "Material-UI",
+          "url": "mui.com"
+        },
+        {
+          "type": "website",
+          "name": "MDN Web Docs",
+          "url": "developer.mozilla.org"
+        },
+        {
+          "type": "book",
+          "name": "Eloquent JavaScript"
+        },
+        {
+          "type": "website",
+          "name": "npm",
+          "url": "www.npmjs.com"
+        },
+        {
+          "type": "book",
+          "name": "Node.js in Action"
+        },
+        {
+          "type": "website",
+          "name": "Material Design",
+          "url": "material.io"
+        }
+      ],
+      "coreCompetence": [
+        "良好的JavaScript基础",
+        "充分掌握React框架机制及核心组件",
+        "良好的编码风格",
+        "追求友好、简洁、漂亮的前端设计"
+      ]
+    },
+    "architectureAndDesign": {
+      "name": "软件架构 & 设计",
+      "rate": {
+        "comprehensive": 4.5,
+        "ability": 4.5,
+        "interest": 4.5,
+        "knowledge": 5,
+        "practice": 4.5
+      },
+      "techStack": [
+        "Domain-Driven Design / Microservice Architecture",
+        "UML / RESTful / Schema.org",
+        "OpenAPI / YAML / Swagger / SwaggerHub",
+        "Mind Map / Lucidchart / Lucidspark"
+      ],
+      "favoriteResources": [
+        {
+          "type": "book",
+          "name": "Microservices Patterns",
+          "subName": "with examples in java"
+        },
+        {
+          "type": "book",
+          "name": "Domain-Driven Design",
+          "subName": "tackling complexity in the heart of software"
+        },
+        {
+          "type": "website",
+          "url": "microservices.io"
+        },
+        {
+          "type": "book",
+          "name": "UML @ Classroom",
+          "subName": "an introduction to object-oriented modeling"
+        },
+        {
+          "type": "book",
+          "name": "RESTful Web APIs"
+        },
+        {
+          "type": "website",
+          "url": "schema.org"
+        }
+      ],
+      "coreCompetence": [
+        "熟悉Spring Cloud核心能力及组件",
+        "熟悉微服务架构风格及相关模式",
+        "熟练使用UML等表达架构设计",
+        "基于Swagger定义RESTful API的丰富经验",
+        "基于微服务架构风格的业务中台构建经验",
+        "微服务架构系统基础设施搭建经验"
+      ]
+    },
+    "solutionBuilding": {
+      "name": "软件方案构建",
+      "rate": {
+        "comprehensive": 4.5,
+        "ability": 4.5,
+        "interest": 5,
+        "knowledge": 4.5,
+        "practice": 4.5
+      },
+      "techStack": [
+        "Scrum",
+        "Mind Map / Lucidchart / Lucidspark"
+      ],
+      "favoriteResources": [
+        {
+          "type": "book",
+          "name": "Essential Scrum",
+          "subName": "a practical guide to the most popular agile process"
+        }
+      ],
+      "coreCompetence": [
+        "崇尚迭代和增量的构建过程",
+        "客户现场驻场需求分析经验",
+        "竞品分析、技术选型等过程实践经验",
+        "平衡研发能力、产品形态(Web/小程序/App)、自研/购买、成本、运营目标等因素形成可行方案的经验",
+        "运营反馈驱动产品迭代的过程实践",
+        "面向猿辅导、学而思、宜信财富等第三方的能力开放和集成经验"
+      ]
+    },
+    "processControl": {
+      "name": "软件过程控制",
+      "rate": {
+        "comprehensive": 4,
+        "ability": 4,
+        "interest": 5,
+        "knowledge": 4,
+        "practice": 4
+      },
+      "techStack": [
+        "Scrum / Test-Driven Development / ITIL",
+        "Mind Map / Lucidchart / Lucidspark",
+        "monday.com / PlanningPoker",
+        "Teambition"
+      ],
+      "favoriteResources": [
+        {
+          "type": "book",
+          "name": "Essential Scrum",
+          "subName": "a practical guide to the most popular agile process"
+        }
+      ],
+      "coreCompetence": [
+        "推崇Scrum框架",
+        "了解ITIL框架",
+        "产品研发过程控制经验",
+        "大量的第三方合作及2B项目实施经验",
+        "过程协作、控制相关的软件和图表实践"
+      ]
+    },
+    "techTeamManagement": {
+      "name": "技术团队管理",
+      "rate": {
+        "comprehensive": 4,
+        "ability": 4,
+        "interest": 5,
+        "knowledge": 4,
+        "practice": 4
+      },
+      "techStack": [
+        "Scrum / ITIL",
+        "FullStack.Cafe / AlgoExpert",
+        "KPI / OKR",
+        "Teambition / 钉钉",
+        "Mind Map / Lucidchart / Lucidspark"
+      ],
+      "favoriteResources": [
+        {
+          "type": "book",
+          "name": "Essential Scrum",
+          "subName": "a practical guide to the most popular agile process"
+        }
+      ],
+      "coreCompetence": [
+        "熟悉软件生命周期和典型过程框架涉及的各种角色",
+        "充分的合作意识",
+        "技术团队建设相关的规划、招募、发展、评价、优化等实践经验",
+        "熟悉KPI、OKR等管理框架"
+      ]
+    }
+  }
+}
