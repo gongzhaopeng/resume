@@ -34,9 +34,9 @@ function SkillsDisplayBoard() {
                     <Grid item xs={3}/>
                     <Grid container xs={6} alignContent="center" justifyContent="center">
                         <SkillMiniCard logo={skillToLogoDict.techTeamManagement.img}
-                                       name={skillCabinet.techTeamManagement.name}
+                                       name={skillCabinet['techTeamManagement'].name}
                                        nameColor={purple[300]}
-                                       rating={skillCabinet.techTeamManagement.rate.comprehensive}
+                                       rating={skillCabinet['techTeamManagement'].rate['comprehensive']}
                         />
                     </Grid>
                     <Grid item xs={3}/>
@@ -46,16 +46,16 @@ function SkillsDisplayBoard() {
                 <Grid container spacing={0}>
                     <Grid container xs={6} alignContent="center" justifyContent="center">
                         <SkillMiniCard logo={skillToLogoDict.solutionBuilding.img}
-                                       name={skillCabinet.solutionBuilding.name}
+                                       name={skillCabinet['solutionBuilding'].name}
                                        nameColor={brown[300]}
-                                       rating={skillCabinet.solutionBuilding.rate.comprehensive}
+                                       rating={skillCabinet['solutionBuilding'].rate['comprehensive']}
                         />
                     </Grid>
                     <Grid container xs={6} alignContent="center" justifyContent="center">
                         <SkillMiniCard logo={skillToLogoDict.processControl.img}
-                                       name={skillCabinet.processControl.name}
+                                       name={skillCabinet['processControl'].name}
                                        nameColor={brown[300]}
-                                       rating={skillCabinet.processControl.rate.comprehensive}
+                                       rating={skillCabinet['processControl'].rate['comprehensive']}
                         />
                     </Grid>
                 </Grid>
@@ -65,9 +65,9 @@ function SkillsDisplayBoard() {
                     <Grid item xs={3}/>
                     <Grid container xs={6} alignContent="center" justifyContent="center">
                         <SkillMiniCard logo={skillToLogoDict.architectureAndDesign.img}
-                                       name={skillCabinet.architectureAndDesign.name}
+                                       name={skillCabinet['architectureAndDesign'].name}
                                        nameColor={grey[300]}
-                                       rating={skillCabinet.architectureAndDesign.rate.comprehensive}
+                                       rating={skillCabinet['architectureAndDesign'].rate['comprehensive']}
                         />
                     </Grid>
                     <Grid item xs={3}/>
@@ -77,16 +77,16 @@ function SkillsDisplayBoard() {
                 <Grid container spacing={0}>
                     <Grid container xs={6} alignContent="center" justifyContent="center">
                         <SkillMiniCard logo={skillToLogoDict.javaBackendDev.img}
-                                       name={skillCabinet.javaBackendDev.name}
+                                       name={skillCabinet['javaBackendDev'].name}
                                        nameColor={grey[300]}
-                                       rating={skillCabinet.javaBackendDev.rate.comprehensive}
+                                       rating={skillCabinet['javaBackendDev'].rate['comprehensive']}
                         />
                     </Grid>
                     <Grid container xs={6} alignContent="center" justifyContent="center">
                         <SkillMiniCard logo={skillToLogoDict.webFrontendDev.img}
-                                       name={skillCabinet.webFrontendDev.name}
+                                       name={skillCabinet['webFrontendDev'].name}
                                        nameColor={grey[300]}
-                                       rating={skillCabinet.webFrontendDev.rate.comprehensive}
+                                       rating={skillCabinet['webFrontendDev'].rate['comprehensive']}
                         />
                     </Grid>
                 </Grid>
