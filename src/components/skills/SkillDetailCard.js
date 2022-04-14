@@ -8,13 +8,14 @@ import Typography from "@material-ui/core/Typography";
 import {useTranslation} from "react-i18next";
 
 import {makeStyles} from '@material-ui/core/styles';
-import {cyan, brown, green, deepOrange, blue, purple, common} from '@material-ui/core/colors';
+import {cyan, brown, green, deepOrange, purple} from '@material-ui/core/colors';
 
 import UniformCard from '../UniformCard'
 import GeneralHorizontalCrossDivider from "../GeneralHorizontalCrossDivider";
 import UniformInfoItem from "../UniformInfoItem";
+import UniformResourceItem from "../UniformResourceItem";
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles({
     root: {
         backgroundColor: cyan[100],
         minHeight: 200
@@ -22,7 +23,7 @@ const useStyles = makeStyles(theme => ({
     logoStyle: ({logoHeightRatio}) => ({
         width: 200, height: 200 * logoHeightRatio
     }),
-}));
+});
 
 function SkillDetailCard({logo, logoHeightRatio, detail}) {
 
@@ -100,7 +101,7 @@ function SkillDetailCard({logo, logoHeightRatio, detail}) {
                     <Grid container xs={6} justifyContent="center" alignContent={'flex-start'}>
                         <CardContent style={{paddingLeft: 0, paddingRight: 8, paddingBottom: 0}}>
                             <Typography align={"center"} variant={"button"} paragraph
-                                        style={{color: deepOrange['A400']}}>
+                                        style={{color: deepOrange['A400'], width: '100%'}}>
                                 /{labels['techStack']}/
                             </Typography>
                             {detail['techStack'].map(techItem => (
@@ -112,7 +113,7 @@ function SkillDetailCard({logo, logoHeightRatio, detail}) {
                     <Grid container xs={6} justifyContent="center" alignContent={'flex-start'}>
                         <CardContent style={{paddingLeft: 8, paddingRight: 0, paddingBottom: 0}}>
                             <Typography align={"center"} variant={"button"} paragraph
-                                        style={{color: purple['A400']}}>
+                                        style={{color: purple['A400'], width: '100%'}}>
                                 /{labels['coreCompetence']}/
                             </Typography>
                             {detail['coreCompetence'].map(competenceItem => (
@@ -122,6 +123,15 @@ function SkillDetailCard({logo, logoHeightRatio, detail}) {
                         </CardContent>
                     </Grid>
                     <Grid item xs={12}><GeneralHorizontalCrossDivider/></Grid>
+                    <Grid container xs={12} justifyContent="space-evenly" alignContent={'center'}>
+                        <Typography align={"center"} variant={"button"} paragraph
+                                    color='primary' style={{width: '100%'}}>
+                            /{labels['favoriteResources']}/
+                        </Typography>
+                        {detail['favoriteResources'].map(resourceItem => (
+                            <UniformResourceItem {...resourceItem}/>
+                        ))}
+                    </Grid>
                 </Grid>
             </CardContent>
         </UniformCard>
