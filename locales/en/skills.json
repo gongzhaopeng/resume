@@ -42,7 +42,7 @@
         },
         {
           "type": "website",
-          "url": "spring.io"
+          "url": "https://spring.io"
         },
         {
           "type": "book",
@@ -56,7 +56,7 @@
         {
           "type": "website",
           "name": "Baeldung",
-          "url": "www.baeldung.com"
+          "url": "https://www.baeldung.com"
         },
         {
           "type": "book",
@@ -109,12 +109,12 @@
         {
           "type": "website",
           "name": "Material-UI",
-          "url": "mui.com"
+          "url": "https://mui.com"
         },
         {
           "type": "website",
           "name": "MDN Web Docs",
-          "url": "developer.mozilla.org"
+          "url": "https://developer.mozilla.org"
         },
         {
           "type": "book",
@@ -123,7 +123,7 @@
         {
           "type": "website",
           "name": "npm",
-          "url": "www.npmjs.com"
+          "url": "https://www.npmjs.com"
         },
         {
           "type": "book",
@@ -132,7 +132,7 @@
         {
           "type": "website",
           "name": "Material Design",
-          "url": "material.io"
+          "url": "https://material.io"
         }
       ],
       "coreCompetence": [
@@ -170,7 +170,7 @@
         },
         {
           "type": "website",
-          "url": "microservices.io"
+          "url": "https://microservices.io"
         },
         {
           "type": "book",
@@ -183,7 +183,7 @@
         },
         {
           "type": "website",
-          "url": "schema.org"
+          "url": "https://schema.org"
         }
       ],
       "coreCompetence": [
