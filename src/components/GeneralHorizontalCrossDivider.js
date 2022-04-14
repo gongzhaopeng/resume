@@ -6,5 +6,7 @@ import {red} from "@material-ui/core/colors";
 
 export default function GeneralHorizontalCrossDivider() {
     return (<Divider variant='fullWidth'
-                     style={{borderStyle: 'dashed', borderWidth: 1, borderColor: red[300]}}/>)
+                     style={{
+                         borderStyle: 'dashed', borderWidth: 1, borderColor: red['A700'],
+                         marginTop: 8, marginBottom: 8}}/>)
 }
