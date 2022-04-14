@@ -22,7 +22,7 @@ function SloganCard({slogan}) {
 
     return (<UniformCard className={root}>
         <CardContent className={content}>
-            <Typography variant="caption" color="secondary" align="center">
+            <Typography variant="caption" color="textPrimary" align="center">
                 {slogan}
             </Typography>
         </CardContent>
