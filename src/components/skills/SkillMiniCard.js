@@ -21,7 +21,7 @@ const useStyles = makeStyles({
     })
 })
 
-function SkillMiniCard({logo, logoHeightRatio, name, nameColor, rating}) {
+function SkillMiniCard({logo, logoHeightRatio=1.0, name, nameColor, rating}) {
 
     const {root, logoStyle, nameStyle} = useStyles({logoHeightRatio, nameColor})
 

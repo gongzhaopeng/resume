@@ -3,6 +3,8 @@ import React, {Fragment} from 'react';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 
+import {useTranslation} from "react-i18next";
+
 import {cyan} from '@material-ui/core/colors';
 
 import SkillsDisplayBoard from "./SkillsDisplayBoard";
@@ -11,12 +13,16 @@ import SloganCard from "../SloganCard";
 
 function Skills() {
 
+    const {t} = useTranslation('skills');
+    const skillCabinet = t('skills:skillCabinet', {returnObjects: true})
+    const slogans = t('skills:slogans', {returnObjects: true})
+
     return (
         <Fragment>
-            <SloganCard slogan={"三人行 必有我师焉"}/>
+            <SloganCard slogan={slogans[0]}/>
             <SkillsDisplayBoard/>
             <SloganCard
-                slogan={"Iterative development acknowledges that we will probably get things wrong before we get them right and that we will do things poorly before we do them well."}/>
+                slogan={slogans[1]}/>
             <UniformCard style={{backgroundColor: cyan[100], height: 200}}>
                 <CardContent>
                     <Typography>
