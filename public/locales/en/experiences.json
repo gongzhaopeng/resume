@@ -1,0 +1,216 @@
+{
+  "labels": {
+  },
+  "experienceCabinet": {
+    "ZKFL": {
+      "entryDate": "2009/07",
+      "leavingDate": "2013/02",
+      "organization": {
+        "name": "北京中科辅龙计算机技术股份有限公司",
+        "abbrName": "中科辅龙",
+        "website": "www.fulongai.com",
+        "type": "民营",
+        "staffNumber": "400",
+        "brief": [
+          "中科院计算技术研究所成果转化",
+          "完全自主知识产权国产化CAD软件代表企业",
+          "三维工厂协同设计"
+        ]
+      },
+      "position": {
+        "department": "研发部",
+        "titles": [
+          "软件工程师",
+          "项目经理"
+        ],
+        "responsibilities": [
+          "\"HIDAS三维配筋系统\"软件研发、需求及合作对接、项目协调、交付"
+        ]
+      },
+      "activities": [
+        {
+          "name": "HIDAS三维配筋系统",
+          "type": "project",
+          "startTime": "2009/07",
+          "endTime": "2012/11",
+          "brief": [
+            "交通部第四航务工程勘察设计院合作研发、共享知识产权",
+            "三维结构建模 / 三维配筋 / 图纸定义及生成",
+            "三维动态设计 / 设计过程流程化",
+            "三维场景钢筋碰撞自动处理"
+          ],
+          "result": [
+            "2012年11月验收，整体交付合作方",
+            "[发明专利号 201210100685] 一种三维混凝土结构配筋交互方法",
+            "[发明专利号 201210250054] 一种三维混凝土结构配筋的图纸自动生成方法"
+          ],
+          "roles": [
+            "软件研发",
+            "项目协调"
+          ],
+          "tasks": [
+            "业务需求对接、分析",
+            "竞品分析 / 原型构造",
+            "系统开发 / 项目过程控制",
+            "系统交付对接"
+          ],
+          "gains": [
+            "客户对接实践",
+            "三维建模 / 计算几何",
+            "针对钢筋碰撞处理的禁忌搜索算法应用"
+          ]
+        }
+      ]
+    },
+    "BYJR": {
+      "entryDate": "2013/03",
+      "leavingDate": "2015/03",
+      "organization": {
+        "name": "宝蕴吉瑞（北京）通讯设备有限公司",
+        "abbrName": "宝蕴吉瑞",
+        "website": "https://www.linkernetworks.com",
+        "type": "初创",
+        "staffNumber": "50",
+        "brief": [
+          "Starent Networks(2009年被思科收购)创始团队成员筹建",
+          "4G核心网系统软件供应",
+          "移动互联网应用"
+        ]
+      },
+      "position": {
+        "department": "开发部",
+        "titles": [
+          "高级软件工程师",
+          "项目经理"
+        ],
+        "responsibilities": [
+          "PCRF(Policy and Charging Rules Function)软件研发、项目协调、运营商用例测试、入网部署"
+        ]
+      },
+      "activities": [
+        {
+          "name": "PCRF(Policy and Charging Rules Function)",
+          "type": "project",
+          "startTime": "2013/03",
+          "endTime": "2015/03",
+          "brief": [
+            "三大电信运营商4G核心网PCRF竞标",
+            "Protocol stack / PCRF Engine / PCRF Admin",
+            "集成Drools Expert驱动业务规则的配置和执行"
+          ],
+          "result": [
+            "顺利通过面向三大电信运营商的功能和性能测试",
+            "完成对中国电信在江西、广西、海南等三省的现网联调及上线测试"
+          ],
+          "roles": [
+            "软件研发",
+            "项目协调"
+          ],
+          "tasks": [
+            "系统开发 / 项目过程控制",
+            "规则引擎Drools Expert集成和定制化",
+            "协议信令和领域对象间的编解码",
+            "协调面向运营商的功能和性能测试"
+          ],
+          "gains": [
+            "Spring Framework / Akka / MQ",
+            "Drools Expert应用",
+            "参与电信运营商的功能和性能测试过程"
+          ]
+        }
+      ]
+    },
+    "XRKJ": {
+      "entryDate": "2015/04",
+      "leavingDate": "2017/02",
+      "organization": {
+        "name": "北京欣润科技有限公司",
+        "abbrName": "欣润科技",
+        "website": null,
+        "type": "初创",
+        "staffNumber": "80",
+        "brief": [
+          "江苏卫视\"最强大脑\"节目合作",
+          "北京师范大学心理学部专业技术支持",
+          "脑力测评和训练 / 益智类游戏"
+        ]
+      },
+      "position": {
+        "department": "研发部",
+        "titles": [
+          "后端研发负责人"
+        ],
+        "responsibilities": [
+          "协调组织后端服务开发",
+          "后端团队日常管理 / 技术指导",
+          "后端技术选型 / 架构 / 接口定义",
+          "框架搭建 / 核心功能实现"
+        ]
+      },
+      "activities": [
+        {
+          "name": "益智类游戏及应用后端",
+          "type": "product",
+          "startTime": "2015/04",
+          "endTime": "2016/10",
+          "brief": [
+            "\"最强大脑\"节目合作",
+            "\"非常大脑\"系列益智类游戏及应用",
+            "后端开发 / 运营支持"
+          ],
+          "result": [
+            "\"最强大脑\"节目播出期间，相关游戏及应用日访问量过百万"
+          ],
+          "roles": [
+            "架构",
+            "过程控制",
+            "服务开发"
+          ],
+          "tasks": [
+            "业务需求分析",
+            "架构 / 接口定义 / 任务分解及过程控制",
+            "微信、微博等开放平台接入 / 支付接入",
+            "微信公众号、微信小店二次开发 / iOS消息推送"
+          ],
+          "gains": [
+            "Play Framework / Scala",
+            "Swagger / RESTful API实践",
+            "开放平台接入实践",
+            "支付接入实践"
+          ]
+        },
+        {
+          "name": "对战平台后端",
+          "type": "product",
+          "startTime": "2016/03",
+          "endTime": "2017/02",
+          "brief": [
+            "对战游戏平台",
+            "大厅 / 游戏厅 / 游戏桌 / 玩家匹配",
+            "可挂载扩展不同形式的对战游戏"
+          ],
+          "result": [
+            "支撑了网球、麻将、德州扑克、仿\"球球大作战\"等对战类游戏"
+          ],
+          "roles": [
+            "架构",
+            "过程控制",
+            "服务开发"
+          ],
+          "tasks": [
+            "技术选型 / 架构 / 框架搭建 / 接口定义",
+            "任务分解及过程控制",
+            "游戏引擎接口抽象"
+          ],
+          "gains": [
+            "Pomelo(游戏服务器框架, 网易开源) / Node.js",
+            "开源框架定制化实践"
+          ]
+        }
+      ]
+    }
+  },
+  "slogans": [
+    "Every run has a purpose."
+  ]
+}
