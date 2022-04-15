@@ -7,31 +7,32 @@ import TimelineContent from '@material-ui/lab/TimelineContent';
 import TimelineOppositeContent from '@material-ui/lab/TimelineOppositeContent';
 import TimelineDot from '@material-ui/lab/TimelineDot';
 import Typography from "@material-ui/core/Typography";
-
-import {useTranslation} from "react-i18next";
+import Chip from "@material-ui/core/Chip";
 
 import {makeStyles} from '@material-ui/core/styles';
-import {cyan, brown, purple, grey} from '@material-ui/core/colors';
 
 const useStyles = makeStyles({
-    root: {},
+    orgNameStyle: {
+        width: '100%',
+        fontStyle: "italic"
+    },
+    titleStyle: {
+        margin: 5
+    }
 });
 
 function ExperiencesTimelineItem({
-                                     entryTime, orgName, department, titles, activities,
-                                     dotColor = 'grey', connector = true
+                                     entryTime, orgName, titles,
+                                     dotColor, connector = true
                                  }) {
 
-    const {root} = useStyles()
-
-    const {t} = useTranslation('experiences');
-    const labels = t('experiences:labels', {returnObjects: true})
+    const {orgNameStyle, titleStyle} = useStyles()
 
     return (
         <TimelineItem>
             <TimelineOppositeContent>
                 <Typography variant="body2" color="textSecondary">
-                    2009/07
+                    {entryTime}
                 </Typography>
             </TimelineOppositeContent>
             <TimelineSeparator>
@@ -39,9 +40,18 @@ function ExperiencesTimelineItem({
                 {connector && <TimelineConnector/>}
             </TimelineSeparator>
             <TimelineContent>
-                <Typography variant="h6" component="h1">
-                    Eat
+                <Typography variant="body1" color='textSecondary' className={orgNameStyle}>
+                    {orgName}
                 </Typography>
+                {titles.map(title => (
+                    <Chip size='small' variant='outlined' className={titleStyle}
+                          label={
+                              <Typography variant='caption' color='textSecondary'>
+                                  {title}
+                              </Typography>
+                          }
+                    />
+                ))}
             </TimelineContent>
         </TimelineItem>
     )

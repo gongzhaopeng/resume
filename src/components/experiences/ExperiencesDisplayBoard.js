@@ -28,8 +28,15 @@ const useStyles = makeStyles({
     }
 });
 
-function makeExperiencesTimelineItem(experience, dotColor = 'grey', connector = true) {
-    const params = {dotColor, connector}
+function makeExperiencesTimelineItem(experience, dotColor = 'primary',
+                                     connector = true) {
+    const params = {
+        entryTime: experience['entryDate'],
+        orgName: experience['organization']['abbrName'],
+        titles: experience['position']['titles'],
+        dotColor, connector
+    };
+
     return (
         <ExperiencesTimelineItem {...params}/>
     )
