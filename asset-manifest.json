@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/resume/static/css/main.5c01d3c8.chunk.css",
-    "main.js": "/resume/static/js/main.0e474a7d.chunk.js",
-    "main.js.map": "/resume/static/js/main.0e474a7d.chunk.js.map",
-    "runtime-main.js": "/resume/static/js/runtime-main.36a429cb.js",
-    "runtime-main.js.map": "/resume/static/js/runtime-main.36a429cb.js.map",
+    "main.js": "/resume/static/js/main.a12e5327.chunk.js",
+    "main.js.map": "/resume/static/js/main.a12e5327.chunk.js.map",
+    "runtime-main.js": "/resume/static/js/runtime-main.e3dffa03.js",
+    "runtime-main.js.map": "/resume/static/js/runtime-main.e3dffa03.js.map",
     "static/css/2.bd135b59.chunk.css": "/resume/static/css/2.bd135b59.chunk.css",
-    "static/js/2.a683fbda.chunk.js": "/resume/static/js/2.a683fbda.chunk.js",
-    "static/js/2.a683fbda.chunk.js.map": "/resume/static/js/2.a683fbda.chunk.js.map",
-    "static/js/3.d1c7d67d.chunk.js": "/resume/static/js/3.d1c7d67d.chunk.js",
-    "static/js/3.d1c7d67d.chunk.js.map": "/resume/static/js/3.d1c7d67d.chunk.js.map",
+    "static/js/2.dda8fff2.chunk.js": "/resume/static/js/2.dda8fff2.chunk.js",
+    "static/js/2.dda8fff2.chunk.js.map": "/resume/static/js/2.dda8fff2.chunk.js.map",
+    "static/js/3.fb03e73b.chunk.js": "/resume/static/js/3.fb03e73b.chunk.js",
+    "static/js/3.fb03e73b.chunk.js.map": "/resume/static/js/3.fb03e73b.chunk.js.map",
     "index.html": "/resume/index.html",
     "static/css/2.bd135b59.chunk.css.map": "/resume/static/css/2.bd135b59.chunk.css.map",
     "static/css/main.5c01d3c8.chunk.css.map": "/resume/static/css/main.5c01d3c8.chunk.css.map",
-    "static/js/2.a683fbda.chunk.js.LICENSE.txt": "/resume/static/js/2.a683fbda.chunk.js.LICENSE.txt",
+    "static/js/2.dda8fff2.chunk.js.LICENSE.txt": "/resume/static/js/2.dda8fff2.chunk.js.LICENSE.txt",
     "static/media/2001-a-space-odyssey.movies.i-like.3e81a3cf.jpeg": "/resume/static/media/2001-a-space-odyssey.movies.i-like.3e81a3cf.jpeg",
     "static/media/an-yong.music.i-like.3ae4b2cf.jpeg": "/resume/static/media/an-yong.music.i-like.3ae4b2cf.jpeg",
     "static/media/avatar.857e9bcc.jpeg": "/resume/static/media/avatar.857e9bcc.jpeg",
@@ -85,10 +85,10 @@
     "static/media/zidane.i-love-soccer.0af2c730.jpeg": "/resume/static/media/zidane.i-love-soccer.0af2c730.jpeg"
   },
   "entrypoints": [
-    "static/js/runtime-main.36a429cb.js",
+    "static/js/runtime-main.e3dffa03.js",
     "static/css/2.bd135b59.chunk.css",
-    "static/js/2.a683fbda.chunk.js",
+    "static/js/2.dda8fff2.chunk.js",
     "static/css/main.5c01d3c8.chunk.css",
-    "static/js/main.0e474a7d.chunk.js"
+    "static/js/main.a12e5327.chunk.js"
   ]
 }
