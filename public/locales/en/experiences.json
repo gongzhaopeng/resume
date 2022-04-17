@@ -10,6 +10,16 @@
     },
     "position": {
       "responsibility": "RESPONSIBILITY"
+    },
+    "activity": {
+      "type": {
+        "product": "PRODUCT",
+        "project": "PROJECT"
+      },
+      "brief": "BRIEF INTRO",
+      "result": "RESULT",
+      "tasks": "WHAT I DIT",
+      "gains": "WHAT I GAINED"
     }
   },
   "experienceCabinet": {

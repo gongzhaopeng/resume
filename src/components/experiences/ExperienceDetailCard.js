@@ -16,6 +16,7 @@ import UniformCard from '../UniformCard'
 import GeneralHorizontalCrossDivider from "../GeneralHorizontalCrossDivider";
 import UniformInfoItem from "../UniformInfoItem";
 import HorizontalPlaceholder from "../HorizontalPlaceholder";
+import ExperienceActivity from "./ExperienceActivity";
 
 const useStyles = makeStyles({
     root: {
@@ -64,8 +65,8 @@ function makeOrgTag(label, className) {
 function ExperienceDetailCard({detail}) {
 
     const {
-        root, orgBlockStyle, positionBlockStyle, orgNameStyle, positionNameStyle,
-        orgTagStyle, titleStyle
+        root, orgBlockStyle, positionBlockStyle, orgNameStyle,
+        positionNameStyle, orgTagStyle, titleStyle
     } = useStyles()
 
     const {t} = useTranslation('experiences');
@@ -127,6 +128,10 @@ function ExperienceDetailCard({detail}) {
                         </Paper>
                     </Grid>
                 </Grid>
+                {detail['activities'].map(activity => ([
+                    <Grid item xs={12}><GeneralHorizontalCrossDivider/></Grid>,
+                    <ExperienceActivity activity={activity}/>
+                ]))}
             </CardContent>
         </UniformCard>
     )

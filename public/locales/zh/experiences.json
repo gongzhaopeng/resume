@@ -10,6 +10,16 @@
     },
     "position": {
       "responsibility": "职责"
+    },
+    "activity": {
+      "type": {
+        "product": "产品",
+        "project": "项目"
+      },
+      "brief": "简介",
+      "result": "成果",
+      "tasks": "我做了什么",
+      "gains": "我收获了什么"
     }
   },
   "experienceCabinet": {
