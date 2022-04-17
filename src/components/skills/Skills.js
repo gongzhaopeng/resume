@@ -37,6 +37,7 @@ function Skills() {
             <SkillDetailCard logo={skillToLogoDict.processControl.img}
                              logoHeightRatio={skillToLogoDict.processControl.heightRatio}
                              detail={skillCabinet['processControl']}/>
+            <SloganCard slogan={slogans[6]}/>
             <SkillDetailCard logo={skillToLogoDict.techTeamManagement.img}
                              logoHeightRatio={skillToLogoDict.techTeamManagement.heightRatio}
                              detail={skillCabinet['techTeamManagement']}/>
