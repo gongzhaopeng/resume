@@ -5,6 +5,7 @@ import ImageListItem from "@material-ui/core/ImageListItem"
 import ImageListItemBar from "@material-ui/core/ImageListItemBar";
 
 import {makeStyles} from '@material-ui/core/styles';
+import * as url from "url";
 
 const imageListWidth = 359;
 const imageListCols = 9;
@@ -29,6 +30,7 @@ export default function DesignImageList({rowHeight, imageItems}) {
     const classes = useStyles();
 
     const onClickImageListItem = (url) => {
+        console.log(url)
         window.open(url, '_blank')
     }
 
@@ -37,7 +39,7 @@ export default function DesignImageList({rowHeight, imageItems}) {
             <ImageList className={classes.imageList} cols={imageListCols} gap={4} rowHeight={rowHeight}>
                 {imageItems.map(item => (
                     <ImageListItem key={item.img} cols={item.cols} rows={item.rows}
-                                   onClick={() => onClickImageListItem.bind('https://www.google.com')}>
+                                   onClick={onClickImageListItem.bind(null, item.img)}>
                         <img src={item.img} alt={item.title}
                              style={{width: imageListWidth / imageListCols * item.cols}}/>
                         <ImageListItemBar
