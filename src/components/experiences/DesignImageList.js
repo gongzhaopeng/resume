@@ -31,7 +31,7 @@ export default function DesignImageList({rowHeight, imageItems}) {
 
     const onClickImageListItem = (url) => {
         console.log(url)
-        window.open(url, '_blank')
+        window.open(url, '_blank', 'noopener')
     }
 
     return (
