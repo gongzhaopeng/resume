@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/resume/static/css/main.5c01d3c8.chunk.css",
-    "main.js": "/resume/static/js/main.b182fdbd.chunk.js",
-    "main.js.map": "/resume/static/js/main.b182fdbd.chunk.js.map",
-    "runtime-main.js": "/resume/static/js/runtime-main.7231a556.js",
-    "runtime-main.js.map": "/resume/static/js/runtime-main.7231a556.js.map",
+    "main.js": "/resume/static/js/main.eaf5f7f1.chunk.js",
+    "main.js.map": "/resume/static/js/main.eaf5f7f1.chunk.js.map",
+    "runtime-main.js": "/resume/static/js/runtime-main.f8f295c5.js",
+    "runtime-main.js.map": "/resume/static/js/runtime-main.f8f295c5.js.map",
     "static/css/2.bd135b59.chunk.css": "/resume/static/css/2.bd135b59.chunk.css",
-    "static/js/2.db22ee69.chunk.js": "/resume/static/js/2.db22ee69.chunk.js",
-    "static/js/2.db22ee69.chunk.js.map": "/resume/static/js/2.db22ee69.chunk.js.map",
-    "static/js/3.21d00a7b.chunk.js": "/resume/static/js/3.21d00a7b.chunk.js",
-    "static/js/3.21d00a7b.chunk.js.map": "/resume/static/js/3.21d00a7b.chunk.js.map",
+    "static/js/2.2e51c7f1.chunk.js": "/resume/static/js/2.2e51c7f1.chunk.js",
+    "static/js/2.2e51c7f1.chunk.js.map": "/resume/static/js/2.2e51c7f1.chunk.js.map",
+    "static/js/3.051aae2d.chunk.js": "/resume/static/js/3.051aae2d.chunk.js",
+    "static/js/3.051aae2d.chunk.js.map": "/resume/static/js/3.051aae2d.chunk.js.map",
     "index.html": "/resume/index.html",
     "static/css/2.bd135b59.chunk.css.map": "/resume/static/css/2.bd135b59.chunk.css.map",
     "static/css/main.5c01d3c8.chunk.css.map": "/resume/static/css/main.5c01d3c8.chunk.css.map",
-    "static/js/2.db22ee69.chunk.js.LICENSE.txt": "/resume/static/js/2.db22ee69.chunk.js.LICENSE.txt",
+    "static/js/2.2e51c7f1.chunk.js.LICENSE.txt": "/resume/static/js/2.2e51c7f1.chunk.js.LICENSE.txt",
     "static/media/2001-a-space-odyssey.movies.i-like.3e81a3cf.jpeg": "/resume/static/media/2001-a-space-odyssey.movies.i-like.3e81a3cf.jpeg",
     "static/media/an-yong.music.i-like.3ae4b2cf.jpeg": "/resume/static/media/an-yong.music.i-like.3ae4b2cf.jpeg",
     "static/media/avatar.857e9bcc.jpeg": "/resume/static/media/avatar.857e9bcc.jpeg",
@@ -42,6 +42,7 @@
     "static/media/ii.me.i-love-soccer.e778f427.jpeg": "/resume/static/media/ii.me.i-love-soccer.e778f427.jpeg",
     "static/media/ii.the-three-of-us.323d49ef.jpeg": "/resume/static/media/ii.the-three-of-us.323d49ef.jpeg",
     "static/media/iii.the-three-of-us.4ac6cafd.jpeg": "/resume/static/media/iii.the-three-of-us.4ac6cafd.jpeg",
+    "static/media/implementation-view.sundial.benbenedu.cn.82bc34aa.png": "/resume/static/media/implementation-view.sundial.benbenedu.cn.82bc34aa.png",
     "static/media/in-the-end.music.i-like.865c370d.jpeg": "/resume/static/media/in-the-end.music.i-like.865c370d.jpeg",
     "static/media/interstellar.movies.i-like.6265b5b3.jpeg": "/resume/static/media/interstellar.movies.i-like.6265b5b3.jpeg",
     "static/media/its-my-life.music.i-like.8c0ed5a9.jpeg": "/resume/static/media/its-my-life.music.i-like.8c0ed5a9.jpeg",
@@ -55,8 +56,11 @@
     "static/media/moneytalks.music.i-like.0c4f66c4.jpeg": "/resume/static/media/moneytalks.music.i-like.0c4f66c4.jpeg",
     "static/media/mother.music.i-like.22aefa82.jpeg": "/resume/static/media/mother.music.i-like.22aefa82.jpeg",
     "static/media/november-rain.music.i-like.51f7c5d1.jpeg": "/resume/static/media/november-rain.music.i-like.51f7c5d1.jpeg",
+    "static/media/part-1.model.domain.sundial.benbenedu.cn.9fc21877.png": "/resume/static/media/part-1.model.domain.sundial.benbenedu.cn.9fc21877.png",
+    "static/media/part-2.model.domain.sundial.benbenedu.cn.324f3bc9.png": "/resume/static/media/part-2.model.domain.sundial.benbenedu.cn.324f3bc9.png",
     "static/media/personal-records.achievements.runner.ac4c0fa7.jpeg": "/resume/static/media/personal-records.achievements.runner.ac4c0fa7.jpeg",
     "static/media/pku.logo.8786d9d8.svg": "/resume/static/media/pku.logo.8786d9d8.svg",
+    "static/media/process-view.sundial.benbenedu.cn.ed2470c0.png": "/resume/static/media/process-view.sundial.benbenedu.cn.ed2470c0.png",
     "static/media/prometheus.movies.i-like.55c7849a.jpeg": "/resume/static/media/prometheus.movies.i-like.55c7849a.jpeg",
     "static/media/pulp-fiction.movies.i-like.083508f1.jpeg": "/resume/static/media/pulp-fiction.movies.i-like.083508f1.jpeg",
     "static/media/index.css": "/resume/static/media/roboto-vietnamese-400-normal.52cebac0.woff2",
@@ -85,10 +89,10 @@
     "static/media/zidane.i-love-soccer.0af2c730.jpeg": "/resume/static/media/zidane.i-love-soccer.0af2c730.jpeg"
   },
   "entrypoints": [
-    "static/js/runtime-main.7231a556.js",
+    "static/js/runtime-main.f8f295c5.js",
     "static/css/2.bd135b59.chunk.css",
-    "static/js/2.db22ee69.chunk.js",
+    "static/js/2.2e51c7f1.chunk.js",
     "static/css/main.5c01d3c8.chunk.css",
-    "static/js/main.b182fdbd.chunk.js"
+    "static/js/main.eaf5f7f1.chunk.js"
   ]
 }
