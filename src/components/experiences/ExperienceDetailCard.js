@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 
 import CardContent from '@material-ui/core/CardContent';
 import Grid from "@material-ui/core/Grid";
@@ -101,7 +101,7 @@ function ExperienceDetailCard({detail}) {
                             </Grid>
                             <HorizontalPlaceholder height={10}/>
                             {detail['organization']['brief'].map(item => (
-                                <UniformInfoItem text={item} color={generalColor}/>
+                                <UniformInfoItem key={item} text={item} color={generalColor}/>
                             ))}
                         </Paper>
                     </Grid>
@@ -117,21 +117,26 @@ function ExperienceDetailCard({detail}) {
                             </Grid>
                             <Grid container justifyContent='center'>
                                 {detail['position']['titles'].map(title => (
-                                    <Chip variant='default' size='small' color='primary' className={titleStyle}
+                                    <Chip key={detail['organization']['name'] + title} variant='default' size='small'
+                                          color='primary'
+                                          className={titleStyle}
                                           label={<Typography variant='caption'>{title}</Typography>}/>
                                 ))}
                             </Grid>
                             <HorizontalPlaceholder height={5}/>
                             {detail['position']['responsibilities'].map(item => (
-                                <UniformInfoItem text={item} color={generalColor}/>
+                                <UniformInfoItem key={detail['organization']['name'] + item} text={item}
+                                                 color={generalColor}/>
                             ))}
                         </Paper>
                     </Grid>
                 </Grid>
-                {detail['activities'].map(activity => ([
-                    <Grid item xs={12}><GeneralHorizontalCrossDivider/></Grid>,
-                    <ExperienceActivity activity={activity}/>
-                ]))}
+                {detail['activities'].map(activity => (
+                    <Fragment key={activity['name']}>
+                        <Grid item xs={12}><GeneralHorizontalCrossDivider/></Grid>,
+                        <ExperienceActivity activity={activity}/>
+                    </Fragment>
+                ))}
             </CardContent>
         </UniformCard>
     )

@@ -6,11 +6,48 @@ import ExperiencesDisplayBoard from "./ExperiencesDisplayBoard";
 import SloganCard from "../SloganCard";
 import ExperienceDetailCard from "./ExperienceDetailCard";
 
+import sundialModelPart1Image from
+        '../../assets/images/activities/org-benbenedu/product-sundial/part-1.model.domain.sundial.benbenedu.cn.png'
+import sundialModelPart2Image from
+        '../../assets/images/activities/org-benbenedu/product-sundial/part-2.model.domain.sundial.benbenedu.cn.png'
+import sundialImplementationViewImage from
+        '../../assets/images/activities/org-benbenedu/product-sundial/implementation-view.sundial.benbenedu.cn.png'
+import sundialProcessViewImage from
+        '../../assets/images/activities/org-benbenedu/product-sundial/process-view.sundial.benbenedu.cn.png'
+
+const sundialDesignImageList = {
+    rowHeight: 50,
+    imageItems: [
+        {
+            title: "part-1.model.domain.sundial.benbenedu.cn",
+            img: sundialModelPart1Image,
+            cols: 4, rows: 2
+        },
+        {
+            title: "part-2.model.domain.sundial.benbenedu.cn",
+            img: sundialModelPart2Image,
+            cols: 5, rows: 2
+        },
+        {
+            title: "implementation-view.sundial.benbenedu.cn",
+            img: sundialImplementationViewImage,
+            cols: 5, rows: 3
+        },
+        {
+            title: "process-view.sundial.benbenedu.cn",
+            img: sundialProcessViewImage,
+            cols: 4, rows: 3
+        }
+    ]
+}
+
 function Experiences() {
 
     const {t} = useTranslation('experiences');
     const experienceCabinet = t('experiences:experienceCabinet', {returnObjects: true})
     const slogans = t('experiences:slogans', {returnObjects: true})
+
+    experienceCabinet['BBJY']['activities'][0]['designImageList'] = sundialDesignImageList
 
     return (
         <Fragment>

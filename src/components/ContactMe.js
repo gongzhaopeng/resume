@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 
 import Fab from '@material-ui/core/Fab';
 import CenterFocusStrongRoundedIcon from '@material-ui/icons/CenterFocusStrongRounded'
@@ -39,59 +39,61 @@ function ContactMe() {
 
     const {t, i18n} = useTranslation();
 
-    return ([
-        <Fab variant="extended" color="primary" className={fab} onClick={onClickFab}>
-            <CenterFocusStrongRoundedIcon/>
-            <Typography style={{marginLeft: 4}}>{t("common:contact.label")}</Typography>
-        </Fab>,
-        <Dialog open={showContactInfo} onClose={onCloseDialog} scroll='paper'
-                maxWidth='sm' fullWidth>
-            <DialogContent dividers className={content}>
-                <Grid container spacing={2}>
-                    <Grid item xs={3}>
-                        <Grid container justifyContent="center" alignContent="center"
-                              style={{height: '100%'}}>
-                            <LocationOnRoundedIcon color="primary"/>
+    return (
+        <Fragment>
+            <Fab variant="extended" color="primary" className={fab} onClick={onClickFab}>
+                <CenterFocusStrongRoundedIcon/>
+                <Typography style={{marginLeft: 4}}>{t("common:contact.label")}</Typography>
+            </Fab>,
+            <Dialog open={showContactInfo} onClose={onCloseDialog} scroll='paper'
+                    maxWidth='sm' fullWidth>
+                <DialogContent dividers className={content}>
+                    <Grid container spacing={2}>
+                        <Grid item xs={3}>
+                            <Grid container justifyContent="center" alignContent="center"
+                                  style={{height: '100%'}}>
+                                <LocationOnRoundedIcon color="primary"/>
+                            </Grid>
+                        </Grid>
+                        <Grid item xs={9}>
+                            <Breadcrumbs>
+                                {i18n.language.indexOf('en') >= 0 &&
+                                    <Typography variant="caption" color="primary">
+                                        {t("common:contact.location.country")}
+                                    </Typography>
+                                }
+                                <Typography variant="caption" color="primary">
+                                    {t("common:contact.location.city")}
+                                </Typography>
+                                <Typography variant="caption" color="primary">
+                                    {t("common:contact.location.district")}
+                                </Typography>
+                                <Typography variant="caption" color="primary">
+                                    {t("common:contact.location.street")}
+                                </Typography>
+                            </Breadcrumbs>
+                        </Grid>
+                        <Grid item xs={3}>
+                            <Grid container justifyContent="center"><EmailRoundedIcon color="primary"/></Grid>
+                        </Grid>
+                        <Grid item xs={9}>
+                            <Typography variant="body1" color="primary">
+                                {t("common:contact.email")}
+                            </Typography>
+                        </Grid>
+                        <Grid item xs={3}>
+                            <Grid container justifyContent="center"><SmartphoneRoundedIcon color="primary"/></Grid>
+                        </Grid>
+                        <Grid item xs={9}>
+                            <Typography variant="body1" color="primary">
+                                {t("common:contact.mobile")}
+                            </Typography>
                         </Grid>
                     </Grid>
-                    <Grid item xs={9}>
-                        <Breadcrumbs>
-                            {i18n.language.indexOf('en') >= 0 &&
-                                <Typography variant="caption" color="primary">
-                                    {t("common:contact.location.country")}
-                                </Typography>
-                            }
-                            <Typography variant="caption" color="primary">
-                                {t("common:contact.location.city")}
-                            </Typography>
-                            <Typography variant="caption" color="primary">
-                                {t("common:contact.location.district")}
-                            </Typography>
-                            <Typography variant="caption" color="primary">
-                                {t("common:contact.location.street")}
-                            </Typography>
-                        </Breadcrumbs>
-                    </Grid>
-                    <Grid item xs={3}>
-                        <Grid container justifyContent="center"><EmailRoundedIcon color="primary"/></Grid>
-                    </Grid>
-                    <Grid item xs={9}>
-                        <Typography variant="body1" color="primary">
-                            {t("common:contact.email")}
-                        </Typography>
-                    </Grid>
-                    <Grid item xs={3}>
-                        <Grid container justifyContent="center"><SmartphoneRoundedIcon color="primary"/></Grid>
-                    </Grid>
-                    <Grid item xs={9}>
-                        <Typography variant="body1" color="primary">
-                            {t("common:contact.mobile")}
-                        </Typography>
-                    </Grid>
-                </Grid>
-            </DialogContent>
-        </Dialog>
-    ]);
+                </DialogContent>
+            </Dialog>
+        </Fragment>
+    );
 }
 
 export default ContactMe

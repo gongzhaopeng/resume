@@ -44,7 +44,7 @@ function ExperiencesTimelineItem({
                     {orgName}
                 </Typography>
                 {titles.map(title => (
-                    <Chip size='small' variant='outlined' className={titleStyle}
+                    <Chip key={title} size='small' variant='outlined' className={titleStyle}
                           label={
                               <Typography variant='caption' color='textSecondary'>
                                   {title}

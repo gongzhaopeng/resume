@@ -3,22 +3,16 @@ import React from 'react';
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import Chip from "@material-ui/core/Chip";
-import Link from "@material-ui/core/Link";
+import CardContent from "@material-ui/core/CardContent";
 
 import {useTranslation} from "react-i18next";
 
-import {makeStyles} from '@material-ui/core/styles';
 import {orange, blue, grey} from '@material-ui/core/colors';
 
 import UniformInfoItem from "../UniformInfoItem";
-import HorizontalPlaceholder from "../HorizontalPlaceholder";
-import CardContent from "@material-ui/core/CardContent";
-
-const useStyles = makeStyles({});
+import DesignImageList from "./DesignImageList";
 
 function ExperienceActivity({activity}) {
-
-    const {} = useStyles()
 
     const {t} = useTranslation('experiences');
     const labels = t('experiences:labels', {returnObjects: true})
@@ -52,7 +46,7 @@ function ExperienceActivity({activity}) {
                         /{labels['activity']['brief']}/
                     </Typography>
                     {activity['brief'].map(item => (
-                        <UniformInfoItem color={generalColor} text={item}/>
+                        <UniformInfoItem key={item} color={generalColor} text={item}/>
                     ))}
                 </CardContent>
             </Grid>
@@ -64,12 +58,12 @@ function ExperienceActivity({activity}) {
                     </Typography>
                     <Grid container justifyContent='center'>
                         {activity['roles'].map(role => (
-                            <Chip variant='default' size='small' color='primary' style={{margin: 4}}
+                            <Chip key={role} variant='default' size='small' color='primary' style={{margin: 4}}
                                   label={<Typography variant='caption'>{role}</Typography>}/>
                         ))}
                     </Grid>
                     {activity['tasks'].map(item => (
-                        <UniformInfoItem color={blue['800']} text={item}/>
+                        <UniformInfoItem key={item} color={blue['800']} text={item}/>
                     ))}
                 </CardContent>
             </Grid>
@@ -81,7 +75,7 @@ function ExperienceActivity({activity}) {
                             /{labels['activity']['result']}/
                         </Typography>
                         {activity['result'].map(item => (
-                            <UniformInfoItem color={blue['800']} text={item}/>
+                            <UniformInfoItem key={item} color={blue['800']} text={item}/>
                         ))}
                     </CardContent>
                 }
@@ -93,10 +87,15 @@ function ExperienceActivity({activity}) {
                         /{labels['activity']['gains']}/
                     </Typography>
                     {activity['gains'].map(item => (
-                        <UniformInfoItem color={orange['900']} text={item}/>
+                        <UniformInfoItem key={item} color={orange['900']} text={item}/>
                     ))}
                 </CardContent>
             </Grid>
+            {activity['designImageList'] && (
+                <Grid item xs={12}>
+                    <DesignImageList {...activity['designImageList']}/>
+                </Grid>
+            )}
         </Grid>
     )
 }

@@ -105,7 +105,7 @@ function SkillDetailCard({logo, logoHeightRatio, detail}) {
                                 /{labels['techStack']}/
                             </Typography>
                             {detail['techStack'].map(techItem => (
-                                <UniformInfoItem color={deepOrange['A400']}
+                                <UniformInfoItem key={'techStack' + techItem} color={deepOrange['A400']}
                                                  text={techItem}/>
                             ))}
                         </CardContent>
@@ -117,7 +117,7 @@ function SkillDetailCard({logo, logoHeightRatio, detail}) {
                                 /{labels['coreCompetence']}/
                             </Typography>
                             {detail['coreCompetence'].map(competenceItem => (
-                                <UniformInfoItem color={purple['A400']}
+                                <UniformInfoItem key={'coreCompetence' + competenceItem} color={purple['A400']}
                                                  text={competenceItem}/>
                             ))}
                         </CardContent>
@@ -129,7 +129,8 @@ function SkillDetailCard({logo, logoHeightRatio, detail}) {
                             /{labels['favoriteResources']}/
                         </Typography>
                         {detail['favoriteResources'].map(resourceItem => (
-                            <UniformResourceItem {...resourceItem}/>
+                            <UniformResourceItem key={'favoriteResources' + (resourceItem.name || resourceItem.url)}
+                                                 {...resourceItem}/>
                         ))}
                     </Grid>
                 </Grid>
