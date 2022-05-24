@@ -29,7 +29,7 @@
         "Test-Driven Development  / Locust",
         "IntelliJ IDEA",
         "Maven / Git / GitHub / GitLab / Travis CI",
-        "Linux / 阿里云 / AWS / Nginx / Docker / DockerHub / Kubernetes"
+        "Linux / Aliyun / AWS / Nginx / Docker / DockerHub / Kubernetes"
       ],
       "favoriteResources": [
         {
@@ -73,13 +73,13 @@
         }
       ],
       "coreCompetence": [
-        "快速有效构造功能实现方案的经验及能力",
-        "良好的编码风格",
-        "推崇函数式编程和测试驱动开发",
-        "框架源码追踪及定制化经验",
-        "复杂BUG的排查定位经验",
-        "高并发服务开发及性能优化经验",
-        "大量的第三方平台能力集成经验"
+        "Ability of and experience in constructing product-feature implementations, fast and efficiently.",
+        "Good coding style.",
+        "Advocate of Functional-Programing and Test-Driven-Development.",
+        "Experience in tracing and customizing open-source frameworks.",
+        "Experience in troubleshooting subtle bugs.",
+        "Experience in developing high-concurrency services and optimizing performance.",
+        "Lots of experience in integrating third-party platform services."
       ]
     },
     "webFrontendDev": {
@@ -136,10 +136,10 @@
         }
       ],
       "coreCompetence": [
-        "良好的JavaScript基础",
-        "充分掌握React框架机制及核心组件",
-        "良好的编码风格",
-        "追求友好、简洁、漂亮的前端设计"
+        "Good Javascript basics.",
+        "Mastery of the mechanism and core components within React framework.",
+        "Good coding style.",
+        "Pursuing friendly, concise and beautiful frontend design."
       ]
     },
     "architectureAndDesign": {
@@ -187,12 +187,12 @@
         }
       ],
       "coreCompetence": [
-        "熟悉Spring Cloud核心能力及组件",
-        "熟悉微服务架构风格及相关模式",
-        "熟练使用UML等表达架构设计",
-        "基于Swagger定义RESTful API的丰富经验",
-        "基于微服务架构风格的业务中台构建经验",
-        "微服务架构系统基础设施搭建经验"
+        "Familiar with core capabilities and components of Spring Cloud.",
+        "Familiar with Microservices architecture and related patterns.",
+        "Proficient in using UML to express architectural design.",
+        "Extensive experience in defining RESTful APIs with Swagger.",
+        "Experience in constructing business middle platform based on Microservices architecture.",
+        "Experience in building system infrastructures based on Microservices architecture."
       ]
     },
     "solutionBuilding": {
@@ -216,12 +216,12 @@
         }
       ],
       "coreCompetence": [
-        "崇尚迭代和增量的构建过程",
-        "客户现场驻场需求分析经验",
-        "竞品分析、技术选型等过程实践经验",
-        "平衡研发能力、产品形态(Web/小程序/App)、自研/购买、成本、运营目标等因素形成可行方案的经验",
-        "运营反馈驱动产品迭代的过程实践",
-        "面向猿辅导、学而思、宜信财富等第三方的能力开放和集成经验"
+        "Appreciating iterative and incremental building processes.",
+        "Experience in analyzing customer requirements on-site.",
+        "Experience in competitive product analysis and technology selection.",
+        "Experience in balancing team capabilities, product form(Web/mini-program/App), buying/building, cost, operational goals and other factors to form a feasible solution.",
+        "Practice of operational-feedback-driven product iteration.",
+        "Experience in opening capabilities to and integrating with third parties such as Yuanfudao, TAL."
       ]
     },
     "processControl": {
@@ -247,11 +247,11 @@
         }
       ],
       "coreCompetence": [
-        "推崇Scrum框架",
-        "了解ITIL框架",
-        "产品研发过程控制经验",
-        "大量的第三方合作及2B项目实施经验",
-        "过程协作、控制相关的软件和图表实践"
+        "Appreciating the Scrum framework.",
+        "Be aware of the ITIL Framework.",
+        "Experience in controlling product development process.",
+        "Extensive experience in implementing third-party cooperation and 2B projects.",
+        "Practice of software and diagrams related to process collaboration & control."
       ]
     },
     "techTeamManagement": {
@@ -278,10 +278,10 @@
         }
       ],
       "coreCompetence": [
-        "熟悉软件生命周期和典型过程框架涉及的各种角色",
-        "充分的合作意识",
-        "技术团队建设相关的规划、招募、发展、评价、优化等实践经验",
-        "熟悉KPI、OKR等管理框架"
+        "Familiar with the various roles involved in the software lifecycle and typical process frameworks.",
+        "Full sense of cooperation.",
+        "Experience in planning, recruitment, development, evaluation and optimization related to technical team building.",
+        "Familiar with KPI, OKR management frameworks."
       ]
     }
   },
