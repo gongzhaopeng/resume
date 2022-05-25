@@ -30,55 +30,55 @@
         "name": "Beijing Zhongke Fulong Intelligent Technology Co., Ltd.",
         "abbrName": "Zhongke Fulong",
         "website": "http://www.fulongai.com",
-        "type": "民营",
+        "type": "private",
         "staffNumber": "400",
         "brief": [
-          "中科院计算技术研究所成果转化",
-          "完全自主知识产权国产化CAD软件代表企业",
-          "三维工厂协同设计"
+          "Achievement transformation of the Institute of Computing Technology, Chinese Academy of Sciences.",
+          "Representative localized-CAD-software enterprise owning completely independent intellectual property rights.",
+          "Collaborative 3D factory design."
         ]
       },
       "position": {
-        "department": "研发部",
+        "department": "R&D Department",
         "titles": [
-          "软件工程师",
-          "项目经理"
+          "Software Engineer",
+          "Project Manager"
         ],
         "responsibilities": [
-          "\"HIDAS三维配筋系统\"软件研发、需求及合作对接、项目协调、交付"
+          "Development, requirements & cooperation communicating, project coordination and delivery of \"HIDAS 3D Reinforcement System\"."
         ]
       },
       "activities": [
         {
-          "name": "HIDAS三维配筋系统",
+          "name": "HIDAS 3D Reinforcement System",
           "type": "project",
           "startTime": "2009/07",
           "endTime": "2012/11",
           "brief": [
-            "交通部第四航务工程勘察设计院合作研发、共享知识产权",
-            "三维结构建模 / 三维配筋 / 图纸定义及生成",
-            "三维动态设计 / 设计过程流程化",
-            "三维场景钢筋碰撞自动处理"
+            "The Fourth Navigation Engineering Survey and Design Institute of the Ministry of Communications cooperates in research and development and shares intellectual property rights.",
+            "3D structural modeling / 3D reinforcement / Drawing definition and generation.",
+            "3D dynamic design / Streamlined design process.",
+            "Automatic processing of reinforcement collision in 3D scene."
           ],
           "result": [
-            "2012年11月验收，整体交付合作方",
-            "[发明专利号 201210100685] 一种三维混凝土结构配筋交互方法",
-            "[发明专利号 201210250054] 一种三维混凝土结构配筋的图纸自动生成方法"
+            "Accepted in November 2012 and delivered to the partner as a whole.",
+            "[Invention patent CN102663187B] Three-dimensional concrete structure reinforcement interactive method.",
+            "[Invention patent CN102831259B] Automatic generation method of drawing for three-dimensional concrete structural reinforcement."
           ],
           "roles": [
-            "软件研发",
-            "项目协调"
+            "Software development",
+            "Project coordination"
           ],
           "tasks": [
-            "业务需求对接、分析",
-            "竞品分析 / 原型构造",
-            "系统开发 / 项目过程控制",
-            "系统交付对接"
+            "Communication and analysis of business requirements.",
+            "Competitive analysis / Prototyping.",
+            "System development / Project process control.",
+            "System delivery."
           ],
           "gains": [
-            "客户对接实践",
-            "三维建模 / 计算几何",
-            "针对钢筋碰撞处理的禁忌搜索算法应用"
+            "Practice of client requirements analysis.",
+            "3D modeling / Computational geometry.",
+            "Application of Tabu search algorithm for reinforcement collision resolving."
           ]
         }
       ]
@@ -90,7 +90,7 @@
         "name": "Linker Networks Inc.",
         "abbrName": "Linker",
         "website": "https://www.linkernetworks.com",
-        "type": "初创",
+        "type": "start-up",
         "staffNumber": "50",
         "brief": [
           "Starent Networks(2009年被思科收购)创始团队成员筹建",
@@ -148,7 +148,7 @@
         "name": "Beijing Xinrun Technology Co., Ltd.",
         "abbrName": "Xinrun",
         "website": null,
-        "type": "初创",
+        "type": "start-up",
         "staffNumber": "80",
         "brief": [
           "江苏卫视\"最强大脑\"节目合作",
@@ -237,7 +237,7 @@
         "name": "Beijing Sincetimes Network Co., Ltd.",
         "abbrName": "Sincetimes",
         "website": "https://www.sincetimes.com",
-        "type": "上市",
+        "type": "public",
         "staffNumber": "500",
         "brief": [
           "手机游戏 / 网页游戏 / 社区社交游戏",
@@ -298,7 +298,7 @@
         "name": "Benben Education Technology (Beijing) Co., Ltd.",
         "abbrName": "Benben",
         "website": "http://www.benbenedu.net",
-        "type": "初创",
+        "type": "start-up",
         "staffNumber": "50",
         "brief": [
           "\"猿辅导\"战略合作 / 北师大心理学部部长创建",
