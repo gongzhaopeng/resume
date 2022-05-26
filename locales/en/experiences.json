@@ -27,58 +27,58 @@
       "entryDate": "2009/07",
       "leavingDate": "2013/02",
       "organization": {
-        "name": "北京中科辅龙计算机技术股份有限公司",
-        "abbrName": "中科辅龙",
+        "name": "Beijing Zhongke Fulong Intelligent Technology Co., Ltd.",
+        "abbrName": "Zhongke Fulong",
         "website": "http://www.fulongai.com",
-        "type": "民营",
+        "type": "private",
         "staffNumber": "400",
         "brief": [
-          "中科院计算技术研究所成果转化",
-          "完全自主知识产权国产化CAD软件代表企业",
-          "三维工厂协同设计"
+          "Achievement transformation of the Institute of Computing Technology, Chinese Academy of Sciences.",
+          "Representative localized-CAD-software enterprise owning completely independent intellectual property rights.",
+          "Collaborative 3D factory design."
         ]
       },
       "position": {
-        "department": "研发部",
+        "department": "R&D Department",
         "titles": [
-          "软件工程师",
-          "项目经理"
+          "Software Engineer",
+          "Project Manager"
         ],
         "responsibilities": [
-          "\"HIDAS三维配筋系统\"软件研发、需求及合作对接、项目协调、交付"
+          "Development, requirements & cooperation communicating, project coordination and delivery of \"HIDAS 3D Reinforcement System\"."
         ]
       },
       "activities": [
         {
-          "name": "HIDAS三维配筋系统",
+          "name": "HIDAS 3D Reinforcement System",
           "type": "project",
           "startTime": "2009/07",
           "endTime": "2012/11",
           "brief": [
-            "交通部第四航务工程勘察设计院合作研发、共享知识产权",
-            "三维结构建模 / 三维配筋 / 图纸定义及生成",
-            "三维动态设计 / 设计过程流程化",
-            "三维场景钢筋碰撞自动处理"
+            "The Fourth Navigation Engineering Survey and Design Institute of the Ministry of Communications cooperates in research and development and shares intellectual property rights.",
+            "3D structural modeling / 3D reinforcement / Drawing definition and generation.",
+            "3D dynamic design / Streamlined design process.",
+            "Automatic processing of reinforcement collision in 3D scene."
           ],
           "result": [
-            "2012年11月验收，整体交付合作方",
-            "[发明专利号 201210100685] 一种三维混凝土结构配筋交互方法",
-            "[发明专利号 201210250054] 一种三维混凝土结构配筋的图纸自动生成方法"
+            "Accepted in November 2012 and delivered to the partner as a whole.",
+            "[Invention patent CN102663187B] Three-dimensional concrete structure reinforcement interactive method.",
+            "[Invention patent CN102831259B] Automatic generation method of drawing for three-dimensional concrete structural reinforcement."
           ],
           "roles": [
-            "软件研发",
-            "项目协调"
+            "Software development",
+            "Project coordination"
           ],
           "tasks": [
-            "业务需求对接、分析",
-            "竞品分析 / 原型构造",
-            "系统开发 / 项目过程控制",
-            "系统交付对接"
+            "Communication and analysis of business requirements.",
+            "Competitive analysis / Prototyping.",
+            "System development / Project process control.",
+            "System delivery."
           ],
           "gains": [
-            "客户对接实践",
-            "三维建模 / 计算几何",
-            "针对钢筋碰撞处理的禁忌搜索算法应用"
+            "Practice of client requirements analysis.",
+            "3D modeling / Computational geometry.",
+            "Application of Tabu search algorithm for reinforcement collision resolving."
           ]
         }
       ]
@@ -87,25 +87,25 @@
       "entryDate": "2013/03",
       "leavingDate": "2015/03",
       "organization": {
-        "name": "宝蕴吉瑞（北京）通讯设备有限公司",
-        "abbrName": "宝蕴吉瑞",
+        "name": "Linker Networks Inc.",
+        "abbrName": "Linker",
         "website": "https://www.linkernetworks.com",
-        "type": "初创",
+        "type": "start-up",
         "staffNumber": "50",
         "brief": [
-          "Starent Networks(2009年被思科收购)创始团队成员筹建",
-          "4G核心网系统软件供应",
-          "移动互联网应用"
+          "Founded by a member of the founding team of Starent Networks (acquired by Cisco in 2009).",
+          "4G core network system software supply.",
+          "Mobile internet application."
         ]
       },
       "position": {
-        "department": "开发部",
+        "department": "Development Department",
         "titles": [
-          "高级软件工程师",
-          "项目经理"
+          "Senior Software Engineer",
+          "Project Manager"
         ],
         "responsibilities": [
-          "PCRF(Policy and Charging Rules Function)软件研发、项目协调、运营商用例测试、入网部署"
+          "Software development, project coordination, operator case testing, and deployment of PCRF (Policy and Charging Rules Function)."
         ]
       },
       "activities": [
@@ -115,28 +115,28 @@
           "startTime": "2013/03",
           "endTime": "2015/03",
           "brief": [
-            "三大电信运营商4G核心网PCRF竞标",
+            "Bidding for PCRF of 4G core network of three telecom operators.",
             "Protocol stack / PCRF Engine / PCRF Admin",
-            "集成Drools Expert驱动业务规则的配置和执行"
+            "Integrate Drools Expert to drive the configuration and execution of business rules."
           ],
           "result": [
-            "顺利通过面向三大电信运营商的功能和性能测试",
-            "完成对中国电信在江西、广西、海南等三省的现网联调及上线测试"
+            "Successfully passed the functional and performance tests of the three major telecom operators.",
+            "Completed the deployment and online testing of China Telecom in Jiangxi, Guangxi and Hainan provinces."
           ],
           "roles": [
-            "软件研发",
-            "项目协调"
+            "Software development",
+            "Project coordination"
           ],
           "tasks": [
-            "系统开发 / 项目过程控制",
-            "规则引擎Drools Expert集成和定制化",
-            "协议信令和领域对象间的编解码",
-            "协调面向运营商的功能和性能测试"
+            "System development / Project process control.",
+            "Integration and customization of rules engine Drools Expert.",
+            "Codec between protocol signaling and domain objects.",
+            "Coordinate functional and performance tests of operators."
           ],
           "gains": [
             "Spring Framework / Akka / MQ",
-            "Drools Expert应用",
-            "参与电信运营商的功能和性能测试过程"
+            "Application of Drools Expert.",
+            "Participated in the functional and performance testing process of telecom operators."
           ]
         }
       ]
@@ -145,87 +145,87 @@
       "entryDate": "2015/04",
       "leavingDate": "2017/02",
       "organization": {
-        "name": "北京欣润科技有限公司",
-        "abbrName": "欣润科技",
+        "name": "Beijing Xinrun Technology Co., Ltd.",
+        "abbrName": "Xinrun",
         "website": null,
-        "type": "初创",
+        "type": "start-up",
         "staffNumber": "80",
         "brief": [
-          "江苏卫视\"最强大脑\"节目合作",
-          "北京师范大学心理学部专业技术支持",
-          "脑力测评和训练 / 益智类游戏"
+          "Cooperated with Jiangsu Satellite TV \"The Brain\" program.",
+          "Professional technical support provided by the Faculty of Psychology, Beijing Normal University.",
+          "Brain assessment and training / Puzzle games."
         ]
       },
       "position": {
-        "department": "研发部",
+        "department": "R&D Department",
         "titles": [
-          "后端研发负责人"
+          "Head of Backend Dev"
         ],
         "responsibilities": [
-          "协调组织后端服务开发",
-          "后端团队日常管理 / 技术指导",
-          "后端技术选型 / 架构 / 接口定义",
-          "框架搭建 / 核心功能实现"
+          "Coordinate and organize the development of backend services.",
+          "Day-to-day management and technical guidance of the backend team.",
+          "Backend technology selection / architecture / API definition.",
+          "Framework construction / Implementation of core functions."
         ]
       },
       "activities": [
         {
-          "name": "益智类游戏及应用后端",
+          "name": "Backend for puzzle games and apps",
           "type": "product",
           "startTime": "2015/04",
           "endTime": "2016/10",
           "brief": [
-            "\"最强大脑\"节目合作",
-            "\"非常大脑\"系列益智类游戏及应用",
-            "后端开发 / 运营支持"
+            "Cooperated with \"The Brain\" program.",
+            "A collection of puzzle games and apps.",
+            "Backend development / Operation support."
           ],
           "result": [
-            "\"最强大脑\"节目播出期间，相关游戏及应用日访问量过百万"
+            "During the broadcast of \"The Brain\", related games and apps received over one million daily visits."
           ],
           "roles": [
-            "架构",
-            "过程控制",
-            "服务开发"
+            "Architecture",
+            "Process control",
+            "Service development"
           ],
           "tasks": [
-            "业务需求分析",
-            "架构 / 接口定义 / 任务分解及过程控制",
-            "微信、微博等开放平台接入 / 支付接入",
-            "微信公众号、微信小店二次开发 / iOS消息推送"
+            "Business Requirements analysis.",
+            "Architecture / API definition / Task decomposition and process control.",
+            "Open platform WeChat, Weibo integration / Payment integration.",
+            "Secondary development of WeChat official account and WeChat store / iOS message push."
           ],
           "gains": [
             "Play Framework / Scala",
-            "Swagger / RESTful API实践",
-            "开放平台接入实践",
-            "支付接入实践"
+            "Practice of Swagger and RESTful API.",
+            "Practice of open platform integration.",
+            "Practice of payment integration."
           ]
         },
         {
-          "name": "对战平台后端",
+          "name": "Battle platform backend",
           "type": "product",
           "startTime": "2016/03",
           "endTime": "2017/02",
           "brief": [
-            "对战游戏平台",
-            "大厅 / 游戏厅 / 游戏桌 / 玩家匹配",
-            "可挂载扩展不同形式的对战游戏"
+            "Battle game platform.",
+            "Lobby / Game room / Game table / Player matching.",
+            "Different forms of battle games can be mounted."
           ],
           "result": [
-            "支撑了网球、麻将、德州扑克、仿\"球球大作战\"等对战类游戏"
+            "Supported battle games such as tennis, mahjong, Texas hold 'em, and ball battle."
           ],
           "roles": [
-            "架构",
-            "过程控制",
-            "服务开发"
+            "Architecture",
+            "Process control",
+            "Service development"
           ],
           "tasks": [
-            "技术选型 / 架构 / 框架搭建 / 接口定义",
-            "任务分解及过程控制",
-            "游戏引擎接口抽象"
+            "Technology selection / Architecture / Framework construction / API definition.",
+            "Task decomposition and process control.",
+            "Abstract the game engine interface."
           ],
           "gains": [
-            "Pomelo(游戏服务器框架, 网易开源) / Node.js",
-            "开源框架定制化实践"
+            "Pomelo (game server framework, open sourced by NetEase) / Node.js.",
+            "Practice of customizing open source framework."
           ]
         }
       ]
@@ -234,59 +234,59 @@
       "entryDate": "2017/03",
       "leavingDate": "2018/12",
       "organization": {
-        "name": "北京华清飞扬网络股份有限公司",
-        "abbrName": "华清飞扬",
+        "name": "Beijing Sincetimes Network Co., Ltd.",
+        "abbrName": "Sincetimes",
         "website": "https://www.sincetimes.com",
-        "type": "上市",
+        "type": "public",
         "staffNumber": "500",
         "brief": [
-          "手机游戏 / 网页游戏 / 社区社交游戏",
-          "腾讯平台深度合作",
-          "\"红警大战\"上线腾讯游戏平台，用户过5亿",
-          "\"战舰帝国\"连续三周蝉联AppStore付费榜首"
+          "Mobile games / Web games / Community social games.",
+          "In-depth cooperation with Tencent platform.",
+          "\"Red Alert War\" launched on Tencent's game platform, with over 500 million users.",
+          "\"Battleship Empire\" topped the AppStore paid list for three consecutive weeks."
         ]
       },
       "position": {
-        "department": "新产品部",
+        "department": "New Products Department",
         "titles": [
-          "技术经理"
+          "Technical Manager"
         ],
         "responsibilities": [
-          "部门技术团队建设",
-          "日常开发管理",
-          "后端服务开发",
-          "服务部署及维护"
+          "Technical team building.",
+          "Daily development management.",
+          "Backend service development.",
+          "Service deployment and maintenance."
         ]
       },
       "activities": [
         {
-          "name": "\"一厘米\"游戏社区应用",
+          "name": "\"1CM\" game community app",
           "type": "product",
           "startTime": "2017/03",
           "endTime": "2018/10",
           "brief": [
-            "一站式手游社区生态 / Web & Android",
-            "游戏发现及获取 / 推荐及榜单 / 工具支持",
-            "游戏评测及评价 / 话题及评论 / 社区互动",
-            "游戏宣发"
+            "One-stop mobile game community ecology / Web & Android.",
+            "Game discovery and acquisition / Recommendations and lists / Tools support.",
+            "Game reviews / Topics and comments / Community interaction.",
+            "Game announcement."
           ],
           "result": [
-            "Web & Android版上线运营"
+            "Online operation of web and Android versions."
           ],
           "roles": [
-            "组建技术团队",
-            "过程控制",
-            "后端服务开发"
+            "Team building",
+            "Process control",
+            "Backend development"
           ],
           "tasks": [
-            "业务需求分析 / 任务分解及过程控制",
-            "接口定义 / 后端功能实现",
-            "游戏安装包、视频、图片、文字、榜单等信息爬取",
-            "运营相关数据采集和统计分析"
+            "Business requirements analysis / Task decomposition and process control.",
+            "API definition / Backend function implementation.",
+            "Crawl game installation packages, videos, pictures, text, lists, etc.",
+            "Operation-related data collection and statistical analysis."
           ],
           "gains": [
-            "ElasticSearch / Scrapy / 腾讯云",
-            "运营数据驱动产品迭代"
+            "ElasticSearch / Scrapy / Tencent Cloud.",
+            "Practice of product iteration driven by operational data."
           ]
         }
       ]
@@ -295,94 +295,94 @@
       "entryDate": "2019/03",
       "leavingDate": "2021/12",
       "organization": {
-        "name": "本本教育科技（北京）有限公司",
-        "abbrName": "本本教育",
+        "name": "Benben Education Technology (Beijing) Co., Ltd.",
+        "abbrName": "Benben",
         "website": "http://www.benbenedu.net",
-        "type": "初创",
+        "type": "start-up",
         "staffNumber": "50",
         "brief": [
-          "\"猿辅导\"战略合作 / 北师大心理学部部长创建",
-          "K12儿童青少年心理与认知测评",
-          "分级阅读 / 综合素质 / 高一分科  / 专业倾向",
-          "测评能力开放与合作 / 2G & 2B项目"
+          "Strategic cooperation with \"Yuanfudao\" / Created by the head of the Faculty of Psychology, Beijing Normal University.",
+          "Psychological and cognitive assessment of K12 children and adolescents.",
+          "Graded Reading / Comprehensive Quality / Course Selection / Professional Tendency",
+          "Openness and cooperation of assessment capabilities / 2G & 2B projects."
         ]
       },
       "position": {
-        "department": "IT中心",
+        "department": "IT Center",
         "titles": [
-          "IT中心经理"
+          "IT Center Manager"
         ],
         "responsibilities": [
-          "IT中心建设、管理",
-          "测评业务中台建设与维护",
-          "测评能力开放与合作对接、方案构建",
-          "2B & 2G测评项目方案构建、技术实施",
-          "微信小程序、APP等2C业务产品研发"
+          "Construction and management of IT center.",
+          "Construction and maintenance of the middle platform of the assessment business.",
+          "Openness of assessment capabilities, cooperative communication and scheme construction.",
+          "Scheme construction and technical implementation of 2B & 2G assessment projects.",
+          "Development of 2C products in the form of WeChat Mini Programs and Apple Apps."
         ]
       },
       "activities": [
         {
-          "name": "Sundial测评业务中台",
+          "name": "Sundial",
           "type": "product",
           "startTime": "2019/09",
           "endTime": "2021/09",
           "brief": [
-            "统一支撑公司各种测评产品和业务",
-            "内容创作(题库、组卷) / 测评实施与监控 / 资源管理 / 报告生成 / 账户与权限",
-            "承载数十万用户同期在线测评",
-            "测评能力开放"
+            "Centrally support the company's various assessment products and businesses.",
+            "Content creation (questions, papers) / Assessment implementation and monitoring / Resource management / Report generation / Account and authority.",
+            "Carry online assessment of hundreds of thousands of users in the same period.",
+            "Open assessment capabilities."
           ],
           "result": [
-            "支撑了长春市二道区5万人规模的中小学分级阅读和综合素质在线测评项目实施",
-            "支撑了面向\"猿辅导\"、\"学而思\"、\"宜信财富\"等合作方的测评能力开放和集成",
-            "支撑了包括\"北京八中\"、\"中关村中学\"等近百所学校相关测评项目的实施"
+            "Supported the implementation of the graded-reading and comprehensive-quality online assessment project for primary and secondary schools with a scale of 50,000 people in Erdao District, Changchun City.",
+            "Supported the openness and integration of assessment capabilities for partners such as \"Yuanfudao\", \"TAL\", and \"CreditEase Wealth\".",
+            "Supported the implementation of assessment projects in nearly 100 schools including \"Beijing No. 8 Middle School\" and \"Zhongguancun Middle School\"."
           ],
           "roles": [
-            "需求和产品定义",
-            "架构",
-            "过程控制"
+            "Product definition",
+            "Architecture",
+            "Process control"
           ],
           "tasks": [
-            "业务需求分析 / 产品及功能定义",
-            "架构 / 技术选型 / 接口定义",
-            "任务分解及过程控制",
-            "微服务架构基础设施搭建",
-            "平台部署和运维"
+            "Business requirements analysis / Product and function definition.",
+            "Architecture / Technology selection / API definition.",
+            "Task decomposition and process control.",
+            "Construction of microservice architecture infrastructure.",
+            "Platform deployment and operation."
           ],
           "gains": [
-            "微服务架构 / Spring Cloud实践",
-            "复杂业务平台构建实践",
-            "Scrum过程框架实践",
-            "阿里云"
+            "Practice of microservice architecture and Spring Cloud.",
+            "Practice of constructing complex business platform.",
+            "Practice of Scrum process framework.",
+            "Alibaba Cloud."
           ]
         },
         {
-          "name": "面向\"猿辅导\"的高考志愿填报相关服务",
+          "name": "College Entrance Exam Volunteer Recommendation Service",
           "type": "project",
           "startTime": "2020/03",
           "endTime": "2021/08",
           "brief": [
-            "\"猿辅导\"旗下\"小猿搜题\"、\"猿题库\"等应用集成",
-            "专业倾向测评与报告生成服务",
-            "院校、专业推荐和查询服务"
+            "Integrate into apps \"Xiaoyuan Souti\" and \"Yuantiku\" developed by \"Yuanfudao\".",
+            "Professional tendency assessment and report generation.",
+            "Recommendation and enquiry services about colleges and majors."
           ],
           "result": [
-            "通过\"猿辅导\"旗下应用累计服务了近200万高考考生",
-            "保证1000(RPS)的接口性能参数"
+            "Served nearly 2 million college entrance examination candidates through the apps of \"Yuanfudao\".",
+            "Guaranteed performance, 1000 RPS."
           ],
           "roles": [
-            "合作对接",
-            "过程控制",
-            "服务开发"
+            "Partner communication",
+            "Process control",
+            "Service development"
           ],
           "tasks": [
-            "服务方案构建及对接 / 接口定义",
-            "任务分解及过程控制",
-            "报告生成、院校专业推荐等核心算法实现",
-            "性能优化和接口性能参数保证"
+            "Service solution construction and connection / Interface definition.",
+            "Task decomposition and process control.",
+            "Implementation of core algorithms related to report generation and majors recommendation.",
+            "Performance optimization and interface performance guarantee."
           ],
           "gains": [
-            "大型企业客户合作对接实践",
+            "Practice of cooperation and communication with large enterprise customers.",
             "Locust"
           ]
         }
