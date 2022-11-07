@@ -133,7 +133,7 @@ function ExperienceDetailCard({detail}) {
                 </Grid>
                 {detail['activities'].map(activity => (
                     <Fragment key={activity['name']}>
-                        <Grid item xs={12}><GeneralHorizontalCrossDivider/></Grid>,
+                        <Grid item xs={12}><GeneralHorizontalCrossDivider/></Grid>
                         <ExperienceActivity activity={activity}/>
                     </Fragment>
                 ))}
