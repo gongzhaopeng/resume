@@ -193,6 +193,26 @@
       }
     },
     {
+      "title": "Kotlin in Action",
+      "subTitle": "",
+      "edition": "",
+      "author": "Dmitry Jemerov",
+      "process": {
+        "read": 100,
+        "master": 85
+      }
+    },
+    {
+      "title": "Go in Action",
+      "subTitle": "",
+      "edition": "",
+      "author": "William Kennedy",
+      "process": {
+        "read": 100,
+        "master": 85
+      }
+    },
+    {
       "title": "React in Action",
       "subTitle": "",
       "edition": "",
