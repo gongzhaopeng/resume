@@ -387,6 +387,29 @@
           ]
         }
       ]
+    },
+    "ZZYK": {
+      "entryDate": "2022/06",
+      "leavingDate": "",
+      "organization": {
+        "name": "Beijing Zhaotianxia Education Technology Co., Ltd.",
+        "abbrName": "Zhaozhao",
+        "website": "https://wx.yikao88.com",
+        "type": "private",
+        "staffNumber": "160",
+        "brief": [
+        ]
+      },
+      "position": {
+        "department": "Technology Center",
+        "titles": [
+          "Technical Director"
+        ],
+        "responsibilities": [
+        ]
+      },
+      "activities": [
+      ]
     }
   },
   "slogans": [

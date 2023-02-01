@@ -65,6 +65,7 @@ function ExperiencesDisplayBoard() {
                             </Typography>
                         </TimelineContent>
                     </TimelineItem>
+                    {makeExperiencesTimelineItem(experienceCabinet['ZZYK'], 'secondary')}
                     {makeExperiencesTimelineItem(experienceCabinet['BBJY'], 'primary')}
                     {makeExperiencesTimelineItem(experienceCabinet['HQFY'], 'secondary')}
                     {makeExperiencesTimelineItem(experienceCabinet['XRKJ'], 'primary')}
