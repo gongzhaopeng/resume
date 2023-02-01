@@ -21,7 +21,7 @@
         "practice": 5
       },
       "techStack": [
-        "Java Platform / JVM / Scala / Python",
+        "Java Platform / JVM / Scala / Python / Go / Kotlin",
         "Spring Framework / Spring Boot / Spring Cloud",
         "Data Structures / Algorithms / Functional Programming / Design Patterns",
         "MongoDB / Redis / MySQL / Cache / ElasticSearch / ELK",
@@ -70,6 +70,14 @@
         {
           "type": "book",
           "name": "Head First Design Patterns"
+        },
+        {
+          "type": "book",
+          "name": "Kotlin in Action"
+        },
+        {
+          "type": "book",
+          "name": "Go in Action"
         }
       ],
       "coreCompetence": [
