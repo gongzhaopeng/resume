@@ -387,9 +387,98 @@
           ]
         }
       ]
+    },
+    "ZZYK": {
+      "entryDate": "2022/06",
+      "leavingDate": "",
+      "organization": {
+        "name": "Beijing Zhaotianxia Education Technology Co., Ltd.",
+        "abbrName": "Zhaozhao",
+        "website": "https://wx.yikao88.com",
+        "type": "private",
+        "staffNumber": "160",
+        "brief": [
+          "The best medical-examination training institution in the field of clinical-practice.",
+          "Founder \"Teacher Zhaozhao\" / \"King of Medical-Examination\" / Initiated \"Drawing Memory Method\"",
+          "More than 400,000 registered members / Nearly 50,000 new students purchase courses every year",
+          "More than 350 branches nationwide."
+        ]
+      },
+      "position": {
+        "department": "Technology Center",
+        "titles": [
+          "Technical Director"
+        ],
+        "responsibilities": [
+          "Planning, construction and management of Technology Center.",
+          "Organize the R&D, operation and maintenance of various business systems and applications such as \"Online School Platform\", \"Educational Affairs Platform\", and \"Zhaozhao Medical-Examination App\".",
+          "Technology selection and solution construction to support the company's strategy and business planning.",
+          "Organize the technical implementation of offline training projects such as \"Group Watching\"."
+        ]
+      },
+      "activities": [
+        {
+          "name": "\"Zhaozhao Medical-Examination\" online school platform",
+          "type": "product",
+          "startTime": "2022/06",
+          "endTime": "",
+          "brief": [
+            "Online learning for medical-exam students / Live video lessons, recorded video lessons, question bank, mock exams / Marketing, online store, community",
+            "Learning process recording and progress tracking.",
+            "Business backend / PC-web app / Mobile-web app / Android app / iOS app / WeChat mini-program app",
+            "Integration of third-party services such as cloud video and SCRM."
+          ],
+          "result": [
+            "Effectively serve the online learning of nearly 50,000 new students every year.",
+            "Nearly 10,000 people watching the popular live broadcast online at the same time."
+          ],
+          "roles": [
+            "Solution construction",
+            "Process control"
+          ],
+          "tasks": [
+            "Host the key major version upgrade of the \"Online School Platform\" from 5.0 to 7.0 / Restructure the business model / Effective and smooth migration of historical data",
+            "Pressure test / Construct performance optimization solution",
+            "Support the expansion from clinical to other business lines such as postgraduate entrance examination, traditional Chinese medicine, etc.",
+            "Organize continuous version iterations according to business and product planning."
+          ],
+          "gains": [
+            "Integration practice of cloud video live & on-demand services."
+          ]
+        },
+        {
+          "name": "Offline \"Group Watching\" of clinical-practice video courses",
+          "type": "project",
+          "startTime": "2022/06",
+          "endTime": "",
+          "brief": [
+            "For the first and second tests of the clinical qualification examination, two video courses are organized to play offline in July-August and October-November every year.",
+            "\"Group Watching\" is carried out at the same time in more than 300 branch schools.",
+            "Help students with limited time and energy to prepare for the test efficiently in a short period of time."
+          ],
+          "result": [
+            "Directly contribute more than 20% of the company's annual revenue.",
+            "Effectively prevent the leakage of core assets such as related video courses."
+          ],
+          "roles": [
+            "Project management",
+            "Process control"
+          ],
+          "tasks": [
+            "Organize and control the technical implementation of the project.",
+            "Coordinate rental, distribution, recycling and cleanup of video-playing equipments.",
+            "Construct solutions for encryption and distribution of core assets such as video files.",
+            "Coordinate technical support during video playing."
+          ],
+          "gains": [
+            "Technical-support practice for large-scale offline training projects."
+          ]
+        }
+      ]
     }
   },
   "slogans": [
+    "Remember, not making a decision IS a decision, it's just a decision to do nothing - and it's usually the worst decision you can make.",
     "Life is too short not to embrace new challenges. To take on any challenge in life and fail is very honorable.",
     "The future is not something we enter. The future is something we create.",
     "If you can dream - and not make dreams your master.",

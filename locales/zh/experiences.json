@@ -293,7 +293,7 @@
     },
     "BBJY": {
       "entryDate": "2019/03",
-      "leavingDate": "2021/12",
+      "leavingDate": "2022/05",
       "organization": {
         "name": "本本教育科技（北京）有限公司",
         "abbrName": "本本教育",
@@ -387,9 +387,99 @@
           ]
         }
       ]
+    },
+    "ZZYK": {
+      "entryDate": "2022/06",
+      "leavingDate": "",
+      "organization": {
+        "name": "北京昭天下教育科技有限公司",
+        "abbrName": "昭昭医考",
+        "website": "https://wx.yikao88.com",
+        "type": "民营",
+        "staffNumber": "160",
+        "brief": [
+          "医考培训临床执业细分领域最强机构",
+          "创始人\"昭昭老师\" / \"医考之王\" / 国内首创\"画图记忆法\"",
+          "注册会员超40万 / 每年新增购课学员近5万",
+          "全国开设分校超过350家"
+        ]
+      },
+      "position": {
+        "department": "技术中心",
+        "titles": [
+          "技术总监"
+        ],
+        "responsibilities": [
+          "技术中心规划、建设和管理",
+          "组织\"网校平台\"、\"教务平台\"、\"昭昭医考App\"等各业务系统和应用的研发及运维",
+          "技术选型和方案构建, 支撑公司的战略和业务规划",
+          "组织\"集中播放\"等线下培训项目相关的技术面实施",
+          "公司日常运营相关的技术支持"
+        ]
+      },
+      "activities": [
+        {
+          "name": "\"昭昭医考\"网校平台",
+          "type": "product",
+          "startTime": "2022/06",
+          "endTime": "",
+          "brief": [
+            "医考学员在线学习 / 视频直播课、视频录播课、题库练习、模考 / 营销、商城、社区",
+            "学习过程记录和进度追踪 / 督学",
+            "业务后台 / PC-Web端 / 移动Web端 / Android端 / iOS端 / 微信小程序",
+            "视频直播&点播、SCRM等第三方服务集成"
+          ],
+          "result": [
+            "每年有效服务近5万新增购课学员的在线学习",
+            "热门直播课次的同时在线观看数达万人"
+          ],
+          "roles": [
+            "方案构建",
+            "过程控制"
+          ],
+          "tasks": [
+            "主持网校平台5.0到7.0的关键大版本升级 / 重构业务模型 / 历史数据的有效平稳迁移",
+            "压测 / 构建性能优化方案",
+            "支撑从临床向考研、考编、中西医等多条业务线的扩展",
+            "根据业务和产品规划, 组织持续的版本迭代"
+          ],
+          "gains": [
+            "视频云直播&云点播服务集成实践"
+          ]
+        },
+        {
+          "name": "临床执业视频课程线下\"集中播放\"",
+          "type": "project",
+          "startTime": "2022/06",
+          "endTime": "",
+          "brief": [
+            "针对临床执业资格一试、二试, 每年7-8月和10-11月组织两次视频课程线下集中播放",
+            "集中播放在全国超过300家分校同期开展",
+            "帮助时间和精力有限的参考学员在短期内高效突击备考"
+          ],
+          "result": [
+            "直接贡献超过两成的公司年度营收",
+            "有效防范相关视频课程等核心资产外泄"
+          ],
+          "roles": [
+            "项目管理",
+            "过程控制"
+          ],
+          "tasks": [
+            "组织和管控项目在技术面的实施",
+            "协调播放设备的租赁、分发、回收和清理",
+            "构建课程视频等核心资产的加密和分发方案",
+            "协调播放过程中的技术支持"
+          ],
+          "gains": [
+            "大型线下培训项目的技术支撑实践"
+          ]
+        }
+      ]
     }
   },
   "slogans": [
+    "Remember, not making a decision IS a decision, it's just a decision to do nothing - and it's usually the worst decision you can make.",
     "Life is too short not to embrace new challenges. To take on any challenge in life and fail is very honorable.",
     "The future is not something we enter. The future is something we create.",
     "If you can dream - and not make dreams your master.",
