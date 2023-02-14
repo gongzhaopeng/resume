@@ -54,14 +54,16 @@ function Experiences() {
             <SloganCard slogan={slogans[0]}/>
             <ExperiencesDisplayBoard/>
             <SloganCard slogan={slogans[1]}/>
-            <ExperienceDetailCard detail={experienceCabinet['BBJY']}/>
+            <ExperienceDetailCard detail={experienceCabinet['ZZYK']}/>
             <SloganCard slogan={slogans[2]}/>
-            <ExperienceDetailCard detail={experienceCabinet['HQFY']}/>
+            <ExperienceDetailCard detail={experienceCabinet['BBJY']}/>
             <SloganCard slogan={slogans[3]}/>
-            <ExperienceDetailCard detail={experienceCabinet['XRKJ']}/>
+            <ExperienceDetailCard detail={experienceCabinet['HQFY']}/>
             <SloganCard slogan={slogans[4]}/>
-            <ExperienceDetailCard detail={experienceCabinet['BYJR']}/>
+            <ExperienceDetailCard detail={experienceCabinet['XRKJ']}/>
             <SloganCard slogan={slogans[5]}/>
+            <ExperienceDetailCard detail={experienceCabinet['BYJR']}/>
+            <SloganCard slogan={slogans[6]}/>
             <ExperienceDetailCard detail={experienceCabinet['ZKFL']}/>
         </Fragment>
     )
